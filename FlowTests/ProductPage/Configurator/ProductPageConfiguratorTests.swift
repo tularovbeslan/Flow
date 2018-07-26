@@ -1,8 +1,8 @@
 //
-//  ProductPageProductPageConfiguratorTests.swift
+//  ProductPageConfiguratorTests.swift
 //  Flow
 //
-//  Created by Beslan Tularov on 26/07/2018.
+//  Created by Beslan Tularov on 27/07/2018.
 //  Copyright © 2018 Flow. All rights reserved.
 //
 

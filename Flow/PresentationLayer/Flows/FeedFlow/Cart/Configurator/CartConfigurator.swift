@@ -1,8 +1,8 @@
 //
-//  CartCartConfigurator.swift
+//  CartConfigurator.swift
 //  Flow
 //
-//  Created by Beslan Tularov on 26/07/2018.
+//  Created by Beslan Tularov on 27/07/2018.
 //  Copyright © 2018 Flow. All rights reserved.
 //
 
@@ -19,11 +19,8 @@ class CartModuleConfigurator {
 
     private func configure(viewController: CartViewController) {
 
-        let router = CartRouter()
-
         let presenter = CartPresenter()
         presenter.view = viewController
-        presenter.router = router
 
         let interactor = CartInteractor()
         interactor.output = presenter

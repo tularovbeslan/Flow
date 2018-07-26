@@ -30,7 +30,7 @@ podfile_path:
 
 ### Templates
 templates:
-- {name: swifty_viper}
+- {name: coordinator_viper, git: 'https://github.com/tularovbeslan/coordinator_viper.git'}
 
 ### Create a reusable module in the specified directory
 #generamba gen [Module Name] swifty_viper --module_path 'Flow/PresentationLayer/ReusableComponents'

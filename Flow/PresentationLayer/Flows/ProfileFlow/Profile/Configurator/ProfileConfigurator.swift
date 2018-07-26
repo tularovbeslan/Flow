@@ -1,8 +1,8 @@
 //
-//  ProfileProfileConfigurator.swift
+//  ProfileConfigurator.swift
 //  Flow
 //
-//  Created by Beslan Tularov on 26/07/2018.
+//  Created by Beslan Tularov on 27/07/2018.
 //  Copyright © 2018 Flow. All rights reserved.
 //
 
@@ -19,11 +19,8 @@ class ProfileModuleConfigurator {
 
     private func configure(viewController: ProfileViewController) {
 
-        let router = ProfileRouter()
-
         let presenter = ProfilePresenter()
         presenter.view = viewController
-        presenter.router = router
 
         let interactor = ProfileInteractor()
         interactor.output = presenter

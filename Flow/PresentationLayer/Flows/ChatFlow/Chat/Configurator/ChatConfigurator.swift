@@ -1,8 +1,8 @@
 //
-//  ChatChatConfigurator.swift
+//  ChatConfigurator.swift
 //  Flow
 //
-//  Created by Beslan Tularov on 26/07/2018.
+//  Created by Beslan Tularov on 27/07/2018.
 //  Copyright © 2018 Flow. All rights reserved.
 //
 
@@ -19,11 +19,8 @@ class ChatModuleConfigurator {
 
     private func configure(viewController: ChatViewController) {
 
-        let router = ChatRouter()
-
         let presenter = ChatPresenter()
         presenter.view = viewController
-        presenter.router = router
 
         let interactor = ChatInteractor()
         interactor.output = presenter
