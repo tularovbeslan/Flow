@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G56-Cf-0ou">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Hbt-df-lcO">
+            <objects>
+                <viewController id="G56-Cf-0ou" customClass="LoginViewController" customModule="Flow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nz8-7d-0dx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mlf-oR-OAW">
+                                <rect key="frame" x="30" y="60" width="315" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Mlf-oR-OAW" secondAttribute="height" multiplier="63:50" id="ub2-SX-o8m"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eaI-l3-FuJ">
+                                <rect key="frame" x="30" y="370" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NGM-3g-9HS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KzC-qo-hVR">
+                                <rect key="frame" x="30" y="430" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="m8S-v6-2Xx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvD-bJ-gjC">
+                                <rect key="frame" x="114.66666666666669" y="510" width="145" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="B3d-jF-3Zh"/>
+                                    <constraint firstAttribute="height" constant="50" id="YQh-i4-j8w"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="singIn:" destination="G56-Cf-0ou" eventType="touchUpInside" id="glV-qe-Eis"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1K6-bf-QnU">
+                                <rect key="frame" x="27.666666666666657" y="698" width="320" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mZ-i4-XWx">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IuU-xz-3dW"/>
+                                            <constraint firstAttribute="width" constant="145" id="cR4-eS-nWh"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="forgot:" destination="G56-Cf-0ou" eventType="touchUpInside" id="Ou8-FX-Gf2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDa-tX-ohI">
+                                        <rect key="frame" x="175" y="0.0" width="145" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="aLv-mL-Xjp"/>
+                                            <constraint firstAttribute="height" constant="50" id="nCV-D7-OqB"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singUp:" destination="G56-Cf-0ou" eventType="touchUpInside" id="GZt-nk-qdF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1K6-bf-QnU" firstAttribute="centerX" secondItem="Nz8-7d-0dx" secondAttribute="centerX" id="H1E-sP-aeC"/>
+                            <constraint firstItem="Mlf-oR-OAW" firstAttribute="centerX" secondItem="Nz8-7d-0dx" secondAttribute="centerX" id="Mim-nV-nhf"/>
+                            <constraint firstItem="Mlf-oR-OAW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zn0-cx-evQ" secondAttribute="leading" constant="30" id="Nj6-uu-SK9"/>
+                            <constraint firstItem="KzC-qo-hVR" firstAttribute="leading" secondItem="eaI-l3-FuJ" secondAttribute="leading" id="Rgu-Vt-ZbN"/>
+                            <constraint firstItem="1K6-bf-QnU" firstAttribute="bottom" secondItem="zn0-cx-evQ" secondAttribute="bottom" constant="-30" id="XbK-RX-7EN"/>
+                            <constraint firstItem="LvD-bJ-gjC" firstAttribute="top" secondItem="KzC-qo-hVR" secondAttribute="bottom" constant="40" id="aTI-wR-7Yw"/>
+                            <constraint firstItem="eaI-l3-FuJ" firstAttribute="top" secondItem="Mlf-oR-OAW" secondAttribute="bottom" constant="60" id="bDY-nV-qwK"/>
+                            <constraint firstItem="KzC-qo-hVR" firstAttribute="trailing" secondItem="eaI-l3-FuJ" secondAttribute="trailing" id="bJr-Al-oYL"/>
+                            <constraint firstItem="zn0-cx-evQ" firstAttribute="trailing" secondItem="eaI-l3-FuJ" secondAttribute="trailing" constant="30" id="i6o-us-ZRS"/>
+                            <constraint firstItem="eaI-l3-FuJ" firstAttribute="leading" secondItem="zn0-cx-evQ" secondAttribute="leading" constant="30" id="iz3-0V-Qwv"/>
+                            <constraint firstItem="KzC-qo-hVR" firstAttribute="height" secondItem="eaI-l3-FuJ" secondAttribute="height" id="nw0-NE-fRP"/>
+                            <constraint firstItem="Mlf-oR-OAW" firstAttribute="top" secondItem="Nz8-7d-0dx" secondAttribute="top" constant="60" id="onL-ZX-5sB"/>
+                            <constraint firstItem="LvD-bJ-gjC" firstAttribute="centerX" secondItem="Nz8-7d-0dx" secondAttribute="centerX" id="qZR-wp-mEe"/>
+                            <constraint firstItem="zn0-cx-evQ" firstAttribute="trailing" secondItem="Mlf-oR-OAW" secondAttribute="trailing" constant="30" id="u9R-W5-vvY"/>
+                            <constraint firstItem="KzC-qo-hVR" firstAttribute="top" secondItem="eaI-l3-FuJ" secondAttribute="bottom" constant="20" id="yJ3-gY-CeU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zn0-cx-evQ"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="812"/>
+                    <connections>
+                        <outlet property="photo" destination="Mlf-oR-OAW" id="Tmm-Hb-o9y"/>
+                        <outletCollection property="fields" destination="eaI-l3-FuJ" collectionClass="NSMutableArray" id="nNB-Uq-Ubz"/>
+                        <outletCollection property="fields" destination="KzC-qo-hVR" collectionClass="NSMutableArray" id="e20-Sy-qve"/>
+                        <outletCollection property="buttons" destination="LvD-bJ-gjC" collectionClass="NSMutableArray" id="ruE-Nz-Ucu"/>
+                        <outletCollection property="buttons" destination="mDa-tX-ohI" collectionClass="NSMutableArray" id="Myb-9V-HNL"/>
+                        <outletCollection property="buttons" destination="6mZ-i4-XWx" collectionClass="NSMutableArray" id="Tkg-cK-xoR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NIN-eV-n3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Bop-qD-tKn" customClass="LoginModuleInitializer" customModule="Flow" customModuleProvider="target">
+                    <connections>
+                        <outlet property="loginViewController" destination="G56-Cf-0ou" id="ZjZ-fG-Nf8"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="253.59999999999999" y="15.517241379310345"/>
+        </scene>
+    </scenes>
+</document>

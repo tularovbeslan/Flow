@@ -10,6 +10,7 @@
 		0066075D82475A26415ECAF5 /* TermsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22653D3A04FD9ED8424B1A5 /* TermsInteractor.swift */; };
 		010B0B8ADED8EAF792C7C42C /* SungupInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A3B070B212CD3C0E64E3EE /* SungupInteractorTests.swift */; };
 		01527F7B6C2F8526E3FAACA1 /* SungupInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0AF21E872D74DF99F3B6A /* SungupInteractor.swift */; };
+		023A845F100BEC26440FCEE2 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5686F4633C90E4A69F65C0 /* LoginPresenterTests.swift */; };
 		0503498F61EE61B49A6770D9 /* TermsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661B97923F42F01EBF3F50C /* TermsViewOutput.swift */; };
 		0589D79D627577BB3A4D2A2F /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A314C336D1AE18F9016080 /* ProfilePresenter.swift */; };
 		0873FE0B75027809B1F84F77 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C61FD13EE499548F49B9BB1 /* ProfileInteractor.swift */; };
@@ -17,27 +18,24 @@
 		0B450DC24048E0A012B9F45A /* SungupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FE629CD04A2144C358B7F5 /* SungupPresenter.swift */; };
 		0CD277EA7443C6FF693208E5 /* TermsConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DAE8728AF74D2BE421771 /* TermsConfiguratorTests.swift */; };
 		0FF3396575A0EEB07024F789 /* TermsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D7F4F70521FB30AD426553 /* TermsInteractorOutput.swift */; };
-		109BE17D75F5BCF0F67EAAFB /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E591E6F692152A8DE44D399 /* AuthorizationViewController.swift */; };
 		11F41DB3AE602C567B071F9C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCF7F9CBCF40974F51FFBD /* FeedViewController.swift */; };
 		148E2CC9A4B05B7B9A56C7DF /* TermsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC12F50FD0A03E44EC0D31 /* TermsInteractorTests.swift */; };
 		14D85AE106861667767CD3E2 /* TermsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F73570DF6E1EFB75D9123E9 /* TermsPresenter.swift */; };
 		16320EA791E6B904032D2887 /* CartViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3ED5503C9C3B4BD51E49C9 /* CartViewTests.swift */; };
-		182EA6122E9174DE9C64ED6C /* AuthorizationInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4F4E5C0A21C469069B1AF /* AuthorizationInteractorTests.swift */; };
 		18A5C8961C5FBDC887AD35E8 /* ProfileInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52E518BFDC085A07C0FED7 /* ProfileInteractorTests.swift */; };
 		191CAD5F62CC4489705F45F7 /* ProductPageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F086D5CAD421C6C2D508B1 /* ProductPageViewInput.swift */; };
 		19A051F3F5BE7C6B972DC8B5 /* ProductPageInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7E8A50414851CB9E1E5F1 /* ProductPageInteractorTests.swift */; };
 		19CBA083B07AB307EFE75FC6 /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B7F1CC21EBECF1B9CE9746 /* CartRouter.swift */; };
-		1A430F06F6FE927C77E69E56 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C4EBDE182C5295C86B1AE2 /* AuthorizationPresenter.swift */; };
 		1E8B77589D1AA28FDAE84323 /* ProductPageViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DBFA60D6E245EC98F5E367 /* ProductPageViewOutput.swift */; };
 		1E934E2CF1CEFCCE2EA5C748 /* CartPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C6962B8549B30216EE9D7 /* CartPresenterTests.swift */; };
+		21930EA94F1635D9C2BF4174 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A92C88B8F81F176F5C1EC2 /* LoginPresenter.swift */; };
 		23BEFAA5A90642C63513446D /* ProductPageInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9E83D732D7A7624F51213 /* ProductPageInteractorInput.swift */; };
-		262B5F8C02B460E5FA112FDA /* AuthorizationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD4AFF959530C374CD4DF8C /* AuthorizationPresenterTests.swift */; };
 		27D4FFC27AEFB4605311EB79 /* ProductPageRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC73AB3EB3102FBF8CF7CC /* ProductPageRouterTests.swift */; };
+		2987647F8633FD155F1FA37D /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401C7B89AABBF4DA15A420B6 /* LoginConfigurator.swift */; };
 		2BF4209E1094C0277DCF2770 /* SungupModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D8EDA0BB223BB0AA93C4E4 /* SungupModuleInput.swift */; };
-		2C84E69CB191046E3617966D /* AuthorizationModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17A8F2ED22D19403F3E7628 /* AuthorizationModuleInput.swift */; };
 		2D6EC4D3D0808F2351D6E2A6 /* ChatModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25E5E57ABC0FFD29B3D740 /* ChatModuleInput.swift */; };
+		2E87343FA6BE6D92BFC3BC7A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF34BABBFB6E4B04066E2B7 /* LoginViewController.swift */; };
 		2EB911CED321DD481E310CF4 /* ChatViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB002D15DF23DDB7212C56C /* ChatViewTests.swift */; };
-		2ED39192A78A22863A5F0814 /* AuthorizationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DD29B0AEA7F92A082C7809 /* AuthorizationViewTests.swift */; };
 		2FA8DCDFBDEC003AF263AD16 /* SungupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47108C5CB751A649E86836 /* SungupViewController.swift */; };
 		2FC9EC50CF6F3622E8F9452E /* ProfileInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1B531F5E9DD78DCF38BC9 /* ProfileInteractorInput.swift */; };
 		31BB086D4706D07438E472D3 /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D5B582D0B5235A082A4804 /* FeedRouter.swift */; };
@@ -54,11 +52,10 @@
 		3FA9FAC1C73879527ABC1FBA /* OnboardingInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E63B26794FC8AE2E466B2 /* OnboardingInteractorTests.swift */; };
 		3FDE43631C90AC24BC741B28 /* SungupPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C1602CCAB2883EF61C9EA /* SungupPresenterTests.swift */; };
 		422FA10784AC5C0B1D4EBE7A /* CartModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9283E3A33B32BCB101F0D /* CartModuleInput.swift */; };
+		44E76FC393F19340E7A85D35 /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FEB2647D69689F01505ED6 /* LoginInteractorInput.swift */; };
 		47206C7199657F62FC058E8D /* SungupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F790A6AEE5AD821919041 /* SungupRouter.swift */; };
 		473608D46D0D0C3146F3268F /* ChatConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746AF2398E50B75050C60430 /* ChatConfiguratorTests.swift */; };
 		474132F9BB3CF60C5ABF06AB /* OnboardingInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077085D879AC8CBB5E34A534 /* OnboardingInteractorOutput.swift */; };
-		4C0B70DB72DD923C2623CC7E /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570A82290FB126EA7E73333 /* AuthorizationInteractor.swift */; };
-		4C8665469C5EDD7A0815F020 /* AuthorizationInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7252D1AEDFB9500845F0E5A2 /* AuthorizationInitializer.swift */; };
 		4FDE7A4604E7801C22ECA060 /* SungupInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B8399FEC854E8F2A2CFB63 /* SungupInteractorInput.swift */; };
 		53F9551345E23DAD835B14A0 /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF77AC45D15E94E5C83693 /* FeedPresenterTests.swift */; };
 		553E64A439E941CFD6E4A2DD /* CartRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907A835313B28D7E99B3C0DE /* CartRouterTests.swift */; };
@@ -74,6 +71,7 @@
 		57458F2D210923400067A53A /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458F2C210923400067A53A /* DeepLinkOption.swift */; };
 		57458F2F210924EC0067A53A /* BaseOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458F2E210924EC0067A53A /* BaseOutput.swift */; };
 		57458F312109251E0067A53A /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458F302109251E0067A53A /* Presentable.swift */; };
+		57458F33210A61D80067A53A /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57458F32210A61D80067A53A /* LoginViewController.storyboard */; };
 		57FAF74D58298D3E27741011 /* ProductPageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BCD82DF4F2F817E86A10E /* ProductPageConfigurator.swift */; };
 		5B281AC67F8D37420E765A02 /* OnboardingRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772721DBDE6F081F8C7B88E3 /* OnboardingRouterInput.swift */; };
 		5C172D7152DFA4326DF6A1C1 /* TermsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1EB44B39D87F30D6E9B0E /* TermsViewTests.swift */; };
@@ -82,23 +80,25 @@
 		6184F68AE33924FB8163E037 /* CartRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2588514C61DAD6ECEE12D256 /* CartRouterInput.swift */; };
 		64F54661C2C3469501312BC0 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C02224BF1A397DF3B6761 /* CartViewController.swift */; };
 		6705B7ADB1A8D7F2ACE6BF37 /* FeedViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393D5BC9086BD67EE9C719FB /* FeedViewTests.swift */; };
+		67AA45437D7576A848880BF8 /* LoginRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B7DE970CB37D28F201C81A /* LoginRouterInput.swift */; };
 		69B12265D3CEB4FDDC648DDF /* ChatPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACB495AE3CDD519B2B5EB0 /* ChatPresenterTests.swift */; };
 		6CBE52E0CAFF9EDA291E4C07 /* OnboardingPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3DE3D2E4A32FB287A6A5D /* OnboardingPresenterTests.swift */; };
 		6CC91DF44CE34EC5A38BA4FC /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84447F71AF3BCC8F8826057 /* OnboardingInteractor.swift */; };
 		70D294940B240D70905D36A4 /* ChatInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB10A868416A361E14D0B4E /* ChatInitializer.swift */; };
 		72C48E3F139979060AB4D4E1 /* FeedConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB4687E9814856BB4DD9696 /* FeedConfigurator.swift */; };
+		7303D0609E39732364C6FE00 /* LoginInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49EA053EF64E155DA274C6 /* LoginInitializer.swift */; };
+		739E48EE6E191F32641B8E6C /* LoginViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CD3E66EA163D9784AB34A /* LoginViewInput.swift */; };
 		7727CF3A88DEA1F0C46CEC64 /* FeedInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD64B71BE042DC69CF96DD7 /* FeedInteractorOutput.swift */; };
+		78A08D191D45B02645A2BDAB /* LoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A8235BE94E4C5ED632601 /* LoginViewTests.swift */; };
 		793B4982F43C064EB5ED6F16 /* CartInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F530EBDF5D5AF74C6BC2D9 /* CartInteractorOutput.swift */; };
 		7B0D8BF08B398ECEB498346D /* ProductPageInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E801D9791B18792EE5976 /* ProductPageInitializer.swift */; };
 		7C883A29E612655AD8071B56 /* ProfileInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD03AA0494BD89AD9BAF8DE /* ProfileInteractorOutput.swift */; };
-		7DEFA73CDB7DED7864B56143 /* AuthorizationConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C887EBE088FF8A0FF41DA1 /* AuthorizationConfiguratorTests.swift */; };
 		7FB96CFF5436B31B02569F78 /* ProductPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC8CE2052D9761116B242 /* ProductPagePresenter.swift */; };
-		7FEFDAA7B16836A7EF1CAE0B /* AuthorizationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDAB52C6EA9BF17C66260BD /* AuthorizationViewOutput.swift */; };
+		80BB6395E62E084D746E458E /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A582B252951929EBA824C /* LoginInteractorTests.swift */; };
 		8331818C458F9A0D0C2C9E38 /* TermsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2D10B3296B85F1E0B29F7E /* TermsRouterTests.swift */; };
 		84D5EBFDE3B4B2A2EB6C93FD /* OnboardingViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD19D18637214CCC099CA5 /* OnboardingViewOutput.swift */; };
 		85905AB91EAF5D35D20A55F1 /* SungupConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577324B9CBEFE865C38F2D6 /* SungupConfigurator.swift */; };
 		86452B7A26D110C2866BD5C8 /* CartConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D4F94BCE1F2A0DA659AF14 /* CartConfigurator.swift */; };
-		886C588927E626721540DEDD /* AuthorizationRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC89C0D82C59BCD2FA1D90 /* AuthorizationRouterTests.swift */; };
 		8AB03F71AE59C7C83C3FF842 /* CartViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D9AFF3CDD7CA3AC30F6187 /* CartViewOutput.swift */; };
 		8AD8CA466AAFA980146E088F /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB65B3B00DC4D7949C1A9C /* OnboardingRouter.swift */; };
 		8B2387FEC5A1334065B4F22B /* FeedInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D32382688C685C0411AF54 /* FeedInteractorTests.swift */; };
@@ -108,6 +108,7 @@
 		93D1DC46E69203F4FF5C656A /* OnboardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161510FB4E221E8767AFE800 /* OnboardingConfigurator.swift */; };
 		965DC5BC4856F0CFFDE914BE /* ProductPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A21273FA2ED9B517DBE73C /* ProductPageInteractor.swift */; };
 		9B5994F7F74A6756011F9B7C /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE31FFDB53DDC6F7A108322 /* CartPresenter.swift */; };
+		9C7F2B7A72B720F01FC4A26B /* LoginModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9CBD2B8B238ADCB209AA08 /* LoginModuleInput.swift */; };
 		9E65938E6EB63EFC0459FACA /* CartInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB7CA6AB8D98561E5781C25 /* CartInteractorInput.swift */; };
 		A14EEEF9B6F0AB98BEB7648A /* TermsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC1AA6AE4E6EB2A3F94937 /* TermsInteractorInput.swift */; };
 		A1514340FC9FE6322B6F9E4C /* OnboardingInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D819E4DAFC2C1D028B887507 /* OnboardingInitializer.swift */; };
@@ -116,12 +117,15 @@
 		A516B2CEAAC1504159E143B9 /* SungupViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC4CBA66C663096439A3F1 /* SungupViewOutput.swift */; };
 		A82DFB0DB2D31AD064E15B86 /* ProfileViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBB90FF795608B08035E2F /* ProfileViewOutput.swift */; };
 		A9C0D1E9CA41509F46A7A86C /* SungupViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB878C4B01A387677169B47 /* SungupViewTests.swift */; };
+		ABA5B36E66F2D741A383B390 /* LoginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC545263FD19121E0E80589 /* LoginInteractorOutput.swift */; };
 		ADF78B2184690356A2E7CE7A /* CartViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD0CBDA8C1C72A7CE0100C /* CartViewInput.swift */; };
 		AE720C27B14858B1A618FBBE /* ProductPageModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A1388F187E94C0FC829E4 /* ProductPageModuleInput.swift */; };
 		AE9C07B0616CF9761BDFD443 /* SungupRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4E2748E0BD98B2E08A97A /* SungupRouterInput.swift */; };
 		B123259A57A63A37E81E50A8 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B60C049A374CC0B9DE0DEE /* ProfileRouter.swift */; };
 		B2198D8AC959BA31CF31A43B /* TermsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8556B29CA3C5911234B01A /* TermsConfigurator.swift */; };
 		B43270A451C5C790C58742DA /* ChatViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF93BD8FD99CF7CC98F530B5 /* ChatViewOutput.swift */; };
+		B4C3033F9F91AB074D59579C /* LoginConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43C63DE13821634EB1FF455 /* LoginConfiguratorTests.swift */; };
+		B6FAD9A22DAA648737E6B09B /* LoginViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049589E92180FD08D41355C /* LoginViewOutput.swift */; };
 		B77FD39C87118A65EF2085F5 /* ChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2739C06CE496C1B64B178B7 /* ChatInteractor.swift */; };
 		B87C1084C57A3C39E74054B2 /* ProfileViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77242959CBDD54A80F677773 /* ProfileViewInput.swift */; };
 		B8F9C39A2AD5159A85BA6F1E /* ChatViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CB9FD24E51F9E03A3389B /* ChatViewInput.swift */; };
@@ -137,26 +141,23 @@
 		C59EB972E1FD9EC95B1694D1 /* FeedConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23D07C12B9A71884F51E2B /* FeedConfiguratorTests.swift */; };
 		C8A290AA334D19DCE715D7A7 /* ProductPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7A445762C82EEA72B98F8 /* ProductPageRouter.swift */; };
 		CB5ADFCBE64563103103A568 /* SungupConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD0B0B65FC1F5AA6D81EF0C /* SungupConfiguratorTests.swift */; };
-		D011E007ADF93882523A6583 /* AuthorizationRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50FC144228BE6DA78FB7F77 /* AuthorizationRouterInput.swift */; };
 		D051E246E15FC28DB6BF7B63 /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3440C1EEEAB1B080E221A810 /* CartInteractor.swift */; };
-		D0D2144E18825F82AD2FB9F7 /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879D485B28DB08ED93996675 /* AuthorizationRouter.swift */; };
 		D0E79986E0FCC6003CD3420A /* SungupInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B766845C4F4503E45B57C /* SungupInteractorOutput.swift */; };
 		D0E7DC7BFBA1135465CC7E91 /* ChatInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984076A4A31170AA803A4168 /* ChatInteractorTests.swift */; };
-		D1B1804F85DF6B28A787FDE4 /* AuthorizationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357AE214F244C2C40068D1F4 /* AuthorizationViewInput.swift */; };
 		D25791986E0FE21CEF0AC386 /* FeedInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B19FD39C2E80AB44F87AB3 /* FeedInitializer.swift */; };
 		D40DC204B09E0F44BC22640F /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD14B4F65B6C39642A582754 /* OnboardingPresenter.swift */; };
 		D5868C9C40A153D24D932C6A /* TermsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA62D32B293963F4E71255A /* TermsPresenterTests.swift */; };
 		D81C6B75DD6719420896C41D /* FeedInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8C64020F4E5CBE8F996CD /* FeedInteractorInput.swift */; };
 		D911851679B82480D1CBD163 /* ProductPageInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634560AA154F9D1C91B6E16B /* ProductPageInteractorOutput.swift */; };
+		DD67036D4397CF1D0A6BF0AE /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7AD1C9BB631F21E12B03AF /* LoginRouter.swift */; };
 		DEBBFA83258A63686D1DFFCC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12188A42CD1823D98FDC6A2A /* OnboardingViewController.swift */; };
 		DEF7A40B7D14D11EE9FED231 /* ChatRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA20C5650610E6786B4D243 /* ChatRouter.swift */; };
 		E0F7D580FB3A9D91A6EB6130 /* OnboardingRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7BF591AB1D05032BCDC48 /* OnboardingRouterTests.swift */; };
 		E17048FDA0D116A70EE86404 /* SungupViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E883610B78D34324C68C02 /* SungupViewInput.swift */; };
 		E197F7426B9C7219BE231BD8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7B338F0106C41A5D9B5BF /* ProfileViewController.swift */; };
-		E4E54A48CB167F4961EE228A /* AuthorizationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35E59F42F6EF2ECBF6D154 /* AuthorizationInteractorOutput.swift */; };
-		E8AB83A2387F5C6EBEFCDD97 /* AuthorizationInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056038886C4C3CE7366E2AFD /* AuthorizationInteractorInput.swift */; };
 		EEB67B68793571FFDAAA261B /* ProfileRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525D0AC40400680096C8D621 /* ProfileRouterTests.swift */; };
-		EFA3D41C96F28F4D0FAB1660 /* AuthorizationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8425BC8305679C19B8D88EE /* AuthorizationConfigurator.swift */; };
+		F47C11406F27D4510F739456 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8C0996491E8F2BBDE40E3 /* LoginInteractor.swift */; };
+		F49710137D3936D3F3922FCD /* LoginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6A1771FC0E01A14E453030 /* LoginRouterTests.swift */; };
 		F58DE342D534ACCD019067AA /* ProfileModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDDFF241CFF9699F296B07B /* ProfileModuleInput.swift */; };
 		F5E3AB2BA0E8A884845890B3 /* FeedViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2016FB0DB9B3EE47B7DBEA5 /* FeedViewOutput.swift */; };
 		F5ED17863BED1C0FD3AF50A7 /* ChatRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6088D2BA4803982D9AC85 /* ChatRouterInput.swift */; };
@@ -190,12 +191,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01A92C88B8F81F176F5C1EC2 /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		01F086D5CAD421C6C2D508B1 /* ProductPageViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageViewInput.swift; sourceTree = "<group>"; };
 		03E6088D2BA4803982D9AC85 /* ChatRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatRouterInput.swift; sourceTree = "<group>"; };
-		056038886C4C3CE7366E2AFD /* AuthorizationInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorInput.swift; sourceTree = "<group>"; };
+		041CD3E66EA163D9784AB34A /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
 		06D9AFF3CDD7CA3AC30F6187 /* CartViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartViewOutput.swift; sourceTree = "<group>"; };
 		06EFC8CE2052D9761116B242 /* ProductPagePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPagePresenter.swift; sourceTree = "<group>"; };
 		077085D879AC8CBB5E34A534 /* OnboardingInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingInteractorOutput.swift; sourceTree = "<group>"; };
+		0A7AD1C9BB631F21E12B03AF /* LoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		0C9CBD2B8B238ADCB209AA08 /* LoginModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginModuleInput.swift; sourceTree = "<group>"; };
 		0DFB65B3B00DC4D7949C1A9C /* OnboardingRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
 		11BF77AC45D15E94E5C83693 /* FeedPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedPresenterTests.swift; sourceTree = "<group>"; };
 		12188A42CD1823D98FDC6A2A /* OnboardingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -209,17 +213,16 @@
 		1D4595552024299975F7AB51 /* SungupInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupInitializer.swift; sourceTree = "<group>"; };
 		1D782775C320DFDA4FA4F2C5 /* ProfileConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileConfiguratorTests.swift; sourceTree = "<group>"; };
 		1DD64B71BE042DC69CF96DD7 /* FeedInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedInteractorOutput.swift; sourceTree = "<group>"; };
+		1F2A8235BE94E4C5ED632601 /* LoginViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewTests.swift; sourceTree = "<group>"; };
+		1F5686F4633C90E4A69F65C0 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		2394AF5C39F6501F9F41CD8A /* TermsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsRouter.swift; sourceTree = "<group>"; };
 		242C1602CCAB2883EF61C9EA /* SungupPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupPresenterTests.swift; sourceTree = "<group>"; };
-		2570A82290FB126EA7E73333 /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
 		2588514C61DAD6ECEE12D256 /* CartRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartRouterInput.swift; sourceTree = "<group>"; };
 		2830C5134A55C6EA190F7FB6 /* CartInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartInitializer.swift; sourceTree = "<group>"; };
 		28D8EDA0BB223BB0AA93C4E4 /* SungupModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupModuleInput.swift; sourceTree = "<group>"; };
 		29D4F94BCE1F2A0DA659AF14 /* CartConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartConfigurator.swift; sourceTree = "<group>"; };
 		2AE3DE3D2E4A32FB287A6A5D /* OnboardingPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterTests.swift; sourceTree = "<group>"; };
 		2BB878C4B01A387677169B47 /* SungupViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupViewTests.swift; sourceTree = "<group>"; };
-		2CAC89C0D82C59BCD2FA1D90 /* AuthorizationRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationRouterTests.swift; sourceTree = "<group>"; };
-		2E591E6F692152A8DE44D399 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		2E7655ABEF44A8397350E802 /* ChatConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatConfigurator.swift; sourceTree = "<group>"; };
 		2EE31FFDB53DDC6F7A108322 /* CartPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
 		2F3ED5503C9C3B4BD51E49C9 /* CartViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartViewTests.swift; sourceTree = "<group>"; };
@@ -227,7 +230,6 @@
 		31A21273FA2ED9B517DBE73C /* ProductPageInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageInteractor.swift; sourceTree = "<group>"; };
 		3440C1EEEAB1B080E221A810 /* CartInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
 		356FB31F991ECE91591C929F /* ChatViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		357AE214F244C2C40068D1F4 /* AuthorizationViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationViewInput.swift; sourceTree = "<group>"; };
 		357E801D9791B18792EE5976 /* ProductPageInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageInitializer.swift; sourceTree = "<group>"; };
 		393D5BC9086BD67EE9C719FB /* FeedViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedViewTests.swift; sourceTree = "<group>"; };
 		3A7F790A6AEE5AD821919041 /* SungupRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupRouter.swift; sourceTree = "<group>"; };
@@ -236,21 +238,23 @@
 		3C491B62C48FD55B4D421ACD /* OnboardingInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingInteractorInput.swift; sourceTree = "<group>"; };
 		3D8556B29CA3C5911234B01A /* TermsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsConfigurator.swift; sourceTree = "<group>"; };
 		3DA392D3E15D3D3249A0FE9D /* ChatRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatRouterTests.swift; sourceTree = "<group>"; };
+		3EC545263FD19121E0E80589 /* LoginInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorOutput.swift; sourceTree = "<group>"; };
 		3EDDFF241CFF9699F296B07B /* ProfileModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileModuleInput.swift; sourceTree = "<group>"; };
 		3F73570DF6E1EFB75D9123E9 /* TermsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsPresenter.swift; sourceTree = "<group>"; };
 		3FC9E83D732D7A7624F51213 /* ProductPageInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageInteractorInput.swift; sourceTree = "<group>"; };
 		3FD03AA0494BD89AD9BAF8DE /* ProfileInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileInteractorOutput.swift; sourceTree = "<group>"; };
+		401C7B89AABBF4DA15A420B6 /* LoginConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 		403A1388F187E94C0FC829E4 /* ProductPageModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageModuleInput.swift; sourceTree = "<group>"; };
 		44881189E9264C2B8555FC3D /* ProfileInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileInitializer.swift; sourceTree = "<group>"; };
 		44B7F1CC21EBECF1B9CE9746 /* CartRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartRouter.swift; sourceTree = "<group>"; };
-		44DD29B0AEA7F92A082C7809 /* AuthorizationViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationViewTests.swift; sourceTree = "<group>"; };
 		453A2D9A101ED6950821D4A4 /* TermsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsRouterInput.swift; sourceTree = "<group>"; };
-		47C4EBDE182C5295C86B1AE2 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 		47DBFA60D6E245EC98F5E367 /* ProductPageViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageViewOutput.swift; sourceTree = "<group>"; };
 		47FBB90FF795608B08035E2F /* ProfileViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileViewOutput.swift; sourceTree = "<group>"; };
 		48D1B531F5E9DD78DCF38BC9 /* ProfileInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileInteractorInput.swift; sourceTree = "<group>"; };
 		4AEC1AA6AE4E6EB2A3F94937 /* TermsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsInteractorInput.swift; sourceTree = "<group>"; };
+		4B6A1771FC0E01A14E453030 /* LoginRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterTests.swift; sourceTree = "<group>"; };
 		4CDC4CBA66C663096439A3F1 /* SungupViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupViewOutput.swift; sourceTree = "<group>"; };
+		4E49EA053EF64E155DA274C6 /* LoginInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInitializer.swift; sourceTree = "<group>"; };
 		525D0AC40400680096C8D621 /* ProfileRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileRouterTests.swift; sourceTree = "<group>"; };
 		52CD0CBDA8C1C72A7CE0100C /* CartViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartViewInput.swift; sourceTree = "<group>"; };
 		5577324B9CBEFE865C38F2D6 /* SungupConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupConfigurator.swift; sourceTree = "<group>"; };
@@ -271,7 +275,9 @@
 		57458F2C210923400067A53A /* DeepLinkOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
 		57458F2E210924EC0067A53A /* BaseOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOutput.swift; sourceTree = "<group>"; };
 		57458F302109251E0067A53A /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		57458F32210A61D80067A53A /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		597AEE9F9B5C3976E714CAD0 /* SungupRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupRouterTests.swift; sourceTree = "<group>"; };
+		5BD8C0996491E8F2BBDE40E3 /* LoginInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		5C61FD13EE499548F49B9BB1 /* ProfileInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		5D0C6962B8549B30216EE9D7 /* CartPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartPresenterTests.swift; sourceTree = "<group>"; };
 		5FD501E58226F6B274CD69B8 /* FeedViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedViewInput.swift; sourceTree = "<group>"; };
@@ -281,7 +287,6 @@
 		64D7A445762C82EEA72B98F8 /* ProductPageRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageRouter.swift; sourceTree = "<group>"; };
 		6DB002D15DF23DDB7212C56C /* ChatViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatViewTests.swift; sourceTree = "<group>"; };
 		70ACB495AE3CDD519B2B5EB0 /* ChatPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatPresenterTests.swift; sourceTree = "<group>"; };
-		7252D1AEDFB9500845F0E5A2 /* AuthorizationInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInitializer.swift; sourceTree = "<group>"; };
 		739474B4BDC3B1789D9FA7C1 /* ProductPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageViewController.swift; sourceTree = "<group>"; };
 		73B60C049A374CC0B9DE0DEE /* ProfileRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		746AF2398E50B75050C60430 /* ChatConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatConfiguratorTests.swift; sourceTree = "<group>"; };
@@ -295,12 +300,10 @@
 		7EB7CA6AB8D98561E5781C25 /* CartInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartInteractorInput.swift; sourceTree = "<group>"; };
 		7FA62D32B293963F4E71255A /* TermsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsPresenterTests.swift; sourceTree = "<group>"; };
 		82C4625F928D983310D16D35 /* TermsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
-		879D485B28DB08ED93996675 /* AuthorizationRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
 		87D7F4F70521FB30AD426553 /* TermsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsInteractorOutput.swift; sourceTree = "<group>"; };
 		89B19FD39C2E80AB44F87AB3 /* FeedInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedInitializer.swift; sourceTree = "<group>"; };
 		8A89A0D5A074DAA50964181C /* OnboardingModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingModuleInput.swift; sourceTree = "<group>"; };
 		8ECCF7F9CBCF40974F51FFBD /* FeedViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		8EDAB52C6EA9BF17C66260BD /* AuthorizationViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationViewOutput.swift; sourceTree = "<group>"; };
 		8F25E5E57ABC0FFD29B3D740 /* ChatModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatModuleInput.swift; sourceTree = "<group>"; };
 		8FB10A868416A361E14D0B4E /* ChatInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatInitializer.swift; sourceTree = "<group>"; };
 		907A835313B28D7E99B3C0DE /* CartRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartRouterTests.swift; sourceTree = "<group>"; };
@@ -310,54 +313,53 @@
 		971FD003238E8045368EF6D8 /* ProductPageViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageViewTests.swift; sourceTree = "<group>"; };
 		984076A4A31170AA803A4168 /* ChatInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatInteractorTests.swift; sourceTree = "<group>"; };
 		99D0AF21E872D74DF99F3B6A /* SungupInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupInteractor.swift; sourceTree = "<group>"; };
+		9AF34BABBFB6E4B04066E2B7 /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9AFDDC7D8EDB3314235E3882 /* ProfileConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileConfigurator.swift; sourceTree = "<group>"; };
 		9B47108C5CB751A649E86836 /* SungupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupViewController.swift; sourceTree = "<group>"; };
 		9B8AF8C16C8E7909B29CF307 /* ProductPageRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageRouterInput.swift; sourceTree = "<group>"; };
 		9CFF4D42465529603B5C44D0 /* OnboardingViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewInput.swift; sourceTree = "<group>"; };
 		9EDC5A69A7350CBD6F19AB8B /* FeedModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedModuleInput.swift; sourceTree = "<group>"; };
-		9FA4F4E5C0A21C469069B1AF /* AuthorizationInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorTests.swift; sourceTree = "<group>"; };
 		A0FE629CD04A2144C358B7F5 /* SungupPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupPresenter.swift; sourceTree = "<group>"; };
-		A17A8F2ED22D19403F3E7628 /* AuthorizationModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationModuleInput.swift; sourceTree = "<group>"; };
 		A25C77BD22390B6B363905C1 /* TermsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsViewInput.swift; sourceTree = "<group>"; };
 		AEA96752C3DDF7FFB8EDAE94 /* CartConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartConfiguratorTests.swift; sourceTree = "<group>"; };
 		B0190B9654F042CE3823F17A /* FeedPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		B22653D3A04FD9ED8424B1A5 /* TermsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsInteractor.swift; sourceTree = "<group>"; };
-		B50FC144228BE6DA78FB7F77 /* AuthorizationRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationRouterInput.swift; sourceTree = "<group>"; };
 		B661B97923F42F01EBF3F50C /* TermsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsViewOutput.swift; sourceTree = "<group>"; };
 		B6B1EB44B39D87F30D6E9B0E /* TermsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsViewTests.swift; sourceTree = "<group>"; };
+		B73A582B252951929EBA824C /* LoginInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		BC0E63B26794FC8AE2E466B2 /* OnboardingInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingInteractorTests.swift; sourceTree = "<group>"; };
 		BC9C9980626CBE7459AE4E74 /* TermsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsModuleInput.swift; sourceTree = "<group>"; };
 		C17B766845C4F4503E45B57C /* SungupInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupInteractorOutput.swift; sourceTree = "<group>"; };
 		C93C3336F61FAD286FACDA4C /* ChatInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatInteractorInput.swift; sourceTree = "<group>"; };
 		CBB7BF591AB1D05032BCDC48 /* OnboardingRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingRouterTests.swift; sourceTree = "<group>"; };
+		D049589E92180FD08D41355C /* LoginViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewOutput.swift; sourceTree = "<group>"; };
 		D124C72DE10969076FD88681 /* ProfilePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfilePresenterTests.swift; sourceTree = "<group>"; };
 		D2016FB0DB9B3EE47B7DBEA5 /* FeedViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedViewOutput.swift; sourceTree = "<group>"; };
 		D2739C06CE496C1B64B178B7 /* ChatInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatInteractor.swift; sourceTree = "<group>"; };
+		D5B7DE970CB37D28F201C81A /* LoginRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterInput.swift; sourceTree = "<group>"; };
 		D819E4DAFC2C1D028B887507 /* OnboardingInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingInitializer.swift; sourceTree = "<group>"; };
 		D8B8399FEC854E8F2A2CFB63 /* SungupInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupInteractorInput.swift; sourceTree = "<group>"; };
-		D8C887EBE088FF8A0FF41DA1 /* AuthorizationConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationConfiguratorTests.swift; sourceTree = "<group>"; };
 		DCE8C64020F4E5CBE8F996CD /* FeedInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedInteractorInput.swift; sourceTree = "<group>"; };
 		DDE97E46B1C0F8170AEE1279 /* OnboardingViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewTests.swift; sourceTree = "<group>"; };
 		DEF7B338F0106C41A5D9B5BF /* ProfileViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DF2D10B3296B85F1E0B29F7E /* TermsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsRouterTests.swift; sourceTree = "<group>"; };
 		DF93BD8FD99CF7CC98F530B5 /* ChatViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatViewOutput.swift; sourceTree = "<group>"; };
 		DFA20C5650610E6786B4D243 /* ChatRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatRouter.swift; sourceTree = "<group>"; };
+		E0FEB2647D69689F01505ED6 /* LoginInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorInput.swift; sourceTree = "<group>"; };
 		E2F9283E3A33B32BCB101F0D /* CartModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartModuleInput.swift; sourceTree = "<group>"; };
 		E4691CD7CDE63B87B6F4DAB1 /* FeedInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		E7A314C336D1AE18F9016080 /* ProfilePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
-		E8425BC8305679C19B8D88EE /* AuthorizationConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationConfigurator.swift; sourceTree = "<group>"; };
 		E85FD1EC56BE96C3820C13A2 /* ProductPageConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageConfiguratorTests.swift; sourceTree = "<group>"; };
 		E99C02224BF1A397DF3B6761 /* CartViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		EC1BCD82DF4F2F817E86A10E /* ProductPageConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductPageConfigurator.swift; sourceTree = "<group>"; };
 		EC2CB9FD24E51F9E03A3389B /* ChatViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatViewInput.swift; sourceTree = "<group>"; };
-		ED35E59F42F6EF2ECBF6D154 /* AuthorizationInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorOutput.swift; sourceTree = "<group>"; };
 		EFB4687E9814856BB4DD9696 /* FeedConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedConfigurator.swift; sourceTree = "<group>"; };
 		F0D32382688C685C0411AF54 /* FeedInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedInteractorTests.swift; sourceTree = "<group>"; };
+		F43C63DE13821634EB1FF455 /* LoginConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfiguratorTests.swift; sourceTree = "<group>"; };
 		F4B4E2748E0BD98B2E08A97A /* SungupRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SungupRouterInput.swift; sourceTree = "<group>"; };
 		F4F530EBDF5D5AF74C6BC2D9 /* CartInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartInteractorOutput.swift; sourceTree = "<group>"; };
 		F84447F71AF3BCC8F8826057 /* OnboardingInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
 		FD14B4F65B6C39642A582754 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
-		FDD4AFF959530C374CD4DF8C /* AuthorizationPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenterTests.swift; sourceTree = "<group>"; };
 		FF993918D2C7A5DB42EA2096 /* ChatPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -403,6 +405,15 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		0389055EEA0408929B30A210 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D5B7DE970CB37D28F201C81A /* LoginRouterInput.swift */,
+				0A7AD1C9BB631F21E12B03AF /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		03A8450EFCEF2AA0CBB77AFB /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,12 +423,32 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		05A490C1C5DF967F4424EC76 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0C9CBD2B8B238ADCB209AA08 /* LoginModuleInput.swift */,
+				01A92C88B8F81F176F5C1EC2 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		0AC9CEEA5BA748F88C45FE6A /* ChatFlow */ = {
 			isa = PBXGroup;
 			children = (
 				79FD3DB76EA5530293DA71D0 /* Chat */,
 			);
 			path = ChatFlow;
+			sourceTree = "<group>";
+		};
+		0ADC348A067BE05A327955FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				041CD3E66EA163D9784AB34A /* LoginViewInput.swift */,
+				D049589E92180FD08D41355C /* LoginViewOutput.swift */,
+				9AF34BABBFB6E4B04066E2B7 /* LoginViewController.swift */,
+				57458F32210A61D80067A53A /* LoginViewController.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		0B23744DA73CA0268AC89CA7 /* Router */ = {
@@ -436,13 +467,16 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
-		0D82EC63DEB5BA5BA9F51406 /* Router */ = {
+		1014D1D5E74EB4D5BC908368 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B50FC144228BE6DA78FB7F77 /* AuthorizationRouterInput.swift */,
-				879D485B28DB08ED93996675 /* AuthorizationRouter.swift */,
+				1E52CE0009849438152201C3 /* Configurator */,
+				EB88B45CAF1CEAEEA70D9FC4 /* View */,
+				F4672D4EEFD3C506336638A1 /* Interactor */,
+				AF9E2EF372751874AFD3F290 /* Presenter */,
+				268C26676D6DABABD94020EA /* Router */,
 			);
-			path = Router;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		110102D3A8B4B9B9B2137A86 /* OnboardingFlow */ = {
@@ -451,6 +485,16 @@
 				BDED6ECFBF0467AFE9A5535D /* Onboarding */,
 			);
 			path = OnboardingFlow;
+			sourceTree = "<group>";
+		};
+		1354D0DA31FDC34CAF37A758 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E0FEB2647D69689F01505ED6 /* LoginInteractorInput.swift */,
+				3EC545263FD19121E0E80589 /* LoginInteractorOutput.swift */,
+				5BD8C0996491E8F2BBDE40E3 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		153E12E0425CD4CC82109063 /* Configurator */ = {
@@ -503,6 +547,14 @@
 			children = (
 				29D4F94BCE1F2A0DA659AF14 /* CartConfigurator.swift */,
 				2830C5134A55C6EA190F7FB6 /* CartInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1E52CE0009849438152201C3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				F43C63DE13821634EB1FF455 /* LoginConfiguratorTests.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -563,14 +615,12 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		2A4AD79FFD79B2D56882E1BB /* View */ = {
+		268C26676D6DABABD94020EA /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				357AE214F244C2C40068D1F4 /* AuthorizationViewInput.swift */,
-				8EDAB52C6EA9BF17C66260BD /* AuthorizationViewOutput.swift */,
-				2E591E6F692152A8DE44D399 /* AuthorizationViewController.swift */,
+				4B6A1771FC0E01A14E453030 /* LoginRouterTests.swift */,
 			);
-			path = View;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		2BF9B34E563A9FD61A658CFC /* View */ = {
@@ -611,20 +661,24 @@
 			path = FeedFlow;
 			sourceTree = "<group>";
 		};
+		35915F472F9F162B4C1598D0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0ADC348A067BE05A327955FF /* View */,
+				05A490C1C5DF967F4424EC76 /* Presenter */,
+				1354D0DA31FDC34CAF37A758 /* Interactor */,
+				0389055EEA0408929B30A210 /* Router */,
+				D745266FFB49FFC319BCF821 /* Configurator */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		35A22628C6693BDC15CCA52F /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 				75B7E8A50414851CB9E1E5F1 /* ProductPageInteractorTests.swift */,
 			);
 			path = Interactor;
-			sourceTree = "<group>";
-		};
-		3A6DC06143FB8E23F2ADE8CC /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				2CAC89C0D82C59BCD2FA1D90 /* AuthorizationRouterTests.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		45868C341D26BC5A32CC58C4 /* Onboarding */ = {
@@ -736,7 +790,6 @@
 			children = (
 				57458F062108B8240067A53A /* FlowTests.swift */,
 				57458F082108B8240067A53A /* Info.plist */,
-				FCBAC92602362B46C0470414 /* Authorization */,
 				7D82327E01918352BE57C3AF /* Sungup */,
 				1FB77CF60B5BB5AB6208CBA3 /* Terms */,
 				45868C341D26BC5A32CC58C4 /* Onboarding */,
@@ -745,6 +798,7 @@
 				7157F5ADB7550E73CF8BF8EC /* Cart */,
 				F3EBB4268639F2C0EE08F0D4 /* Chat */,
 				63DB25734825E2A84C1CBA68 /* Profile */,
+				1014D1D5E74EB4D5BC908368 /* Login */,
 			);
 			path = FlowTests;
 			sourceTree = "<group>";
@@ -1024,15 +1078,6 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		8A2643BEEB81DBAB5578E736 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				E8425BC8305679C19B8D88EE /* AuthorizationConfigurator.swift */,
-				7252D1AEDFB9500845F0E5A2 /* AuthorizationInitializer.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
 		8CC52F7C5C04228F08042C5A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1217,6 +1262,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		AF9E2EF372751874AFD3F290 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1F5686F4633C90E4A69F65C0 /* LoginPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		B01C0836D364EE977B57BDF3 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
@@ -1278,19 +1331,11 @@
 		BE592A69D14AF3A64BAEBB52 /* AuthorizationFlow */ = {
 			isa = PBXGroup;
 			children = (
-				C34B46FE0B88387A73FDC70F /* Authorization */,
 				6D39E5FFAD6D2678145F01F6 /* Sungup */,
 				7CE5D62C2601EC8E58AE0890 /* Terms */,
+				35915F472F9F162B4C1598D0 /* Login */,
 			);
 			path = AuthorizationFlow;
-			sourceTree = "<group>";
-		};
-		C07163AD4CB5ABA268F92C4E /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				D8C887EBE088FF8A0FF41DA1 /* AuthorizationConfiguratorTests.swift */,
-			);
-			path = Configurator;
 			sourceTree = "<group>";
 		};
 		C12B6FF8B29016167635C88F /* Configurator */ = {
@@ -1307,18 +1352,6 @@
 				3C0DAE8728AF74D2BE421771 /* TermsConfiguratorTests.swift */,
 			);
 			path = Configurator;
-			sourceTree = "<group>";
-		};
-		C34B46FE0B88387A73FDC70F /* Authorization */ = {
-			isa = PBXGroup;
-			children = (
-				2A4AD79FFD79B2D56882E1BB /* View */,
-				D7515BFD55E9C44A2983ABAD /* Presenter */,
-				FF52DA4DE41840F8E076EFDB /* Interactor */,
-				0D82EC63DEB5BA5BA9F51406 /* Router */,
-				8A2643BEEB81DBAB5578E736 /* Configurator */,
-			);
-			path = Authorization;
 			sourceTree = "<group>";
 		};
 		C4354E26C800B674B68CE079 /* Router */ = {
@@ -1364,22 +1397,6 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		CEAB66BAD34BC7D62A46C436 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				FDD4AFF959530C374CD4DF8C /* AuthorizationPresenterTests.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		D0C3B1D95102425B818293D5 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				9FA4F4E5C0A21C469069B1AF /* AuthorizationInteractorTests.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
 		D2A75C3AF1972A6EBCCFE907 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
@@ -1396,13 +1413,13 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		D7515BFD55E9C44A2983ABAD /* Presenter */ = {
+		D745266FFB49FFC319BCF821 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				A17A8F2ED22D19403F3E7628 /* AuthorizationModuleInput.swift */,
-				47C4EBDE182C5295C86B1AE2 /* AuthorizationPresenter.swift */,
+				401C7B89AABBF4DA15A420B6 /* LoginConfigurator.swift */,
+				4E49EA053EF64E155DA274C6 /* LoginInitializer.swift */,
 			);
-			path = Presenter;
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		DA1E6FABB5A43780C9A86F53 /* Feed */ = {
@@ -1415,14 +1432,6 @@
 				C60DF0374FFD1B63B2E332A0 /* Configurator */,
 			);
 			path = Feed;
-			sourceTree = "<group>";
-		};
-		DBBC779E8A1AA95057CA3074 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				44DD29B0AEA7F92A082C7809 /* AuthorizationViewTests.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		DBEA15F444A9990159C73082 /* ProductPage */ = {
@@ -1492,6 +1501,14 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		EB88B45CAF1CEAEEA70D9FC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F2A8235BE94E4C5ED632601 /* LoginViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EBD7DA448FBEB572FDE461A0 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
@@ -1521,6 +1538,14 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		F4672D4EEFD3C506336638A1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B73A582B252951929EBA824C /* LoginInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		F8B81753894B4F3A7470BAA0 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -1539,34 +1564,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FCBAC92602362B46C0470414 /* Authorization */ = {
-			isa = PBXGroup;
-			children = (
-				C07163AD4CB5ABA268F92C4E /* Configurator */,
-				DBBC779E8A1AA95057CA3074 /* View */,
-				D0C3B1D95102425B818293D5 /* Interactor */,
-				CEAB66BAD34BC7D62A46C436 /* Presenter */,
-				3A6DC06143FB8E23F2ADE8CC /* Router */,
-			);
-			path = Authorization;
-			sourceTree = "<group>";
-		};
 		FD3439AD95D5C1A92E18DE3A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				242C1602CCAB2883EF61C9EA /* SungupPresenterTests.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		FF52DA4DE41840F8E076EFDB /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				056038886C4C3CE7366E2AFD /* AuthorizationInteractorInput.swift */,
-				ED35E59F42F6EF2ECBF6D154 /* AuthorizationInteractorOutput.swift */,
-				2570A82290FB126EA7E73333 /* AuthorizationInteractor.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		FFA18BE0DFD9A5F4E64B8E67 /* Presenter */ = {
@@ -1684,6 +1687,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57458F33210A61D80067A53A /* LoginViewController.storyboard in Resources */,
 				57458EFC2108B8240067A53A /* LaunchScreen.storyboard in Resources */,
 				57458EF92108B8240067A53A /* Assets.xcassets in Resources */,
 			);
@@ -1716,18 +1720,6 @@
 				57458F2D210923400067A53A /* DeepLinkOption.swift in Sources */,
 				57458EF22108B8200067A53A /* AppDelegate.swift in Sources */,
 				57458F312109251E0067A53A /* Presentable.swift in Sources */,
-				D1B1804F85DF6B28A787FDE4 /* AuthorizationViewInput.swift in Sources */,
-				7FEFDAA7B16836A7EF1CAE0B /* AuthorizationViewOutput.swift in Sources */,
-				109BE17D75F5BCF0F67EAAFB /* AuthorizationViewController.swift in Sources */,
-				2C84E69CB191046E3617966D /* AuthorizationModuleInput.swift in Sources */,
-				1A430F06F6FE927C77E69E56 /* AuthorizationPresenter.swift in Sources */,
-				E8AB83A2387F5C6EBEFCDD97 /* AuthorizationInteractorInput.swift in Sources */,
-				E4E54A48CB167F4961EE228A /* AuthorizationInteractorOutput.swift in Sources */,
-				4C0B70DB72DD923C2623CC7E /* AuthorizationInteractor.swift in Sources */,
-				D011E007ADF93882523A6583 /* AuthorizationRouterInput.swift in Sources */,
-				D0D2144E18825F82AD2FB9F7 /* AuthorizationRouter.swift in Sources */,
-				EFA3D41C96F28F4D0FAB1660 /* AuthorizationConfigurator.swift in Sources */,
-				4C8665469C5EDD7A0815F020 /* AuthorizationInitializer.swift in Sources */,
 				E17048FDA0D116A70EE86404 /* SungupViewInput.swift in Sources */,
 				A516B2CEAAC1504159E143B9 /* SungupViewOutput.swift in Sources */,
 				2FA8DCDFBDEC003AF263AD16 /* SungupViewController.swift in Sources */,
@@ -1824,6 +1816,18 @@
 				B123259A57A63A37E81E50A8 /* ProfileRouter.swift in Sources */,
 				C01BD1EA6586EF8C05107DFC /* ProfileConfigurator.swift in Sources */,
 				3E57B99F3117D5DAA3943FCD /* ProfileInitializer.swift in Sources */,
+				739E48EE6E191F32641B8E6C /* LoginViewInput.swift in Sources */,
+				B6FAD9A22DAA648737E6B09B /* LoginViewOutput.swift in Sources */,
+				2E87343FA6BE6D92BFC3BC7A /* LoginViewController.swift in Sources */,
+				9C7F2B7A72B720F01FC4A26B /* LoginModuleInput.swift in Sources */,
+				21930EA94F1635D9C2BF4174 /* LoginPresenter.swift in Sources */,
+				44E76FC393F19340E7A85D35 /* LoginInteractorInput.swift in Sources */,
+				ABA5B36E66F2D741A383B390 /* LoginInteractorOutput.swift in Sources */,
+				F47C11406F27D4510F739456 /* LoginInteractor.swift in Sources */,
+				67AA45437D7576A848880BF8 /* LoginRouterInput.swift in Sources */,
+				DD67036D4397CF1D0A6BF0AE /* LoginRouter.swift in Sources */,
+				2987647F8633FD155F1FA37D /* LoginConfigurator.swift in Sources */,
+				7303D0609E39732364C6FE00 /* LoginInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1832,11 +1836,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57458F072108B8240067A53A /* FlowTests.swift in Sources */,
-				7DEFA73CDB7DED7864B56143 /* AuthorizationConfiguratorTests.swift in Sources */,
-				2ED39192A78A22863A5F0814 /* AuthorizationViewTests.swift in Sources */,
-				182EA6122E9174DE9C64ED6C /* AuthorizationInteractorTests.swift in Sources */,
-				262B5F8C02B460E5FA112FDA /* AuthorizationPresenterTests.swift in Sources */,
-				886C588927E626721540DEDD /* AuthorizationRouterTests.swift in Sources */,
 				CB5ADFCBE64563103103A568 /* SungupConfiguratorTests.swift in Sources */,
 				A9C0D1E9CA41509F46A7A86C /* SungupViewTests.swift in Sources */,
 				010B0B8ADED8EAF792C7C42C /* SungupInteractorTests.swift in Sources */,
@@ -1877,6 +1876,11 @@
 				18A5C8961C5FBDC887AD35E8 /* ProfileInteractorTests.swift in Sources */,
 				34A9B9324856136C4C61CD90 /* ProfilePresenterTests.swift in Sources */,
 				EEB67B68793571FFDAAA261B /* ProfileRouterTests.swift in Sources */,
+				B4C3033F9F91AB074D59579C /* LoginConfiguratorTests.swift in Sources */,
+				78A08D191D45B02645A2BDAB /* LoginViewTests.swift in Sources */,
+				80BB6395E62E084D746E458E /* LoginInteractorTests.swift in Sources */,
+				023A845F100BEC26440FCEE2 /* LoginPresenterTests.swift in Sources */,
+				F49710137D3936D3F3922FCD /* LoginRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
