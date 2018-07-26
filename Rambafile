@@ -1,0 +1,39 @@
+### Headers settings
+company: Flow
+
+### Xcode project settings
+project_name: Flow
+xcodeproj_path: Flow.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: Flow
+
+# The file path for new modules
+project_file_path: Flow/PresentationLayer/
+
+# The Xcode group path to new modules
+project_group_path: Flow/PresentationLayer/
+
+### Tests generation settings section
+# The tests target name
+test_target: FlowTests
+
+# The file path for new tests
+test_file_path: FlowTests/
+
+# The Xcode group path to new tests
+test_group_path: FlowTests/
+
+### Dependencies settings section
+podfile_path:
+
+### Templates
+templates:
+- {name: swifty_viper}
+
+### Create a reusable module in the specified directory
+#generamba gen [Module Name] swifty_viper --module_path 'Flow/PresentationLayer/ReusableComponents'
+
+### Create a specific module in the specified directory
+#generamba gen [Module Name] swifty_viper --module_path 'Flow/PresentationLayer/Flows'
