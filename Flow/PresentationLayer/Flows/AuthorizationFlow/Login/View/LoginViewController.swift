@@ -10,15 +10,18 @@ import UIKit
 
 class LoginViewController: UIViewController, LoginViewInput {
 
+	// MARK: - Properties
     var output: LoginViewOutput!
 	
+	// MARK: - IBOutlets
 	@IBOutlet weak var photo: UIImageView!
 	@IBOutlet var fields: [UIImageView]!
 	@IBOutlet var buttons: [UIButton]!
 	
-    // MARK: Life cycle
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+		
         output.viewIsReady()
 		photoAppearance()
 		fieldsAppearance()
@@ -26,13 +29,14 @@ class LoginViewController: UIViewController, LoginViewInput {
     }
 
 
-    // MARK: LoginViewInput
+    // MARK: - LoginViewInput
     func setupInitialState() {
 		
     }
 	
 	// MARK: - Appearance
 	private func photoAppearance() {
+		
 		photo.image = #imageLiteral(resourceName: "photo")
 		photo.backgroundColor = UIColor(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)
 		photo.layer.cornerRadius = 30
@@ -40,7 +44,9 @@ class LoginViewController: UIViewController, LoginViewInput {
 	}
 	
 	private func fieldsAppearance() {
+		
 		fields.forEach { (field) in
+			
 			field.backgroundColor = UIColor(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)
 			field.layer.cornerRadius = 20
 			field.layer.masksToBounds = true
@@ -48,10 +54,13 @@ class LoginViewController: UIViewController, LoginViewInput {
 	}
 	
 	private func buttonsAppearance() {
+		
 		buttons.forEach { (button) in
+			
 			button.layer.cornerRadius = 25
 			button.layer.masksToBounds = true
 			button.setTitleColor(.white, for: .normal)
+			
 			switch button.tag {
 			case 0:
 				button.backgroundColor = UIColor(red: 229/255, green: 98/255, blue: 92/255, alpha: 1)
@@ -71,15 +80,14 @@ class LoginViewController: UIViewController, LoginViewInput {
 	
 	// MARK: - Actions
 	@IBAction func singIn(_ sender: UIButton) {
+		
 	}
 	
 	@IBAction func forgot(_ sender: UIButton) {
+		
 	}
 	
 	@IBAction func singUp(_ sender: UIButton) {
+		
 	}
-	
-	
-	
-	
 }
