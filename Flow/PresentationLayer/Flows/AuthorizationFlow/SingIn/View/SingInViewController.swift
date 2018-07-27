@@ -15,7 +15,7 @@ class SingInViewController: UIViewController, SingInViewInput {
 	
 	// MARK: - IBOutlets
 	@IBOutlet weak var photo: UIImageView!
-	@IBOutlet var fields: [UIImageView]!
+	@IBOutlet var fields: [UITextField]!
 	@IBOutlet var buttons: [UIButton]!
 	
     // MARK: - Life cycle
@@ -71,7 +71,6 @@ class SingInViewController: UIViewController, SingInViewInput {
 				button.setTitle("Sing up", for: .normal)
 			default:
 				break
-				
 			}
 		}
 	}
