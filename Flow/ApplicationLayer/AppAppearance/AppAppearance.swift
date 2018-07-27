@@ -11,12 +11,14 @@ import UIKit
 class AppAppearance {
 	enum UI {
 		case Button(tag: Int)
+		case Label(tag: Int)
 		case Filed
 		case Image
 		
 		var radius: CGFloat {
 			switch self {
 			case .Button: return 25
+			case .Label: return 5
 			case .Filed: return 20
 			case .Image: return 30
 			}
@@ -30,6 +32,17 @@ class AppAppearance {
 					return UIColor(red: 229/255, green: 98/255, blue: 92/255, alpha: 1)
 				case 1:
 					return UIColor(red: 249/255, green: 191/255, blue: 118/255, alpha: 1)
+				case 2:
+					return UIColor(red: 97/255, green: 83/255, blue: 117/255, alpha: 1)
+				default: return UIColor.black
+				}
+				
+			case let .Label(tag):
+				switch tag {
+				case 0:
+					return UIColor(red: 97/255, green: 83/255, blue: 117/255, alpha: 1)
+				case 1:
+					return UIColor(red: 97/255, green: 83/255, blue: 117/255, alpha: 0.5)
 				case 2:
 					return UIColor(red: 97/255, green: 83/255, blue: 117/255, alpha: 1)
 				default: return UIColor.black

@@ -83,7 +83,9 @@ class SingInViewController: UIViewController, SingInViewInput {
 	}
 	
 	@IBAction func forgot(_ sender: UIButton) {
-		
+		let storyBoard = UIStoryboard(name: String(describing: PasswordRecoveryViewController.self), bundle: nil)
+		let vc = storyBoard.instantiateViewController(withIdentifier: String(describing: PasswordRecoveryViewController.self))
+		present(vc, animated: true, completion: nil)
 	}
 	
 	@IBAction func singUp(_ sender: UIButton) {
