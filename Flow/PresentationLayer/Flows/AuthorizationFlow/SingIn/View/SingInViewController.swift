@@ -50,6 +50,8 @@ class SingInViewController: UIViewController, SingInViewInput {
 			field.backgroundColor = AppAppearance.UI.Filed.color
 			field.layer.cornerRadius = AppAppearance.UI.Filed.radius
 			field.layer.masksToBounds = true
+			field.textAlignment = .center
+			field.isEnabled = false
 		}
 	}
 	

@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mlf-oR-OAW">
-                                <rect key="frame" x="30" y="60" width="315" height="250"/>
+                                <rect key="frame" x="30.333333333333343" y="60" width="315" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Mlf-oR-OAW" secondAttribute="height" multiplier="63:50" id="ub2-SX-o8m"/>
                                 </constraints>
@@ -90,14 +91,13 @@
                             <constraint firstItem="LvD-bJ-gjC" firstAttribute="top" secondItem="15O-CQ-HBe" secondAttribute="bottom" constant="40" id="Kcq-AT-pEz"/>
                             <constraint firstItem="15O-CQ-HBe" firstAttribute="top" secondItem="ZHy-kA-FN2" secondAttribute="bottom" constant="20" id="MS1-Up-AaJ"/>
                             <constraint firstItem="Mlf-oR-OAW" firstAttribute="centerX" secondItem="Nz8-7d-0dx" secondAttribute="centerX" id="Mim-nV-nhf"/>
-                            <constraint firstItem="Mlf-oR-OAW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zn0-cx-evQ" secondAttribute="leading" constant="30" id="Nj6-uu-SK9"/>
                             <constraint firstItem="1K6-bf-QnU" firstAttribute="bottom" secondItem="zn0-cx-evQ" secondAttribute="bottom" constant="-30" id="XbK-RX-7EN"/>
                             <constraint firstItem="15O-CQ-HBe" firstAttribute="height" secondItem="ZHy-kA-FN2" secondAttribute="height" id="bNH-xM-eg5"/>
                             <constraint firstItem="ZHy-kA-FN2" firstAttribute="top" secondItem="Mlf-oR-OAW" secondAttribute="bottom" constant="60" id="bfh-jy-fc3"/>
                             <constraint firstItem="Mlf-oR-OAW" firstAttribute="top" secondItem="Nz8-7d-0dx" secondAttribute="top" constant="60" id="onL-ZX-5sB"/>
                             <constraint firstItem="LvD-bJ-gjC" firstAttribute="centerX" secondItem="Nz8-7d-0dx" secondAttribute="centerX" id="qZR-wp-mEe"/>
                             <constraint firstItem="15O-CQ-HBe" firstAttribute="trailing" secondItem="ZHy-kA-FN2" secondAttribute="trailing" id="qxU-rc-9Ha"/>
-                            <constraint firstItem="zn0-cx-evQ" firstAttribute="trailing" secondItem="Mlf-oR-OAW" secondAttribute="trailing" constant="30" id="u9R-W5-vvY"/>
+                            <constraint firstItem="Mlf-oR-OAW" firstAttribute="width" secondItem="Nz8-7d-0dx" secondAttribute="width" multiplier="0.84" priority="750" id="vFm-yI-K0a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zn0-cx-evQ"/>
                     </view>
