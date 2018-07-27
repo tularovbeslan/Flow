@@ -82,6 +82,8 @@
 		57458F2F210924EC0067A53A /* BaseOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458F2E210924EC0067A53A /* BaseOutput.swift */; };
 		57458F312109251E0067A53A /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458F302109251E0067A53A /* Presentable.swift */; };
 		57458F35210A93840067A53A /* SingInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57458F34210A93830067A53A /* SingInViewController.storyboard */; };
+		57458F37210A94DF0067A53A /* PasswordRecoveryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57458F36210A94DF0067A53A /* PasswordRecoveryViewController.storyboard */; };
+		57458F3A210A953E0067A53A /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458F39210A953E0067A53A /* AppAppearance.swift */; };
 		57CFD79C56A3F5EBEABC0C0E /* PasswordRecoveryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2429D23C1A0CFEBA0AB8F0B /* PasswordRecoveryInteractorTests.swift */; };
 		5A56CF30A569C04FD99F6E9B /* SingUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */; };
 		5B6FE13CF8AE2EBDB0271CB7 /* CartModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62060EF2181341CF6B89EB9F /* CartModuleInput.swift */; };
@@ -296,6 +298,8 @@
 		57458F2E210924EC0067A53A /* BaseOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOutput.swift; sourceTree = "<group>"; };
 		57458F302109251E0067A53A /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		57458F34210A93830067A53A /* SingInViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SingInViewController.storyboard; sourceTree = "<group>"; };
+		57458F36210A94DF0067A53A /* PasswordRecoveryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PasswordRecoveryViewController.storyboard; sourceTree = "<group>"; };
+		57458F39210A953E0067A53A /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
 		576DA6AA7BF4BEA017375F23 /* CartCoordinatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartCoordinatorTests.swift; sourceTree = "<group>"; };
 		57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingUpPresenter.swift; sourceTree = "<group>"; };
 		59D8E9A706A7DB7EB14CE6D9 /* SingInConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingInConfigurator.swift; sourceTree = "<group>"; };
@@ -847,6 +851,7 @@
 		57458F1F2108B8430067A53A /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				57458F38210A952D0067A53A /* AppAppearance */,
 				57458F29210922BC0067A53A /* Protocols */,
 				57458EF12108B81F0067A53A /* AppDelegate.swift */,
 			);
@@ -917,6 +922,14 @@
 				57458F302109251E0067A53A /* Presentable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		57458F38210A952D0067A53A /* AppAppearance */ = {
+			isa = PBXGroup;
+			children = (
+				57458F39210A953E0067A53A /* AppAppearance.swift */,
+			);
+			path = AppAppearance;
 			sourceTree = "<group>";
 		};
 		5797AF948A11EF74F27EFDE3 /* View */ = {
@@ -1159,6 +1172,7 @@
 				7148994A9B3112EC24A75398 /* PasswordRecoveryViewInput.swift */,
 				190E1C6225FFBBA9BEE81B5E /* PasswordRecoveryViewOutput.swift */,
 				A9BACFD13C1D4B08A76BA1BB /* PasswordRecoveryViewController.swift */,
+				57458F36210A94DF0067A53A /* PasswordRecoveryViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1865,6 +1879,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57458EFC2108B8240067A53A /* LaunchScreen.storyboard in Resources */,
+				57458F37210A94DF0067A53A /* PasswordRecoveryViewController.storyboard in Resources */,
 				57458EF92108B8240067A53A /* Assets.xcassets in Resources */,
 				57458F35210A93840067A53A /* SingInViewController.storyboard in Resources */,
 			);
@@ -1941,6 +1956,7 @@
 				786F897493E3BD45A1807122 /* TermsViewController.swift in Sources */,
 				3B423386ECD8CA72DC939767 /* TermsModuleInput.swift in Sources */,
 				42FE03494F96313D31BDF3CD /* TermsModuleOutput.swift in Sources */,
+				57458F3A210A953E0067A53A /* AppAppearance.swift in Sources */,
 				F1D587F74F38C76F650ADC0D /* TermsPresenter.swift in Sources */,
 				A516C8F3A5F8859DC9333C1A /* TermsInteractorInput.swift in Sources */,
 				56BA9B50F7D9995DEC9DBAA0 /* TermsInteractorOutput.swift in Sources */,
