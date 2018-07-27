@@ -44,7 +44,7 @@ class AppAppearance {
 				case 1:
 					return UIColor(red: 97/255, green: 83/255, blue: 117/255, alpha: 0.5)
 				case 2:
-					return UIColor(red: 97/255, green: 83/255, blue: 117/255, alpha: 1)
+					return UIColor(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)
 				default: return UIColor.black
 				}
 			case .Filed: return UIColor(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)

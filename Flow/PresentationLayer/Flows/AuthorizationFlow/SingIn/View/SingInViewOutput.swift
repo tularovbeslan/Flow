@@ -8,10 +8,5 @@
 
 protocol SingInViewOutput {
 
-    /**
-        @author Beslan Tularov
-        Notify presenter that view is ready
-    */
-
     func viewIsReady()
 }

@@ -10,16 +10,57 @@ import UIKit
 
 class TermsViewController: UIViewController, TermsViewInput {
 
-    var output: TermsViewOutput!
+	// MARK: - Properties
 
-    // MARK: Life cycle
+    var output: TermsViewOutput!
+	
+	// MARK: - IBOutlets
+
+	@IBOutlet var labels: [UILabel]!
+	@IBOutlet weak var button: UIButton!
+
+    // MARK: - Life cycle
+	
     override func viewDidLoad() {
         super.viewDidLoad()
+		
         output.viewIsReady()
+		labelsAppearance()
+		buttonAppearance()
     }
 
 
-    // MARK: TermsViewInput
+    // MARK: - TermsViewInput
+	
     func setupInitialState() {
+		
     }
+	
+	// MARK: - Appearance
+	
+	private func labelsAppearance() {
+		
+		labels.forEach { (label) in
+			
+			label.backgroundColor = AppAppearance.UI.Label(tag: label.tag).color
+			label.layer.cornerRadius = AppAppearance.UI.Label(tag: label.tag).radius
+			label.layer.masksToBounds = true
+			label.textAlignment = .left
+		}
+	}
+	
+	private func buttonAppearance() {
+		
+		button.layer.cornerRadius = AppAppearance.UI.Button(tag: button.tag).radius
+		button.layer.masksToBounds = true
+		button.setTitleColor(.white, for: .normal)
+		button.backgroundColor = AppAppearance.UI.Button(tag: button.tag).color
+		button.setTitle("Accept", for: .normal)
+	}
+	
+	// MARK: - Actions
+	
+	@IBAction func Accept(_ sender: UIButton) {
+		dismiss(animated: true, completion: nil)
+	}
 }

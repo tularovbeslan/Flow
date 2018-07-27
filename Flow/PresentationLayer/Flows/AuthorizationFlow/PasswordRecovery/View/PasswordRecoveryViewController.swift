@@ -11,14 +11,17 @@ import UIKit
 class PasswordRecoveryViewController: UIViewController, PasswordRecoveryViewInput {
 
 	// MARK: - Properties
+	
     var output: PasswordRecoveryViewOutput!
 	
 	// MARK: - IBOutlets
+	
 	@IBOutlet weak var field: UITextField!
 	@IBOutlet var labels: [UILabel]!
 	@IBOutlet weak var button: UIButton!
 	
     // MARK: - Life cycle
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 		
@@ -30,10 +33,12 @@ class PasswordRecoveryViewController: UIViewController, PasswordRecoveryViewInpu
 
 
     // MARK: - PasswordRecoveryViewInput
+	
     func setupInitialState() {
     }
 	
 	// MARK: - Appearance
+	
 	private func fieldAppearance() {
 		
 		field.backgroundColor = AppAppearance.UI.Filed.color
@@ -64,6 +69,7 @@ class PasswordRecoveryViewController: UIViewController, PasswordRecoveryViewInpu
 	}
 	
 	// MARK: - Actions
+	
 	@IBAction func send(_ sender: UIButton) {
 		dismiss(animated: true, completion: nil)
 	}

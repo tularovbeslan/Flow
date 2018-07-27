@@ -1,11 +1,13 @@
 //
-//  PasswordRecoveryCoordinator.swift
+//  AuthorizationCoordinatorOutput.swift
 //  Flow
 //
 //  Created by Beslan Tularov on 27/07/2018.
 //  Copyright © 2018 Flow. All rights reserved.
 //
 
-class PasswordRecoveryCoordinator: PasswordRecoveryCoordinatorOutput {
+import Foundation
+
+protocol AuthorizationCoordinatorOutput {
 
 }
