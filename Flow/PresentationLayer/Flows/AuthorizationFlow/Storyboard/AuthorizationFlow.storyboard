@@ -421,7 +421,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="Accept:" destination="sWh-Gc-dW7" eventType="touchUpInside" id="Z3E-dN-1JW"/>
+                                    <action selector="accept:" destination="sWh-Gc-dW7" eventType="touchUpInside" id="ba9-kp-sKU"/>
                                     <action selector="send:" destination="4Xa-p2-MyF" eventType="touchUpInside" id="Oio-a3-1in"/>
                                 </connections>
                             </button>
@@ -453,7 +453,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHE-LF-EJL">
-                                <rect key="frame" x="30" y="494" width="315" height="10"/>
+                                <rect key="frame" x="30.000000000000007" y="494" width="93.666666666666686" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="ofc-pX-JZl"/>
                                 </constraints>
@@ -461,22 +461,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a93-uM-093" customClass="PWSwitch" customModule="PWSwitch">
+                                <rect key="frame" x="285" y="534" width="60" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="639-hS-1db"/>
+                                    <constraint firstAttribute="width" constant="60" id="rUC-eR-l0V"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HlO-4t-nly" firstAttribute="trailing" secondItem="e1N-eY-YaD" secondAttribute="trailing" constant="30" id="2O9-1n-Pby"/>
-                            <constraint firstItem="HlO-4t-nly" firstAttribute="trailing" secondItem="BHE-LF-EJL" secondAttribute="trailing" constant="30" id="6lg-ik-Yg8"/>
+                            <constraint firstItem="HlO-4t-nly" firstAttribute="trailing" secondItem="a93-uM-093" secondAttribute="trailing" constant="30" id="7iD-s6-VDh"/>
                             <constraint firstItem="kF0-p7-Rp4" firstAttribute="leading" secondItem="HlO-4t-nly" secondAttribute="leading" constant="30" id="7le-LB-zLk"/>
                             <constraint firstItem="HlO-4t-nly" firstAttribute="trailing" secondItem="3iq-0d-7v1" secondAttribute="trailing" constant="30" id="80q-YM-v8Q"/>
                             <constraint firstItem="lGq-0R-cgU" firstAttribute="top" secondItem="sQX-wo-VEb" secondAttribute="bottom" constant="30" id="9Sf-BR-FxF"/>
                             <constraint firstItem="3iq-0d-7v1" firstAttribute="top" secondItem="qfU-gG-0k1" secondAttribute="bottom" constant="40" id="C2B-60-Kkl"/>
                             <constraint firstItem="HlO-4t-nly" firstAttribute="trailing" secondItem="ZAL-Gk-mNV" secondAttribute="trailing" constant="30" id="CJ2-75-2vs"/>
+                            <constraint firstItem="BHE-LF-EJL" firstAttribute="width" secondItem="sgh-rC-kZ8" secondAttribute="width" multiplier="0.25" id="EsF-nH-aYy"/>
                             <constraint firstItem="e1N-eY-YaD" firstAttribute="leading" secondItem="HlO-4t-nly" secondAttribute="leading" constant="30" id="H5j-OK-4kP"/>
                             <constraint firstItem="3iq-0d-7v1" firstAttribute="leading" secondItem="qfU-gG-0k1" secondAttribute="leading" id="Hnw-Uz-2VZ"/>
                             <constraint firstItem="qfU-gG-0k1" firstAttribute="leading" secondItem="HlO-4t-nly" secondAttribute="leading" constant="30" id="Idf-dz-yRs"/>
                             <constraint firstItem="BHE-LF-EJL" firstAttribute="top" secondItem="KtP-0a-Pkr" secondAttribute="bottom" constant="30" id="K8X-bT-itX"/>
                             <constraint firstItem="sQX-wo-VEb" firstAttribute="leading" secondItem="HlO-4t-nly" secondAttribute="leading" constant="30" id="N7O-my-NfK"/>
                             <constraint firstItem="HlO-4t-nly" firstAttribute="trailing" secondItem="KtP-0a-Pkr" secondAttribute="trailing" constant="30" id="NsC-Mn-HAG"/>
+                            <constraint firstItem="a93-uM-093" firstAttribute="top" secondItem="BHE-LF-EJL" secondAttribute="bottom" constant="30" id="OIX-pk-piB"/>
                             <constraint firstItem="kF0-p7-Rp4" firstAttribute="top" secondItem="3iq-0d-7v1" secondAttribute="bottom" constant="30" id="OYd-B1-4le"/>
                             <constraint firstItem="HlO-4t-nly" firstAttribute="trailing" secondItem="sQX-wo-VEb" secondAttribute="trailing" constant="30" id="PsT-JJ-LwJ"/>
                             <constraint firstAttribute="bottom" secondItem="gaQ-J6-cbq" secondAttribute="bottom" constant="60" id="Qfo-DE-CLl"/>
@@ -501,6 +511,7 @@
                     </view>
                     <connections>
                         <outlet property="button" destination="gaQ-J6-cbq" id="v5t-ta-zZA"/>
+                        <outlet property="conformSwitch" destination="a93-uM-093" id="5Ez-NE-Ok4"/>
                         <outletCollection property="labels" destination="qfU-gG-0k1" collectionClass="NSMutableArray" id="H7Z-SJ-bns"/>
                         <outletCollection property="labels" destination="3iq-0d-7v1" collectionClass="NSMutableArray" id="D2F-4W-GLx"/>
                         <outletCollection property="labels" destination="kF0-p7-Rp4" collectionClass="NSMutableArray" id="iCI-ef-wqi"/>
@@ -520,7 +531,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="2455" y="16"/>
+            <point key="canvasLocation" x="2453.5999999999999" y="15.517241379310345"/>
         </scene>
     </scenes>
 </document>

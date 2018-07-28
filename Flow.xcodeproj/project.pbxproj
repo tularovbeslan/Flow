@@ -83,6 +83,7 @@
 		57458F40210BA86C0067A53A /* AuthorizationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458F3E210BA86C0067A53A /* AuthorizationCoordinator.swift */; };
 		57458F43210BC7610067A53A /* OnboardingFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57458F42210BC7610067A53A /* OnboardingFlow.storyboard */; };
 		57458F46210BDA420067A53A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458F45210BDA420067A53A /* UIColorExtension.swift */; };
+		57458F49210C8BE50067A53A /* ProfileFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57458F48210C8BE50067A53A /* ProfileFlow.storyboard */; };
 		57CFD79C56A3F5EBEABC0C0E /* PasswordRecoveryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2429D23C1A0CFEBA0AB8F0B /* PasswordRecoveryInteractorTests.swift */; };
 		5A56CF30A569C04FD99F6E9B /* SingUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */; };
 		5B6FE13CF8AE2EBDB0271CB7 /* CartModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62060EF2181341CF6B89EB9F /* CartModuleInput.swift */; };
@@ -299,6 +300,7 @@
 		57458F3E210BA86C0067A53A /* AuthorizationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationCoordinator.swift; sourceTree = "<group>"; };
 		57458F42210BC7610067A53A /* OnboardingFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingFlow.storyboard; sourceTree = "<group>"; };
 		57458F45210BDA420067A53A /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		57458F48210C8BE50067A53A /* ProfileFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileFlow.storyboard; sourceTree = "<group>"; };
 		576DA6AA7BF4BEA017375F23 /* CartCoordinatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartCoordinatorTests.swift; sourceTree = "<group>"; };
 		57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingUpPresenter.swift; sourceTree = "<group>"; };
 		59D8E9A706A7DB7EB14CE6D9 /* SingInConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingInConfigurator.swift; sourceTree = "<group>"; };
@@ -963,6 +965,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		57458F47210C8BCC0067A53A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				57458F48210C8BE50067A53A /* ProfileFlow.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		5797AF948A11EF74F27EFDE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1411,7 +1421,6 @@
 				6B34AA7FFF9F9E43FD106D7A /* View */,
 				9951E1ACBD0FA05F8FAD4F7A /* Presenter */,
 				3DF3B41E2324929F01BE4669 /* Interactor */,
-				7A91BD41FCD79161D7291605 /* Coordinator */,
 				90D5EC9ED8753B9DDE75359E /* Configurator */,
 			);
 			path = Profile;
@@ -1546,6 +1555,8 @@
 		DCE8B112EA6838FE9D8048B9 /* ProfileFlow */ = {
 			isa = PBXGroup;
 			children = (
+				57458F47210C8BCC0067A53A /* Storyboard */,
+				7A91BD41FCD79161D7291605 /* Coordinator */,
 				B7A60F9EF0E600E818CE997A /* Profile */,
 			);
 			path = ProfileFlow;
@@ -1892,6 +1903,7 @@
 				57458EFC2108B8240067A53A /* LaunchScreen.storyboard in Resources */,
 				57458EF92108B8240067A53A /* Assets.xcassets in Resources */,
 				57458F35210A93840067A53A /* AuthorizationFlow.storyboard in Resources */,
+				57458F49210C8BE50067A53A /* ProfileFlow.storyboard in Resources */,
 				57458F43210BC7610067A53A /* OnboardingFlow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1939,10 +1951,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flow/Pods-Flow-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/PWSwitch/PWSwitch.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PWSwitch.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

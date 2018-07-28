@@ -93,7 +93,10 @@ class OnboardingViewController: UIViewController, OnboardingViewInput {
 	// MARK: - Actions
 	
 	@IBAction func next(_ sender: UIButton) {
-		dismiss(animated: true, completion: nil)
+		
+		let storyboard = UIStoryboard(name: "ProfileFlow", bundle: nil)
+		let vc = storyboard.instantiateViewController(withIdentifier: String(describing: ProfileViewController.self))
+		present(vc, animated: true, completion: nil)
 	}
 }
 

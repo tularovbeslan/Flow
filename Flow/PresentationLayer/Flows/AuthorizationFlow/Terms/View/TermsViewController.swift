@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PWSwitch
 
 class TermsViewController: UIViewController, TermsViewInput {
 
@@ -18,6 +19,7 @@ class TermsViewController: UIViewController, TermsViewInput {
 
 	@IBOutlet var labels: [UILabel]!
 	@IBOutlet weak var button: UIButton!
+	@IBOutlet weak var conformSwitch: PWSwitch!
 
     // MARK: - Life cycle
 	
@@ -27,8 +29,8 @@ class TermsViewController: UIViewController, TermsViewInput {
         output.viewIsReady()
 		labelsAppearance()
 		buttonAppearance()
+		conformSwitchAppearance()
     }
-
 
     // MARK: - TermsViewInput
 	
@@ -58,9 +60,36 @@ class TermsViewController: UIViewController, TermsViewInput {
 		button.setTitle("Accept", for: .normal)
 	}
 	
+	private func conformSwitchAppearance() {
+		
+		let trackInset: CGFloat = 11
+		let cornerRadius: CGFloat = 5
+		let thumbDiameter: CGFloat = 16
+		let thumbWidth: CGFloat = 25
+
+		conformSwitch.trackOnBorderColor = .clear
+		conformSwitch.trackOffBorderColor = .clear
+		conformSwitch.trackOffFillColor = .smoothGray
+		conformSwitch.trackOnFillColor = .smoothGray
+		conformSwitch.trackInset = trackInset
+		conformSwitch.cornerRadius = cornerRadius
+		conformSwitch.thumbDiameter = thumbDiameter
+		conformSwitch.thumbWidth = thumbWidth
+		conformSwitch.thumbOnFillColor = .lightOrange
+		conformSwitch.thumbOffFillColor = .lightRed
+		conformSwitch.thumbShadowColor = .clear
+		conformSwitch.thumbOnBorderColor = .clear
+		conformSwitch.thumbOffBorderColor = .clear
+		conformSwitch.thumbOffPushBorderColor = .clear
+	}
+	
 	// MARK: - Actions
 	
-	@IBAction func Accept(_ sender: UIButton) {
+	@IBAction func conform(_ sender: PWSwitch) {
+		
+	}
+	
+	@IBAction func accept(_ sender: UIButton) {
 		dismiss(animated: true, completion: nil)
 	}
 }

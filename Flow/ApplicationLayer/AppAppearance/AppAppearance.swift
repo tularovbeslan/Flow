@@ -49,7 +49,6 @@ class AppAppearance {
 				default: return UIColor.black
 				}
 			case .Filed, .Image: return .smoothGray
-			
 			}
 		}
 	}

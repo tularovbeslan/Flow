@@ -1,16 +1,28 @@
 PODS:
   - FSPagerView (0.7.1)
+  - PWSwitch (1.1.0)
 
 DEPENDENCIES:
   - FSPagerView
+  - PWSwitch (from `https://github.com/tularovbeslan/PWSwitch.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FSPagerView
 
+EXTERNAL SOURCES:
+  PWSwitch:
+    :git: https://github.com/tularovbeslan/PWSwitch.git
+
+CHECKOUT OPTIONS:
+  PWSwitch:
+    :commit: c4fcae6f79aacda382fc1a98b7256dbc9e4f17db
+    :git: https://github.com/tularovbeslan/PWSwitch.git
+
 SPEC CHECKSUMS:
   FSPagerView: 958aba39684e1573755ddcfcc29f7eebb8413cee
+  PWSwitch: aadea992acf22aee2408ee8eddad3b3260b1f2d4
 
-PODFILE CHECKSUM: 920a632be7a47bbeef64bb310ff6f53645acc77c
+PODFILE CHECKSUM: 2155f7b633973d22501a70dc3065cf7a329420dc
 
 COCOAPODS: 1.5.3
