@@ -126,11 +126,13 @@ extension OnboardingViewController: FSPagerViewDelegate {
 		}
 		self.pageControl.currentPage = pagerView.currentIndex
 		
-		UIView.animate(withDuration: 0.15,
+		UIView.animate(withDuration: 0.25,
 					   delay: 0,
+					   usingSpringWithDamping: 4,
+					   initialSpringVelocity: 4,
 					   options: .curveEaseInOut,
 					   animations: {
-						self.bottomConstraint.constant = pagerView.currentIndex == (self.numberOfItems - 1) ? 60 : -60
+			self.bottomConstraint.constant = pagerView.currentIndex == (self.numberOfItems - 1) ? 60 : -60
 			self.view.layoutIfNeeded()
 		}, completion: nil)
 	}
