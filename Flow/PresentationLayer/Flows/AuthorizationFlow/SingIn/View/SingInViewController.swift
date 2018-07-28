@@ -43,6 +43,7 @@ class SingInViewController: UIViewController, SingInViewInput {
 	private func photoAppearance() {
 		
 		photo.image = #imageLiteral(resourceName: "photo")
+		photo.contentMode = .center
 		photo.backgroundColor = AppAppearance.UI.Image.color
 		photo.layer.cornerRadius = AppAppearance.UI.Image.radius
 		photo.layer.masksToBounds = true
@@ -86,6 +87,9 @@ class SingInViewController: UIViewController, SingInViewInput {
 	
 	@IBAction func singIn(_ sender: UIButton) {
 		
+		let storyboard = UIStoryboard(name: "OnboardingFlow", bundle: nil)
+		let vc = storyboard.instantiateViewController(withIdentifier: String(describing: OnboardingViewController.self))
+		present(vc, animated: true, completion: nil)
 	}
 	
 	@IBAction func forgot(_ sender: UIButton) {

@@ -28,27 +28,28 @@ class AppAppearance {
 			switch self {
 			case let .Button(tag) :
 				switch tag {
-				case 0:
-					return UIColor(red: 229/255, green: 98/255, blue: 92/255, alpha: 1)
-				case 1:
-					return UIColor(red: 249/255, green: 191/255, blue: 118/255, alpha: 1)
-				case 2:
-					return UIColor(red: 97/255, green: 83/255, blue: 117/255, alpha: 1)
+				case 0: return .lightRed
+				case 1: return .lightOrange
+				case 2: return .smoothPurple
 				default: return UIColor.black
 				}
 				
 			case let .Label(tag):
 				switch tag {
 				case 0:
-					return UIColor(red: 97/255, green: 83/255, blue: 117/255, alpha: 1)
+					return .smoothPurple
 				case 1:
-					return UIColor(red: 97/255, green: 83/255, blue: 117/255, alpha: 0.5)
+					return .lightPurple
 				case 2:
-					return UIColor(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)
+					return .smoothGray
+				case 3:
+					return .lightRed
+				case 4:
+					return .lightOrange
 				default: return UIColor.black
 				}
-			case .Filed: return UIColor(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)
-			case .Image: return UIColor(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)
+			case .Filed, .Image: return .smoothGray
+			
 			}
 		}
 	}

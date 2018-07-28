@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zpa-oz-FND">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,11 +16,81 @@
             <objects>
                 <viewController storyboardIdentifier="OnboardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zpa-oz-FND" customClass="OnboardingViewController" customModule="Flow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="khF-fG-gOe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Del-6o-fZ5">
+                                <rect key="frame" x="152.66666666666666" y="104" width="70" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="8Nd-zD-MOg"/>
+                                    <constraint firstAttribute="height" constant="10" id="aIt-MA-zSd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3P-6O-55Q">
+                                <rect key="frame" x="102.66666666666669" y="134" width="170" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="6CS-Zh-bQB"/>
+                                    <constraint firstAttribute="width" constant="170" id="daQ-UT-Ez7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ziZ-ea-37T" customClass="FSPagerView" customModule="FSPagerView">
+                                <rect key="frame" x="0.0" y="214" width="375" height="393"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ziZ-ea-37T" secondAttribute="height" multiplier="125:131" id="8I4-8T-0WR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Poq-KX-Uby" customClass="FSPageControl" customModule="FSPagerView">
+                                <rect key="frame" x="30" y="637" width="315" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="cqS-nR-z2n"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmu-Ji-rRf">
+                                <rect key="frame" x="115" y="701" width="145" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aYP-bF-huR"/>
+                                    <constraint firstAttribute="width" constant="145" id="wQI-XD-7hZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="next:" destination="Zpa-oz-FND" eventType="touchUpInside" id="lmd-f0-5Ps"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ziZ-ea-37T" firstAttribute="top" secondItem="x3P-6O-55Q" secondAttribute="bottom" constant="70" id="56C-zI-ZY4"/>
+                            <constraint firstItem="Del-6o-fZ5" firstAttribute="centerX" secondItem="khF-fG-gOe" secondAttribute="centerX" id="5zO-ZW-4fd"/>
+                            <constraint firstAttribute="bottom" secondItem="xmu-Ji-rRf" secondAttribute="bottom" constant="-180" id="IS6-qR-xTO"/>
+                            <constraint firstItem="ziZ-ea-37T" firstAttribute="leading" secondItem="COH-3G-u5k" secondAttribute="leading" id="JfX-kY-nrz"/>
+                            <constraint firstItem="Poq-KX-Uby" firstAttribute="top" secondItem="ziZ-ea-37T" secondAttribute="bottom" constant="30" id="i3T-F6-Z4N"/>
+                            <constraint firstItem="x3P-6O-55Q" firstAttribute="top" secondItem="Del-6o-fZ5" secondAttribute="bottom" constant="20" id="qKV-RH-TP1"/>
+                            <constraint firstItem="ziZ-ea-37T" firstAttribute="trailing" secondItem="COH-3G-u5k" secondAttribute="trailing" id="qik-Nm-6hc"/>
+                            <constraint firstItem="x3P-6O-55Q" firstAttribute="centerX" secondItem="Del-6o-fZ5" secondAttribute="centerX" id="rCm-vd-GIM"/>
+                            <constraint firstItem="Poq-KX-Uby" firstAttribute="leading" secondItem="COH-3G-u5k" secondAttribute="leading" constant="30" id="rUQ-BL-pQj"/>
+                            <constraint firstItem="xmu-Ji-rRf" firstAttribute="centerX" secondItem="khF-fG-gOe" secondAttribute="centerX" id="u9m-t7-Hx2"/>
+                            <constraint firstItem="COH-3G-u5k" firstAttribute="trailing" secondItem="Poq-KX-Uby" secondAttribute="trailing" constant="30" id="vMT-XE-oI4"/>
+                            <constraint firstItem="Del-6o-fZ5" firstAttribute="top" secondItem="COH-3G-u5k" secondAttribute="top" constant="60" id="wfb-wC-8ng"/>
+                            <constraint firstItem="xmu-Ji-rRf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Poq-KX-Uby" secondAttribute="bottom" constant="49" id="yH7-8z-mRt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="COH-3G-u5k"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="IS6-qR-xTO" id="98g-Of-Fdz"/>
+                        <outlet property="button" destination="xmu-Ji-rRf" id="sAH-lP-c5x"/>
+                        <outlet property="pageControl" destination="Poq-KX-Uby" id="jnd-ok-Za3"/>
+                        <outlet property="pager" destination="ziZ-ea-37T" id="R7X-4W-pOp"/>
+                        <outletCollection property="labels" destination="x3P-6O-55Q" collectionClass="NSMutableArray" id="cMa-ed-UNa"/>
+                        <outletCollection property="labels" destination="Del-6o-fZ5" collectionClass="NSMutableArray" id="zyv-NM-owL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzm-gR-CGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="cHj-JI-17Z" customClass="OnboardingModuleInitializer" customModule="Flow" customModuleProvider="target">
@@ -28,7 +99,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="148" y="140"/>
+            <point key="canvasLocation" x="148" y="139.880059970015"/>
         </scene>
     </scenes>
 </document>
