@@ -468,6 +468,9 @@
                                     <constraint firstAttribute="height" constant="32" id="639-hS-1db"/>
                                     <constraint firstAttribute="width" constant="60" id="rUC-eR-l0V"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="conform:" destination="sWh-Gc-dW7" eventType="valueChanged" id="6V2-nb-gb0"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
