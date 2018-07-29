@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-@IBDesignable
 open class PWSwitch: UIControl {
     
     var backLayer: CALayer!
@@ -18,7 +17,7 @@ open class PWSwitch: UIControl {
     open var on = false
     
     /// UIAppearance compatible property
-    @IBInspectable open dynamic var trackOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+	open var trackOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOffBorderColor }
         set {
             self._trackOffBorderColor = newValue
@@ -27,7 +26,7 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _trackOffBorderColor: UIColor?
     
-    @IBInspectable open dynamic var trackOffPushBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+	open var trackOffPushBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOffPushBorderColor }
         set {
             self._trackOffPushBorderColor = newValue
@@ -36,7 +35,7 @@ open class PWSwitch: UIControl {
     fileprivate var _trackOffPushBorderColor: UIColor?
     
     
-    @IBInspectable open dynamic var trackOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+	open var trackOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOffFillColor }
         set {
             self._trackOffFillColor = newValue
@@ -45,7 +44,7 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _trackOffFillColor: UIColor?
 
-    @IBInspectable open dynamic var thumbOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+	open var thumbOffBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOffBorderColor }
         set {
             self._thumbOffBorderColor = newValue
@@ -54,7 +53,7 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _thumbOffBorderColor: UIColor?
     
-    @IBInspectable open dynamic var thumbOffPushBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+	open var thumbOffPushBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOffPushBorderColor }
         set {
             self._thumbOffPushBorderColor = newValue
@@ -62,7 +61,7 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _thumbOffPushBorderColor: UIColor?
     
-    @IBInspectable open dynamic var thumbOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+	open var thumbOffFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOffFillColor }
         set {
             self._thumbOffFillColor = newValue
@@ -71,7 +70,7 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _thumbOffFillColor: UIColor?
     
-    @IBInspectable open dynamic var trackOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+	open var trackOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOnFillColor }
         set {
             self._trackOnFillColor = newValue
@@ -79,7 +78,7 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _trackOnFillColor: UIColor?
     
-    @IBInspectable open dynamic var trackOnBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+	open var trackOnBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._trackOnBorderColor }
         set {
             self._trackOnBorderColor = newValue
@@ -88,7 +87,7 @@ open class PWSwitch: UIControl {
     fileprivate var _trackOnBorderColor: UIColor?
     
     
-    @IBInspectable open dynamic var thumbOnBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
+	open var thumbOnBorderColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOnBorderColor }
         set {
             self._thumbOnBorderColor = newValue
@@ -97,7 +96,7 @@ open class PWSwitch: UIControl {
     fileprivate var _thumbOnBorderColor: UIColor?
     
     
-    @IBInspectable open dynamic var thumbOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
+	open var thumbOnFillColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbOnFillColor }
         set {
             self._thumbOnFillColor = newValue
@@ -106,7 +105,7 @@ open class PWSwitch: UIControl {
     fileprivate var _thumbOnFillColor: UIColor?
 
     
-    @IBInspectable open dynamic var thumbDiameter: CGFloat { // UI_APPEARANCE_SELECTOR
+	open var thumbDiameter: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._thumbDiameter }
         set {
             self._thumbDiameter = newValue
@@ -117,7 +116,7 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _thumbDiameter: CGFloat
 	
-	@IBInspectable open dynamic var thumbWidth: CGFloat { // UI_APPEARANCE_SELECTOR
+	open var thumbWidth: CGFloat { // UI_APPEARANCE_SELECTOR
 		get { return self._thumbWidth }
 		set {
 			self._thumbWidth = newValue
@@ -127,7 +126,7 @@ open class PWSwitch: UIControl {
 	}
 	fileprivate var _thumbWidth: CGFloat
     
-    @IBInspectable open dynamic var cornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
+	open var cornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._cornerRadius }
         set {
             self._cornerRadius = newValue
@@ -137,7 +136,7 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _cornerRadius: CGFloat
     
-    @IBInspectable open dynamic var thumbCornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
+	open var thumbCornerRadius: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._thumbCornerRadius }
         set {
             self._thumbCornerRadius = newValue
@@ -147,7 +146,7 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _thumbCornerRadius: CGFloat
     
-    @IBInspectable open dynamic var shouldFillOnPush: Bool { // UI_APPEARANCE_SELECTOR
+	open var shouldFillOnPush: Bool { // UI_APPEARANCE_SELECTOR
         get { return self._shouldFillOnPush }
         set {
             self._shouldFillOnPush = newValue
@@ -155,7 +154,7 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _shouldFillOnPush: Bool
     
-    @IBInspectable open dynamic var trackInset: CGFloat { // UI_APPEARANCE_SELECTOR
+	open var trackInset: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._trackInset }
         set {
             self._trackInset = newValue
@@ -164,7 +163,7 @@ open class PWSwitch: UIControl {
     fileprivate var _trackInset: CGFloat
     
     
-    @IBInspectable open dynamic var thumbShadowColor: UIColor? { // UI_APPEARANCE_SELECTOR
+	open var thumbShadowColor: UIColor? { // UI_APPEARANCE_SELECTOR
         get { return self._thumbShadowColor }
         set {
             self._thumbShadowColor = newValue
@@ -174,7 +173,7 @@ open class PWSwitch: UIControl {
     }
     fileprivate var _thumbShadowColor: UIColor?
     
-    @IBInspectable open dynamic var shadowStrength: CGFloat { // UI_APPEARANCE_SELECTOR
+	open var shadowStrength: CGFloat { // UI_APPEARANCE_SELECTOR
         get { return self._shadowStrength }
         set {
             self._shadowStrength = newValue

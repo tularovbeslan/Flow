@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 open class FSPageControl: UIControl {
     
     /// The number of page indicators of the page control. Default is 0.
