@@ -11,15 +11,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Cart View Controller-->
         <scene sceneID="XBv-Ng-cdW">
             <objects>
-                <viewController id="bF2-uf-YTS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bF2-uf-YTS" customClass="CartViewController" customModule="Flow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZHq-kq-W9D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dh4-3S-3IW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dh4-3S-3IW">
                                 <rect key="frame" x="30" y="100" width="70" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="5AD-tO-aUs"/>
@@ -36,26 +36,29 @@
                                     <constraint firstAttribute="width" constant="145" id="x8l-eX-7nz"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="bay:" destination="bF2-uf-YTS" eventType="touchUpInside" id="ch0-8H-Lc2"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zHG-tN-ScN">
                                 <rect key="frame" x="0.0" y="120" width="375" height="437"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="170" id="epK-OP-dNF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartCell" rowHeight="170" id="epK-OP-dNF" customClass="CartCell" customModule="Flow" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="epK-OP-dNF" id="wvc-W4-sKB">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Qr-uu-MSe">
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Qr-uu-MSe">
                                                     <rect key="frame" x="20" y="15" width="140" height="140"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="140" id="9BM-Q9-vDk"/>
                                                         <constraint firstAttribute="width" constant="140" id="bsR-nk-xIO"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hiw-tK-aax">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hiw-tK-aax">
                                                     <rect key="frame" x="190" y="80" width="150" height="10"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="10" id="VJo-zr-EMc"/>
@@ -64,7 +67,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfn-7L-Oew">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfn-7L-Oew">
                                                     <rect key="frame" x="190" y="100" width="112.5" height="10"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="10" id="wFF-JP-0mU"/>
@@ -73,7 +76,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHp-bJ-dd4">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHp-bJ-dd4">
                                                     <rect key="frame" x="190" y="60" width="75" height="10"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="10" id="HGY-Ms-LVy"/>
@@ -101,6 +104,12 @@
                                                 <constraint firstItem="nfn-7L-Oew" firstAttribute="top" secondItem="Hiw-tK-aax" secondAttribute="bottom" constant="10" id="u2H-Vn-F3g"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="photo" destination="6Qr-uu-MSe" id="FcN-DG-vHH"/>
+                                            <outletCollection property="labels" destination="zHp-bJ-dd4" collectionClass="NSMutableArray" id="3cj-dP-zzg"/>
+                                            <outletCollection property="labels" destination="Hiw-tK-aax" collectionClass="NSMutableArray" id="kQ8-RQ-jfQ"/>
+                                            <outletCollection property="labels" destination="nfn-7L-Oew" collectionClass="NSMutableArray" id="cAG-wn-A0L"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -118,8 +127,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mVo-9f-ajs"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="t5V-E7-30I" id="LZH-IV-ghs"/>
+                        <outlet property="label" destination="Dh4-3S-3IW" id="L80-q4-0CF"/>
+                        <outlet property="tableView" destination="zHG-tN-ScN" id="pY3-j9-uwc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAf-UR-zjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="bvC-AK-Xp6" customClass="CartModuleInitializer" customModule="Flow" customModuleProvider="target">
+                    <connections>
+                        <outlet property="cartViewController" destination="bF2-uf-YTS" id="6Ky-dV-dv8"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="37.600000000000001" y="180.35982008995504"/>
         </scene>

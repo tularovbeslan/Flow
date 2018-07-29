@@ -10,16 +10,75 @@ import UIKit
 
 class CartViewController: UIViewController, CartViewInput {
 
-    var output: CartViewOutput!
+	// MARK: - Properties
 
-    // MARK: Life cycle
+    var output: CartViewOutput!
+	
+	// MARK: - IBOutlets
+
+	@IBOutlet weak var label: UILabel!
+	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var button: UIButton!
+	
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+		
         output.viewIsReady()
+		labelsAppearance()
+		buttonAppearance()
+		setupTableView()
     }
 
 
-    // MARK: CartViewInput
+    // MARK: - CartViewInput
+	
     func setupInitialState() {
+		
     }
+	
+	// MARK: - Helpers
+	
+	private func setupTableView() {
+		
+		tableView.dataSource = self
+		tableView.tableFooterView = UIView(frame: .zero)
+		tableView.separatorStyle = .none
+	}
+	
+	// MARK: - Actions
+	
+	@IBAction func bay(_ sender: UIButton) {
+		
+	}
+	
+	// MARK: - Appearance
+	
+	private func labelsAppearance() {
+		
+		label.backgroundColor = AppAppearance.UI.Label(tag: label.tag).color
+		label.layer.cornerRadius = AppAppearance.UI.Label(tag: label.tag).radius
+		label.layer.masksToBounds = true
+		label.textAlignment = .left
+	}
+	
+	private func buttonAppearance() {
+		
+		button.layer.cornerRadius = AppAppearance.UI.Button(tag: button.tag).radius
+		button.layer.masksToBounds = true
+		button.setTitleColor(.white, for: .normal)
+		button.backgroundColor = AppAppearance.UI.Button(tag: button.tag).color
+		button.setTitle("Bay", for: .normal)
+	}
+}
+
+extension CartViewController: UITableViewDataSource {
+	
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 3
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		return tableView.dequeueReusableCell(withIdentifier: String(describing: CartCell.self), for: indexPath)
+	}
 }

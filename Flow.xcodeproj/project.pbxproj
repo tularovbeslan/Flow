@@ -84,6 +84,7 @@
 		57458F49210C8BE50067A53A /* ProfileFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57458F48210C8BE50067A53A /* ProfileFlow.storyboard */; };
 		57CFD79C56A3F5EBEABC0C0E /* PasswordRecoveryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2429D23C1A0CFEBA0AB8F0B /* PasswordRecoveryInteractorTests.swift */; };
 		57F906BE210E669C004D638E /* FeedFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F906BD210E669C004D638E /* FeedFlow.storyboard */; };
+		57F906C0210E707B004D638E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F906BF210E707B004D638E /* CartCell.swift */; };
 		5A56CF30A569C04FD99F6E9B /* SingUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */; };
 		5B6FE13CF8AE2EBDB0271CB7 /* CartModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62060EF2181341CF6B89EB9F /* CartModuleInput.swift */; };
 		60D279DF3937DD93ADDFE8A0 /* ProductPageConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73B87E54F10F38A4F61AEA9 /* ProductPageConfiguratorTests.swift */; };
@@ -298,6 +299,7 @@
 		576DA6AA7BF4BEA017375F23 /* CartCoordinatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartCoordinatorTests.swift; sourceTree = "<group>"; };
 		57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingUpPresenter.swift; sourceTree = "<group>"; };
 		57F906BD210E669C004D638E /* FeedFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedFlow.storyboard; sourceTree = "<group>"; };
+		57F906BF210E707B004D638E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		59D8E9A706A7DB7EB14CE6D9 /* SingInConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingInConfigurator.swift; sourceTree = "<group>"; };
 		5D6761B9991158D4DA980786 /* TermsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsPresenter.swift; sourceTree = "<group>"; };
 		5E2E6E1F6EAF09453B1CF23B /* ProfileInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileInteractorTests.swift; sourceTree = "<group>"; };
@@ -1285,6 +1287,7 @@
 				C4A144BD4973DF7AB8CE4C7A /* CartViewInput.swift */,
 				A928CE734AAC5C2465759686 /* CartViewOutput.swift */,
 				AAF729D4C728872E0A16E139 /* CartViewController.swift */,
+				57F906BF210E707B004D638E /* CartCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1961,6 +1964,7 @@
 				57458EF22108B8200067A53A /* AppDelegate.swift in Sources */,
 				57458F312109251E0067A53A /* Presentable.swift in Sources */,
 				290AEAE3426E0D478CB87503 /* PasswordRecoveryViewInput.swift in Sources */,
+				57F906C0210E707B004D638E /* CartCell.swift in Sources */,
 				C6A59FFE9A992A5519C63DB7 /* PasswordRecoveryViewOutput.swift in Sources */,
 				834B346B5FA1D269FE174EF0 /* PasswordRecoveryViewController.swift in Sources */,
 				F0E788C0248868A2045CC783 /* PasswordRecoveryModuleInput.swift in Sources */,
