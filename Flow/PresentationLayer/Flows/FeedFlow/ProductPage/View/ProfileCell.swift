@@ -1,29 +1,31 @@
 //
-//  CartCell.swift
+//  ProfileCell.swift
 //  Flow
 //
-//  Created by workmachine on 30.07.2018.
+//  Created by workmachine on 31.07.2018.
 //  Copyright © 2018 Beslan Tularov Ramazanovich. All rights reserved.
 //
 
 import UIKit
 
-class CartCell: UITableViewCell {
+class ProfileCell: UITableViewCell {
 	
 	// MARK: - IBOutlets
 
 	@IBOutlet var labels: [UILabel]!
 	@IBOutlet weak var photo: UIImageView!
-
+	@IBOutlet weak var field: UITextField!
+	
 	// MARK: - Life cycle
 
     override func awakeFromNib() {
         super.awakeFromNib()
-		
-		selectionStyle = .none
 
-		labelsAppearance()
+		selectionStyle = .none
+		
 		photoAppearance()
+		labelsAppearance()
+		fieldsAppearance()
 	}
 
 	// MARK: - Appearance
@@ -36,6 +38,15 @@ class CartCell: UITableViewCell {
 			label.layer.masksToBounds = true
 			label.textAlignment = .left
 		}
+	}
+	
+	private func fieldsAppearance() {
+		
+		field.backgroundColor = AppAppearance.UI.Filed.color
+		field.layer.cornerRadius = AppAppearance.UI.Filed.radius
+		field.layer.masksToBounds = true
+		field.textAlignment = .center
+		field.isEnabled = false
 	}
 	
 	private func photoAppearance() {

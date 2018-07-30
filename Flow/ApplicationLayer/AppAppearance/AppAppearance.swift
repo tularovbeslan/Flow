@@ -36,16 +36,13 @@ class AppAppearance {
 				
 			case let .Label(tag):
 				switch tag {
-				case 0:
-					return .smoothPurple
-				case 1:
-					return .lightPurple
-				case 2:
-					return .smoothGray
-				case 3:
-					return .lightRed
-				case 4:
-					return .lightOrange
+				case 0: return .smoothPurple
+				case 1: return .transparentPurple
+				case 2: return .smoothGray
+				case 3: return .lightRed
+				case 4: return .lightOrange
+				case 5: return .lightRed
+				case 6: return .transparentRed
 				default: return UIColor.black
 				}
 			case .Filed, .Image: return .smoothGray

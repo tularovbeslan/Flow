@@ -41,6 +41,7 @@ class CartViewController: UIViewController, CartViewInput {
 	
 	private func setupTableView() {
 		
+		tableView.delegate = self
 		tableView.dataSource = self
 		tableView.tableFooterView = UIView(frame: .zero)
 		tableView.separatorStyle = .none
@@ -80,5 +81,12 @@ extension CartViewController: UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		return tableView.dequeueReusableCell(withIdentifier: String(describing: CartCell.self), for: indexPath)
+	}
+}
+
+extension CartViewController: UITableViewDelegate {
+	
+	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		return UITableViewAutomaticDimension
 	}
 }

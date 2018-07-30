@@ -82,6 +82,7 @@
 		57458F43210BC7610067A53A /* OnboardingFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57458F42210BC7610067A53A /* OnboardingFlow.storyboard */; };
 		57458F46210BDA420067A53A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458F45210BDA420067A53A /* UIColorExtension.swift */; };
 		57458F49210C8BE50067A53A /* ProfileFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57458F48210C8BE50067A53A /* ProfileFlow.storyboard */; };
+		57CE5244210FC2430036CF3F /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5243210FC2430036CF3F /* ProfileCell.swift */; };
 		57CFD79C56A3F5EBEABC0C0E /* PasswordRecoveryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2429D23C1A0CFEBA0AB8F0B /* PasswordRecoveryInteractorTests.swift */; };
 		57F906BE210E669C004D638E /* FeedFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F906BD210E669C004D638E /* FeedFlow.storyboard */; };
 		57F906C0210E707B004D638E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F906BF210E707B004D638E /* CartCell.swift */; };
@@ -298,6 +299,7 @@
 		57458F48210C8BE50067A53A /* ProfileFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileFlow.storyboard; sourceTree = "<group>"; };
 		576DA6AA7BF4BEA017375F23 /* CartCoordinatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartCoordinatorTests.swift; sourceTree = "<group>"; };
 		57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingUpPresenter.swift; sourceTree = "<group>"; };
+		57CE5243210FC2430036CF3F /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		57F906BD210E669C004D638E /* FeedFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedFlow.storyboard; sourceTree = "<group>"; };
 		57F906BF210E707B004D638E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		59D8E9A706A7DB7EB14CE6D9 /* SingInConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingInConfigurator.swift; sourceTree = "<group>"; };
@@ -1534,6 +1536,7 @@
 				6BE66148577BC208478792E2 /* ProductPageViewInput.swift */,
 				3E7CA653AB4E252C5E9A8304 /* ProductPageViewOutput.swift */,
 				4E9905CD4A819F6975FE27C4 /* ProductPageViewController.swift */,
+				57CE5243210FC2430036CF3F /* ProfileCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1996,6 +1999,7 @@
 				CB1917237DEBED66766A1207 /* SingUpInteractorOutput.swift in Sources */,
 				E44CA84946874AD419558F40 /* SingUpInteractor.swift in Sources */,
 				43A4B4241922B7BC4ACEDE3A /* SingUpConfigurator.swift in Sources */,
+				57CE5244210FC2430036CF3F /* ProfileCell.swift in Sources */,
 				206B0CE88364339D9337AC7C /* SingUpInitializer.swift in Sources */,
 				C720BD8E5F32BAA7825E8AD3 /* TermsViewInput.swift in Sources */,
 				C6DA3872E019BC7AB5C7B42B /* TermsViewOutput.swift in Sources */,
