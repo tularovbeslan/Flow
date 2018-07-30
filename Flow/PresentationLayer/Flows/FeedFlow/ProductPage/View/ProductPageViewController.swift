@@ -68,7 +68,7 @@ class ProductPageViewController: UIViewController, ProductPageViewInput {
 			button.backgroundColor = AppAppearance.UI.Button(tag: button.tag).color
 			
 			switch button.tag {
-			case 1:
+			case 0:
 				button.setTitle("Back", for: .normal)
 			case 2:
 				button.setTitle("Add to Cart", for: .normal)
