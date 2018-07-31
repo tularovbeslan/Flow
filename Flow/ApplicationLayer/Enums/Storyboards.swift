@@ -1,5 +1,5 @@
 //
-//  BaseOutput.swift
+//  Storyboards.swift
 //  Flow
 //
 //  Created by workmachine on 31.07.2018.
@@ -8,4 +8,9 @@
 
 import Foundation
 
-protocol BaseOutput: NSObjectProtocol,  Presentable { }
+enum Storyboards: String {
+	case AuthorizationFlow
+	case OnboardingFlow
+	case FeedFlow
+	case ProfileFlow
+}

@@ -1,5 +1,5 @@
 //
-//  BaseOutput.swift
+//  CoordinatorFactoryImp.swift
 //  Flow
 //
 //  Created by workmachine on 31.07.2018.
@@ -7,5 +7,3 @@
 //
 
 import Foundation
-
-protocol BaseOutput: NSObjectProtocol,  Presentable { }

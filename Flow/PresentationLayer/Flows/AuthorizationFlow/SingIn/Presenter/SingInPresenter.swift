@@ -6,11 +6,15 @@
 //  Copyright © 2018 Flow. All rights reserved.
 //
 
-class SingInPresenter: SingInModuleInput, SingInViewOutput, SingInInteractorOutput {
+final class SingInPresenter: SingInModuleInput, SingInViewOutput, SingInInteractorOutput {
 
+	// MARK: - Properties
+	
     weak var view: SingInViewInput!
     var interactor: SingInInteractorInput!
-
+	
+	// MARK: - SingInViewOutput
+	
     func viewIsReady() {
 
     }

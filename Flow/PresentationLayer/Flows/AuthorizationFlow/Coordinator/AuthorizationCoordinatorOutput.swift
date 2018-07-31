@@ -9,5 +9,6 @@
 import Foundation
 
 protocol AuthorizationCoordinatorOutput {
-
+	
+	var finishFlow: (() -> Void)? { get set }
 }

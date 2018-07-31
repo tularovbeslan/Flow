@@ -7,5 +7,7 @@
 //
 
 class AuthorizationCoordinator: AuthorizationCoordinatorOutput {
-
+	
+	var finishFlow: (() -> Void)?
+	
 }

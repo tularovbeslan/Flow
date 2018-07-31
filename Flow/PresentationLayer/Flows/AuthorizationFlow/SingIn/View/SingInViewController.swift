@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SingInViewController: UIViewController, SingInViewInput {
+class SingInViewController: UIViewController, SingInViewInput, BaseOutput {
 
 	// MARK: - Properties
 	
