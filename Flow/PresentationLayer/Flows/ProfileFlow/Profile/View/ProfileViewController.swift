@@ -77,6 +77,7 @@ class ProfileViewController: UIViewController, ProfileViewInput {
 		button.setTitleColor(.white, for: .normal)
 		button.backgroundColor = AppAppearance.UI.Button(tag: button.tag).color
 		button.setTitle("Exit", for: .normal)
+		button.titleLabel?.font = UIFont.avertaCY(style: .semibold, size: 13)
 	}
 	
 	// MARK: - Actions

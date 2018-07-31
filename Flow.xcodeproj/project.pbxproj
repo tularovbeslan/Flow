@@ -86,6 +86,7 @@
 		57CE5246210FD98F0036CF3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5245210FD98F0036CF3F /* User.swift */; };
 		57CE5248210FD9BB0036CF3F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5247210FD9BB0036CF3F /* Product.swift */; };
 		57CE524A210FDC510036CF3F /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5249210FDC510036CF3F /* UIFontExtension.swift */; };
+		57CE524C211082430036CF3F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE524B211082430036CF3F /* FeedCell.swift */; };
 		57CFD79C56A3F5EBEABC0C0E /* PasswordRecoveryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2429D23C1A0CFEBA0AB8F0B /* PasswordRecoveryInteractorTests.swift */; };
 		57F906BE210E669C004D638E /* FeedFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F906BD210E669C004D638E /* FeedFlow.storyboard */; };
 		57F906C0210E707B004D638E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F906BF210E707B004D638E /* CartCell.swift */; };
@@ -306,6 +307,7 @@
 		57CE5245210FD98F0036CF3F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		57CE5247210FD9BB0036CF3F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		57CE5249210FDC510036CF3F /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		57CE524B211082430036CF3F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		57F906BD210E669C004D638E /* FeedFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedFlow.storyboard; sourceTree = "<group>"; };
 		57F906BF210E707B004D638E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		59D8E9A706A7DB7EB14CE6D9 /* SingInConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingInConfigurator.swift; sourceTree = "<group>"; };
@@ -1327,6 +1329,7 @@
 				A186499B390F8E64B90F8A4C /* FeedViewInput.swift */,
 				8AB003EB05D30A8059B87789 /* FeedViewOutput.swift */,
 				2918678F9E9D3ABD4C53D81C /* FeedViewController.swift */,
+				57CE524B211082430036CF3F /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2066,6 +2069,7 @@
 				7120FA65B1D1603C602473BB /* CartViewOutput.swift in Sources */,
 				645AE8EF33DEBA1248D8D70C /* CartViewController.swift in Sources */,
 				5B6FE13CF8AE2EBDB0271CB7 /* CartModuleInput.swift in Sources */,
+				57CE524C211082430036CF3F /* FeedCell.swift in Sources */,
 				8455ABBCE87786224FD6D7A0 /* CartModuleOutput.swift in Sources */,
 				1BA463D86F5746A4CCADD84E /* CartPresenter.swift in Sources */,
 				4B7C0B25BE6DBAADEEB919B9 /* CartInteractorInput.swift in Sources */,
