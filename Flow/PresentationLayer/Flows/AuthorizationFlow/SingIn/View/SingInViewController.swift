@@ -69,7 +69,8 @@ class SingInViewController: UIViewController, SingInViewInput {
 			button.layer.masksToBounds = true
 			button.setTitleColor(.white, for: .normal)
 			button.backgroundColor = AppAppearance.UI.Button(tag: button.tag).color
-
+			button.titleLabel?.font = UIFont.avertaCY(style: .semibold, size: 13)
+			
 			switch button.tag {
 			case 0:
 				button.setTitle("Sing in", for: .normal)

@@ -85,6 +85,7 @@
 		57CE5244210FC2430036CF3F /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5243210FC2430036CF3F /* ProfileCell.swift */; };
 		57CE5246210FD98F0036CF3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5245210FD98F0036CF3F /* User.swift */; };
 		57CE5248210FD9BB0036CF3F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5247210FD9BB0036CF3F /* Product.swift */; };
+		57CE524A210FDC510036CF3F /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5249210FDC510036CF3F /* UIFontExtension.swift */; };
 		57CFD79C56A3F5EBEABC0C0E /* PasswordRecoveryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2429D23C1A0CFEBA0AB8F0B /* PasswordRecoveryInteractorTests.swift */; };
 		57F906BE210E669C004D638E /* FeedFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F906BD210E669C004D638E /* FeedFlow.storyboard */; };
 		57F906C0210E707B004D638E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F906BF210E707B004D638E /* CartCell.swift */; };
@@ -304,6 +305,7 @@
 		57CE5243210FC2430036CF3F /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		57CE5245210FD98F0036CF3F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		57CE5247210FD9BB0036CF3F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		57CE5249210FDC510036CF3F /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		57F906BD210E669C004D638E /* FeedFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedFlow.storyboard; sourceTree = "<group>"; };
 		57F906BF210E707B004D638E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		59D8E9A706A7DB7EB14CE6D9 /* SingInConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingInConfigurator.swift; sourceTree = "<group>"; };
@@ -957,6 +959,7 @@
 			isa = PBXGroup;
 			children = (
 				57458F45210BDA420067A53A /* UIColorExtension.swift */,
+				57CE5249210FDC510036CF3F /* UIFontExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2081,6 +2084,7 @@
 				713A3865AE4AD1BDA0F51B15 /* ChatInteractorOutput.swift in Sources */,
 				145AF7060CF6FB6A0C7E56CA /* ChatInteractor.swift in Sources */,
 				0DA6B6670B3BD0A6F9BBBE02 /* ChatCoordinatorOutput.swift in Sources */,
+				57CE524A210FDC510036CF3F /* UIFontExtension.swift in Sources */,
 				FC468FD7984D3E0E7E0739A9 /* ChatCoordinator.swift in Sources */,
 				8727C763AC06AB741452BA7F /* ChatConfigurator.swift in Sources */,
 				C194CD8CE2D0C0CC77159F9C /* ChatInitializer.swift in Sources */,

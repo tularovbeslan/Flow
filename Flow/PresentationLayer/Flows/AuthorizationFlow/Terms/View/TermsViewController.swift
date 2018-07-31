@@ -58,6 +58,7 @@ class TermsViewController: UIViewController, TermsViewInput {
 		button.setTitleColor(.white, for: .normal)
 		button.backgroundColor = AppAppearance.UI.Button(tag: button.tag).color
 		button.setTitle("Accept", for: .normal)
+		button.titleLabel?.font = UIFont.avertaCY(style: .semibold, size: 13)
 	}
 	
 	private func conformSwitchAppearance() {

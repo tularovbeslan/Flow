@@ -35,6 +35,7 @@ class PasswordRecoveryViewController: UIViewController, PasswordRecoveryViewInpu
     // MARK: - PasswordRecoveryViewInput
 	
     func setupInitialState() {
+		
     }
 	
 	// MARK: - Appearance
@@ -66,6 +67,8 @@ class PasswordRecoveryViewController: UIViewController, PasswordRecoveryViewInpu
 		button.setTitleColor(.white, for: .normal)
 		button.backgroundColor = AppAppearance.UI.Button(tag: button.tag).color
 		button.setTitle("Send", for: .normal)
+		button.titleLabel?.font = UIFont.avertaCY(style: .semibold, size: 13)
+
 	}
 	
 	// MARK: - Actions
