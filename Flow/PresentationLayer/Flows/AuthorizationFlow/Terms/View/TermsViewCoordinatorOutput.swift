@@ -6,9 +6,7 @@
 //  Copyright © 2018 Beslan Tularov Ramazanovich. All rights reserved.
 //
 
-protocol TermsViewCoordinatorOutput: class {
+protocol TermsViewCoordinatorOutput: Presentable {
 	
-	var confirmed: Bool { get set }
-	var onConfirmChanged: ((Bool) -> ())? { get set }
-	var onSignIn: (() -> Void)? { get set }
+	var onAccept: (() -> Void)? { get set }
 }

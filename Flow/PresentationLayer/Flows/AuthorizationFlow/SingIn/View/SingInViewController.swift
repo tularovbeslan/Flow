@@ -25,16 +25,16 @@ class SingInViewController: UIViewController, SingInViewInput, SingInViewCoordin
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-        output.viewIsReady()
-		photoAppearance()
-		fieldsAppearance()
-		buttonsAppearance()
-    } 
+        output.viewDidLoad()
+    }
 
     // MARK: - LoginViewInput
 	
     func setupInitialState() {
 		
+		photoAppearance()
+		fieldsAppearance()
+		buttonsAppearance()
     }
 	
 	// MARK: - SingInViewCoordinatorOutput

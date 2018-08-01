@@ -512,6 +512,7 @@
                         <viewLayoutGuide key="safeArea" id="HlO-4t-nly"/>
                     </view>
                     <connections>
+                        <outlet property="bottomConstraint" destination="Qfo-DE-CLl" id="EBN-fp-rsr"/>
                         <outlet property="button" destination="gaQ-J6-cbq" id="v5t-ta-zZA"/>
                         <outlet property="conformSwitch" destination="a93-uM-093" id="5Ez-NE-Ok4"/>
                         <outletCollection property="labels" destination="qfU-gG-0k1" collectionClass="NSMutableArray" id="H7Z-SJ-bns"/>

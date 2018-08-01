@@ -15,14 +15,21 @@ extension UIViewController {
 	}
 	
 	class func fromStoryboard(_ storyboard: UIStoryboard, identifier: String) -> Self {
-		return fromStoryboard(storyboard, identifier: identifier)
+		return instantiateControllerInStoryboard(storyboard, identifier: identifier)
 	}
 	
 	class func fromStoryboard(_ storyboard: UIStoryboard) -> Self {
-		return fromStoryboard(storyboard, identifier: String(describing: self.self))
+		return fromStoryboard(storyboard, identifier: nameOfClass)
 	}
 	
 	class func fromStoryboard(_ storyboard: Storyboards) -> Self {
-		return fromStoryboard(UIStoryboard(name: storyboard.rawValue, bundle: nil), identifier: String(describing: self.self))
+		return fromStoryboard(UIStoryboard(name: storyboard.rawValue, bundle: nil), identifier: nameOfClass)
+	}
+}
+
+extension NSObject {
+	
+	class var nameOfClass: String {
+		return NSStringFromClass(self).components(separatedBy: ".").last!
 	}
 }

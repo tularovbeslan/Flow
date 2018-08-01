@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AuthorizationCoordinatorOutput {
+protocol AuthorizationCoordinatorOutput: class {
 	
 	var finishFlow: (() -> Void)? { get set }
 }

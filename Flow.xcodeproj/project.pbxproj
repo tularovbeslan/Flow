@@ -98,6 +98,9 @@
 		57CE5266211111CA0036CF3F /* PasswordRecoveryViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5265211111CA0036CF3F /* PasswordRecoveryViewCoordinatorOutput.swift */; };
 		57CE5268211112470036CF3F /* SingUpViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5267211112470036CF3F /* SingUpViewCoordinatorOutput.swift */; };
 		57CE526A211112990036CF3F /* TermsViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5269211112990036CF3F /* TermsViewCoordinatorOutput.swift */; };
+		57CE526C2111EE3B0036CF3F /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE526B2111EE3B0036CF3F /* ApplicationCoordinator.swift */; };
+		57CE5270211240750036CF3F /* FlowNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE526F211240750036CF3F /* FlowNavigationController.swift */; };
+		57CE5272211240B20036CF3F /* FlowNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CE5271211240B20036CF3F /* FlowNavigationController.storyboard */; };
 		57CFD79C56A3F5EBEABC0C0E /* PasswordRecoveryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2429D23C1A0CFEBA0AB8F0B /* PasswordRecoveryInteractorTests.swift */; };
 		57F906BE210E669C004D638E /* FeedFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F906BD210E669C004D638E /* FeedFlow.storyboard */; };
 		57F906C0210E707B004D638E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F906BF210E707B004D638E /* CartCell.swift */; };
@@ -330,6 +333,9 @@
 		57CE5265211111CA0036CF3F /* PasswordRecoveryViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewCoordinatorOutput.swift; sourceTree = "<group>"; };
 		57CE5267211112470036CF3F /* SingUpViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewCoordinatorOutput.swift; sourceTree = "<group>"; };
 		57CE5269211112990036CF3F /* TermsViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewCoordinatorOutput.swift; sourceTree = "<group>"; };
+		57CE526B2111EE3B0036CF3F /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		57CE526F211240750036CF3F /* FlowNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowNavigationController.swift; sourceTree = "<group>"; };
+		57CE5271211240B20036CF3F /* FlowNavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlowNavigationController.storyboard; sourceTree = "<group>"; };
 		57F906BD210E669C004D638E /* FeedFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedFlow.storyboard; sourceTree = "<group>"; };
 		57F906BF210E707B004D638E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		59D8E9A706A7DB7EB14CE6D9 /* SingInConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingInConfigurator.swift; sourceTree = "<group>"; };
@@ -877,6 +883,7 @@
 				57458F38210A952D0067A53A /* AppAppearance */,
 				57458F29210922BC0067A53A /* Protocols */,
 				57458EF12108B81F0067A53A /* AppDelegate.swift */,
+				57CE526B2111EE3B0036CF3F /* ApplicationCoordinator.swift */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -908,6 +915,7 @@
 		57458F232108B8710067A53A /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				57CE526D21123FEE0036CF3F /* ReuseableComponents */,
 				57CE525C211109D40036CF3F /* Routing */,
 				B01C0836D364EE977B57BDF3 /* Flows */,
 			);
@@ -1045,6 +1053,23 @@
 				57CE525F21110A930036CF3F /* RouterImp.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		57CE526D21123FEE0036CF3F /* ReuseableComponents */ = {
+			isa = PBXGroup;
+			children = (
+				57CE526E211240460036CF3F /* FlowNavigationController */,
+			);
+			path = ReuseableComponents;
+			sourceTree = "<group>";
+		};
+		57CE526E211240460036CF3F /* FlowNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				57CE526F211240750036CF3F /* FlowNavigationController.swift */,
+				57CE5271211240B20036CF3F /* FlowNavigationController.storyboard */,
+			);
+			path = FlowNavigationController;
 			sourceTree = "<group>";
 		};
 		57F906BC210E668B004D638E /* Storyboard */ = {
@@ -1968,6 +1993,7 @@
 			files = (
 				57458EFC2108B8240067A53A /* LaunchScreen.storyboard in Resources */,
 				57458EF92108B8240067A53A /* Assets.xcassets in Resources */,
+				57CE5272211240B20036CF3F /* FlowNavigationController.storyboard in Resources */,
 				57458F35210A93840067A53A /* AuthorizationFlow.storyboard in Resources */,
 				57458F49210C8BE50067A53A /* ProfileFlow.storyboard in Resources */,
 				57F906BE210E669C004D638E /* FeedFlow.storyboard in Resources */,
@@ -2082,6 +2108,7 @@
 				E44CA84946874AD419558F40 /* SingUpInteractor.swift in Sources */,
 				43A4B4241922B7BC4ACEDE3A /* SingUpConfigurator.swift in Sources */,
 				57CE5244210FC2430036CF3F /* ProfileCell.swift in Sources */,
+				57CE526C2111EE3B0036CF3F /* ApplicationCoordinator.swift in Sources */,
 				206B0CE88364339D9337AC7C /* SingUpInitializer.swift in Sources */,
 				C720BD8E5F32BAA7825E8AD3 /* TermsViewInput.swift in Sources */,
 				C6DA3872E019BC7AB5C7B42B /* TermsViewOutput.swift in Sources */,
@@ -2164,6 +2191,7 @@
 				57CE524A210FDC510036CF3F /* UIFontExtension.swift in Sources */,
 				FC468FD7984D3E0E7E0739A9 /* ChatCoordinator.swift in Sources */,
 				8727C763AC06AB741452BA7F /* ChatConfigurator.swift in Sources */,
+				57CE5270211240750036CF3F /* FlowNavigationController.swift in Sources */,
 				C194CD8CE2D0C0CC77159F9C /* ChatInitializer.swift in Sources */,
 				57CE52592110FE870036CF3F /* UIViewControllerExtension.swift in Sources */,
 				57CE526A211112990036CF3F /* TermsViewCoordinatorOutput.swift in Sources */,

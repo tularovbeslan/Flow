@@ -12,9 +12,9 @@ class SingUpPresenter: SingUpModuleInput, SingUpViewOutput, SingUpInteractorOutp
 	weak var coordinator: SingUpViewCoordinatorOutput!
     var interactor: SingUpInteractorInput!
 
-    func viewIsReady() {
-
-    }
+	func viewDidLoad() {
+		view.setupInitialState()
+	}
 	
 	func onSingInTap() {
 		coordinator.onSignIn?()

@@ -8,6 +8,6 @@
 
 protocol PasswordRecoveryViewOutput {
 
-    func viewIsReady()
+    func viewDidLoad()
 	func onSendTap()
 }

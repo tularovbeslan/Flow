@@ -6,7 +6,7 @@
 //  Copyright © 2018 Beslan Tularov Ramazanovich. All rights reserved.
 //
 
-protocol SingUpViewCoordinatorOutput: class {
+protocol SingUpViewCoordinatorOutput: Presentable {
 
 	var onSignIn: (() -> Void)? { get set }
 	var onSignUp: (() -> Void)? { get set }

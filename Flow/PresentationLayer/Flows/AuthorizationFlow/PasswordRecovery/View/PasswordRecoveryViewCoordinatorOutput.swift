@@ -6,7 +6,7 @@
 //  Copyright © 2018 Beslan Tularov Ramazanovich. All rights reserved.
 //
 
-protocol PasswordRecoveryViewCoordinatorOutput: class {
+protocol PasswordRecoveryViewCoordinatorOutput: Presentable {
 	
 	var onSend: (() -> Void)? { get set }
 }

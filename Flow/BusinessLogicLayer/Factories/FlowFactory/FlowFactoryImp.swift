@@ -6,7 +6,7 @@
 //  Copyright © 2018 Beslan Tularov Ramazanovich. All rights reserved.
 //
 
-import Foundation
+import UIKit.UIViewController
 
 class FlowFactoryImp: AuthorizationFlowFactory {
 	

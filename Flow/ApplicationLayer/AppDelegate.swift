@@ -12,11 +12,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-
+	var rootController: UINavigationController {
+		return self.window!.rootViewController as! UINavigationController
+	}
+	private lazy var applicationCoordinator: Coordinator = self.produceApplicationCoordinator()
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+
+		applicationCoordinator.start()
 		return true
+	}
+	
+	private func produceApplicationCoordinator() -> Coordinator {
+		let router = RouterImp(rootController: self.rootController)
+		let coordinatorFactory = CoordinatorFactoryImp()
+		let flowCoordinator = FlowFactoryImp()
+		
+		return ApplicationCoordinator(router: router,
+									  coordinatorFactory: coordinatorFactory,
+									  flowFactory: flowCoordinator)
 	}
 
 	func applicationWillResignActive(_ application: UIApplication) {

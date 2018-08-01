@@ -8,8 +8,6 @@
 
 protocol TermsViewOutput {
 
-    func viewIsReady()
-	func onConformChanged(_ value: Bool)
+	func viewDidLoad()
 	func onAcceptTap()
-
 }

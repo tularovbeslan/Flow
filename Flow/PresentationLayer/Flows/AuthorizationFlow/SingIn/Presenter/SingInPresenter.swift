@@ -16,9 +16,9 @@ final class SingInPresenter: SingInModuleInput, SingInViewOutput, SingInInteract
 	
 	// MARK: - SingInViewOutput
 	
-    func viewIsReady() {
-
-    }
+	func viewDidLoad() {
+		view.setupInitialState()
+	}
 	
 	func onSungInTap() {
 		coordinator.onSignIn?()

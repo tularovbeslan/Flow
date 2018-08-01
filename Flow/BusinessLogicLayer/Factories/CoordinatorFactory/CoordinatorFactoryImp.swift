@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class CoordinatorFactoryImp: CoordinatorFactory {
+	
+	func produceAuthorizationCoordinator(router: Router, flowFactory: AuthorizationFlowFactory) -> Coordinator & AuthorizationCoordinatorOutput {
+		
+		let coordinator = AuthorizationCoordinator(router: router, factory: flowFactory)
+		return coordinator
+	}
+}

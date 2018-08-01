@@ -14,42 +14,44 @@ class TermsViewController: UIViewController, TermsViewInput, TermsViewCoordinato
 	// MARK: - Properties
 
     var output: TermsViewOutput!
-	
+	let bottomConstant: CGFloat = 60
+
 	// MARK: - IBOutlets
 
 	@IBOutlet var labels: [UILabel]!
 	@IBOutlet weak var button: UIButton!
-	@IBOutlet weak var conformSwitch: PWSwitch! {
-		didSet {
-			conformSwitch.on = confirmed
-			button.isEnabled = confirmed
-		}
-	}
+	@IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+	@IBOutlet weak var conformSwitch: PWSwitch!
 
     // MARK: - Life cycle
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-        output.viewIsReady()
-		labelsAppearance()
-		buttonAppearance()
-		conformSwitchAppearance()
+		output.viewDidLoad()
     }
 
     // MARK: - TermsViewInput
 	
     func setupInitialState() {
 		
+		labelsAppearance()
+		buttonAppearance()
+		conformSwitchAppearance()
     }
 	
 	// MARK: - TermsViewCoordinatorOutput
 	
-	var confirmed: Bool = false
+	var confirmed: Bool = false {
+		
+		didSet {
+			
+			conformSwitch.on = confirmed
+			buttonAnimation()
+		}
+	}
 	
-	var onConfirmChanged: ((Bool) -> ())?
-	
-	var onSignIn: (() -> Void)?
+	var onAccept: (() -> Void)?
 	
 	// MARK: - Appearance
 	
@@ -72,6 +74,7 @@ class TermsViewController: UIViewController, TermsViewInput, TermsViewCoordinato
 		button.backgroundColor = AppAppearance.UI.Button(tag: button.tag).color
 		button.setTitle("Accept", for: .normal)
 		button.titleLabel?.font = UIFont.avertaCY(style: .semibold, size: 13)
+		bottomConstraint.constant = confirmed ? bottomConstant : -bottomConstant
 	}
 	
 	private func conformSwitchAppearance() {
@@ -97,10 +100,25 @@ class TermsViewController: UIViewController, TermsViewInput, TermsViewCoordinato
 		conformSwitch.thumbOffPushBorderColor = .clear
 	}
 	
+	// MARK: - Heplers
+	
+	private func buttonAnimation() {
+		
+		bottomConstraint.constant = confirmed ? bottomConstant : -bottomConstant
+		
+		UIView.animate(withDuration: 0.25,
+					   delay: 0,
+					   options: .curveEaseInOut,
+					   animations: {
+						
+			self.view.layoutIfNeeded()
+		}, completion: nil)
+	}
+	
 	// MARK: - Actions
 	
 	@IBAction func conform(_ sender: PWSwitch) {
-		output.onConformChanged(sender.on)
+		confirmed = sender.on
 	}
 	
 	@IBAction func accept(_ sender: UIButton) {

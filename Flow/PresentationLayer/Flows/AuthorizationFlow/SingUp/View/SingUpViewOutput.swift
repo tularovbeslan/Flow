@@ -8,7 +8,7 @@
 
 protocol SingUpViewOutput {
 	
-    func viewIsReady()
+    func viewDidLoad()
 	func onSingInTap()
 	func onSingUpTap()
 	func onTermsTap()

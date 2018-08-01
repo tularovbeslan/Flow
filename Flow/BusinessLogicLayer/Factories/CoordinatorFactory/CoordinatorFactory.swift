@@ -8,4 +8,5 @@
 
 protocol CoordinatorFactory {
 	
+	func produceAuthorizationCoordinator(router: Router, flowFactory: AuthorizationFlowFactory) -> Coordinator & AuthorizationCoordinatorOutput
 }

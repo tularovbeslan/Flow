@@ -25,10 +25,7 @@ class PasswordRecoveryViewController: UIViewController, PasswordRecoveryViewInpu
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-        output.viewIsReady()
-		fieldAppearance()
-		labelsAppearance()
-		buttonAppearance()
+        output.viewDidLoad()
     }
 
 
@@ -36,6 +33,9 @@ class PasswordRecoveryViewController: UIViewController, PasswordRecoveryViewInpu
 	
     func setupInitialState() {
 		
+		fieldAppearance()
+		labelsAppearance()
+		buttonAppearance()
     }
 	
 	// MARK: - PasswordRecoveryViewCoordinatorOutput

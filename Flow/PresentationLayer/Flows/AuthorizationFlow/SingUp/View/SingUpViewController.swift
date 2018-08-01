@@ -25,10 +25,7 @@ class SingUpViewController: UIViewController, SingUpViewInput, SingUpViewCoordin
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-        output.viewIsReady()
-		labelsAppearance()
-		fieldsAppearance()
-		buttonsAppearance()
+        output.viewDidLoad()
     }
 
 
@@ -36,6 +33,9 @@ class SingUpViewController: UIViewController, SingUpViewInput, SingUpViewCoordin
 	
     func setupInitialState() {
 		
+		labelsAppearance()
+		fieldsAppearance()
+		buttonsAppearance()
     }
 	
 	// MARK: - SingUpViewCoordinatorOutput
