@@ -9,4 +9,7 @@
 protocol SingInViewOutput {
 
     func viewIsReady()
+	func onSungInTap()
+	func onSungUnTap()
+	func onPasswordRecoveryTap()
 }

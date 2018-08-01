@@ -21,6 +21,7 @@ class SingUpModuleConfigurator {
 
         let presenter = SingUpPresenter()
         presenter.view = viewController
+		presenter.coordinator = viewController
 
         let interactor = SingUpInteractor()
         interactor.output = presenter

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SingInViewController: UIViewController, SingInViewInput, BaseOutput {
+class SingInViewController: UIViewController, SingInViewInput, SingInViewCoordinatorOutput {
 
 	// MARK: - Properties
 	
@@ -29,14 +29,21 @@ class SingInViewController: UIViewController, SingInViewInput, BaseOutput {
 		photoAppearance()
 		fieldsAppearance()
 		buttonsAppearance()
-    }
-
+    } 
 
     // MARK: - LoginViewInput
 	
     func setupInitialState() {
 		
     }
+	
+	// MARK: - SingInViewCoordinatorOutput
+	
+	var onSignIn: (() -> Void)?
+	
+	var onSignUp: (() -> Void)?
+	
+	var onPasswordRecovery: (() -> Void)?
 	
 	// MARK: - Appearance
 	
@@ -88,19 +95,16 @@ class SingInViewController: UIViewController, SingInViewInput, BaseOutput {
 	
 	@IBAction func singIn(_ sender: UIButton) {
 		
-		let storyboard = UIStoryboard(name: "OnboardingFlow", bundle: nil)
-		let vc = storyboard.instantiateViewController(withIdentifier: String(describing: OnboardingViewController.self))
-		present(vc, animated: true, completion: nil)
+		output.onSungInTap()
 	}
 	
 	@IBAction func forgot(_ sender: UIButton) {
 		
-		let vc = storyboard!.instantiateViewController(withIdentifier: String(describing: PasswordRecoveryViewController.self))
-		present(vc, animated: true, completion: nil)
+		output.onPasswordRecoveryTap()
 	}
 	
 	@IBAction func singUp(_ sender: UIButton) {
-		let vc = storyboard!.instantiateViewController(withIdentifier: String(describing: SingUpViewController.self))
-		present(vc, animated: true, completion: nil)
+		
+		output.onSungUnTap()
 	}
 }

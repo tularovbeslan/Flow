@@ -21,6 +21,7 @@ class TermsModuleConfigurator {
 
         let presenter = TermsPresenter()
         presenter.view = viewController
+		presenter.coordinator = viewController
 
         let interactor = TermsInteractor()
         interactor.output = presenter

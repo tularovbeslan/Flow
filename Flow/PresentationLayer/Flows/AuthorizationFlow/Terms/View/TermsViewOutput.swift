@@ -8,10 +8,8 @@
 
 protocol TermsViewOutput {
 
-    /**
-        @author Beslan Tularov
-        Notify presenter that view is ready
-    */
-
     func viewIsReady()
+	func onConformChanged(_ value: Bool)
+	func onAcceptTap()
+
 }

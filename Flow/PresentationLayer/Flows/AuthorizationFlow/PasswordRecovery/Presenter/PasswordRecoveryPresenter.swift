@@ -9,9 +9,14 @@
 class PasswordRecoveryPresenter: PasswordRecoveryModuleInput, PasswordRecoveryViewOutput, PasswordRecoveryInteractorOutput {
 
     weak var view: PasswordRecoveryViewInput!
+	weak var coordinator: PasswordRecoveryViewCoordinatorOutput!
     var interactor: PasswordRecoveryInteractorInput!
 
     func viewIsReady() {
 
     }
+	
+	func onSendTap() {
+		coordinator.onSend?()
+	}
 }

@@ -7,11 +7,9 @@
 //
 
 protocol SingUpViewOutput {
-
-    /**
-        @author Beslan Tularov
-        Notify presenter that view is ready
-    */
-
+	
     func viewIsReady()
+	func onSingInTap()
+	func onSingUpTap()
+	func onTermsTap()
 }

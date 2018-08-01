@@ -10,19 +10,19 @@ import Foundation
 
 class FlowFactoryImp: AuthorizationFlowFactory {
 	
-	func produceSingInOutput() -> SingInViewInput {
+	func produceSingInOutput() -> SingInViewCoordinatorOutput {
 		return SingInViewController.fromStoryboard(.AuthorizationFlow)
 	}
 	
-	func produceSignUpOutput() -> SingUpViewInput {
+	func produceSignUpOutput() -> SingUpViewCoordinatorOutput {
 		return SingUpViewController.fromStoryboard(.AuthorizationFlow)
 	}
 	
-	func producePasswordRecoveryOutput() -> PasswordRecoveryViewInput {
+	func producePasswordRecoveryOutput() -> PasswordRecoveryViewCoordinatorOutput {
 		return PasswordRecoveryViewController.fromStoryboard(.AuthorizationFlow)
 	}
 	
-	func produceTermsOutput() -> TermsViewInput {
+	func produceTermsOutput() -> TermsViewCoordinatorOutput {
 		return TermsViewController.fromStoryboard(.AuthorizationFlow)
 	}
 }

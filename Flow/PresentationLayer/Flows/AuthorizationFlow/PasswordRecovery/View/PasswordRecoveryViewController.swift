@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PasswordRecoveryViewController: UIViewController, PasswordRecoveryViewInput {
+class PasswordRecoveryViewController: UIViewController, PasswordRecoveryViewInput, PasswordRecoveryViewCoordinatorOutput {
 
 	// MARK: - Properties
 	
@@ -37,6 +37,10 @@ class PasswordRecoveryViewController: UIViewController, PasswordRecoveryViewInpu
     func setupInitialState() {
 		
     }
+	
+	// MARK: - PasswordRecoveryViewCoordinatorOutput
+	
+	var onSend: (() -> Void)?
 	
 	// MARK: - Appearance
 	
@@ -74,7 +78,8 @@ class PasswordRecoveryViewController: UIViewController, PasswordRecoveryViewInpu
 	// MARK: - Actions
 	
 	@IBAction func send(_ sender: UIButton) {
-		dismiss(animated: true, completion: nil)
+		
+		output.onSendTap()
 	}
 	
 }

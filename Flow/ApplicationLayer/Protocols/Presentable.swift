@@ -8,7 +8,7 @@
 
 import UIKit.UIViewController
 
-protocol Presentable {
+protocol Presentable: class {
 	
 	func toPresent() -> UIViewController?
 }

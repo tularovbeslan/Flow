@@ -89,11 +89,15 @@
 		57CE524F2110E6E10036CF3F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE524E2110E6E10036CF3F /* Storyboards.swift */; };
 		57CE52532110EAE70036CF3F /* CoordinatorFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE52522110EAE70036CF3F /* CoordinatorFactoryImp.swift */; };
 		57CE52552110EFDA0036CF3F /* AuthorizationFlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE52542110EFDA0036CF3F /* AuthorizationFlowFactory.swift */; };
-		57CE52572110F86E0036CF3F /* BaseOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE52562110F86E0036CF3F /* BaseOutput.swift */; };
 		57CE52592110FE870036CF3F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE52582110FE870036CF3F /* UIViewControllerExtension.swift */; };
 		57CE525B2110FFF40036CF3F /* FlowFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE525A2110FFF40036CF3F /* FlowFactoryImp.swift */; };
 		57CE525E21110A7E0036CF3F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE525D21110A7E0036CF3F /* Router.swift */; };
 		57CE526021110A930036CF3F /* RouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE525F21110A930036CF3F /* RouterImp.swift */; };
+		57CE526221110DAD0036CF3F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE526121110DAD0036CF3F /* BaseCoordinator.swift */; };
+		57CE5264211110780036CF3F /* SingInViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5263211110780036CF3F /* SingInViewCoordinatorOutput.swift */; };
+		57CE5266211111CA0036CF3F /* PasswordRecoveryViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5265211111CA0036CF3F /* PasswordRecoveryViewCoordinatorOutput.swift */; };
+		57CE5268211112470036CF3F /* SingUpViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5267211112470036CF3F /* SingUpViewCoordinatorOutput.swift */; };
+		57CE526A211112990036CF3F /* TermsViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5269211112990036CF3F /* TermsViewCoordinatorOutput.swift */; };
 		57CFD79C56A3F5EBEABC0C0E /* PasswordRecoveryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2429D23C1A0CFEBA0AB8F0B /* PasswordRecoveryInteractorTests.swift */; };
 		57F906BE210E669C004D638E /* FeedFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F906BD210E669C004D638E /* FeedFlow.storyboard */; };
 		57F906C0210E707B004D638E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F906BF210E707B004D638E /* CartCell.swift */; };
@@ -317,11 +321,15 @@
 		57CE524E2110E6E10036CF3F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		57CE52522110EAE70036CF3F /* CoordinatorFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImp.swift; sourceTree = "<group>"; };
 		57CE52542110EFDA0036CF3F /* AuthorizationFlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationFlowFactory.swift; sourceTree = "<group>"; };
-		57CE52562110F86E0036CF3F /* BaseOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOutput.swift; sourceTree = "<group>"; };
 		57CE52582110FE870036CF3F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		57CE525A2110FFF40036CF3F /* FlowFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowFactoryImp.swift; sourceTree = "<group>"; };
 		57CE525D21110A7E0036CF3F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		57CE525F21110A930036CF3F /* RouterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterImp.swift; sourceTree = "<group>"; };
+		57CE526121110DAD0036CF3F /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		57CE5263211110780036CF3F /* SingInViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInViewCoordinatorOutput.swift; sourceTree = "<group>"; };
+		57CE5265211111CA0036CF3F /* PasswordRecoveryViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewCoordinatorOutput.swift; sourceTree = "<group>"; };
+		57CE5267211112470036CF3F /* SingUpViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewCoordinatorOutput.swift; sourceTree = "<group>"; };
+		57CE5269211112990036CF3F /* TermsViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewCoordinatorOutput.swift; sourceTree = "<group>"; };
 		57F906BD210E669C004D638E /* FeedFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedFlow.storyboard; sourceTree = "<group>"; };
 		57F906BF210E707B004D638E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		59D8E9A706A7DB7EB14CE6D9 /* SingInConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingInConfigurator.swift; sourceTree = "<group>"; };
@@ -484,6 +492,7 @@
 			children = (
 				A98985637F33149EBFC80939 /* SingInViewInput.swift */,
 				836493050ED8E05BC9316218 /* SingInViewOutput.swift */,
+				57CE5263211110780036CF3F /* SingInViewCoordinatorOutput.swift */,
 				D0E6E42C54E997CC956B6AE9 /* SingInViewController.swift */,
 			);
 			path = View;
@@ -519,6 +528,7 @@
 			children = (
 				DB3625517ACE0DEC0A85F463 /* TermsViewInput.swift */,
 				79B4AD8F216CB4F70F04DB45 /* TermsViewOutput.swift */,
+				57CE5269211112990036CF3F /* TermsViewCoordinatorOutput.swift */,
 				C0A08BF6ADEEDB7477A1BE5C /* TermsViewController.swift */,
 			);
 			path = View;
@@ -924,7 +934,7 @@
 		57458F262109227B0067A53A /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				57CE52512110EA930036CF3F /* ModuleFactory */,
+				57CE52512110EA930036CF3F /* FlowFactory */,
 				57CE52502110E8830036CF3F /* CoordinatorFactory */,
 			);
 			path = Factories;
@@ -935,8 +945,8 @@
 			children = (
 				57458F2A210922D40067A53A /* Coordinator.swift */,
 				57458F2C210923400067A53A /* DeepLinkOption.swift */,
-				57CE52562110F86E0036CF3F /* BaseOutput.swift */,
 				57458F302109251E0067A53A /* Presentable.swift */,
+				57CE526121110DAD0036CF3F /* BaseCoordinator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -952,8 +962,8 @@
 		57458F3B210BA80B0067A53A /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				57458F3E210BA86C0067A53A /* AuthorizationCoordinator.swift */,
 				57458F3D210BA86C0067A53A /* AuthorizationCoordinatorOutput.swift */,
+				57458F3E210BA86C0067A53A /* AuthorizationCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -1019,13 +1029,13 @@
 			path = CoordinatorFactory;
 			sourceTree = "<group>";
 		};
-		57CE52512110EA930036CF3F /* ModuleFactory */ = {
+		57CE52512110EA930036CF3F /* FlowFactory */ = {
 			isa = PBXGroup;
 			children = (
 				57CE52542110EFDA0036CF3F /* AuthorizationFlowFactory.swift */,
 				57CE525A2110FFF40036CF3F /* FlowFactoryImp.swift */,
 			);
-			path = ModuleFactory;
+			path = FlowFactory;
 			sourceTree = "<group>";
 		};
 		57CE525C211109D40036CF3F /* Routing */ = {
@@ -1278,6 +1288,7 @@
 			children = (
 				7148994A9B3112EC24A75398 /* PasswordRecoveryViewInput.swift */,
 				190E1C6225FFBBA9BEE81B5E /* PasswordRecoveryViewOutput.swift */,
+				57CE5265211111CA0036CF3F /* PasswordRecoveryViewCoordinatorOutput.swift */,
 				A9BACFD13C1D4B08A76BA1BB /* PasswordRecoveryViewController.swift */,
 			);
 			path = View;
@@ -1590,6 +1601,7 @@
 			children = (
 				49A56D82329C93EFEF4BEFD0 /* SingUpViewInput.swift */,
 				36305D61EFCA9FCDB0ED3F3D /* SingUpViewOutput.swift */,
+				57CE5267211112470036CF3F /* SingUpViewCoordinatorOutput.swift */,
 				F42B36713113989AEC7B2B4F /* SingUpViewController.swift */,
 			);
 			path = View;
@@ -2033,6 +2045,7 @@
 				57CE5248210FD9BB0036CF3F /* Product.swift in Sources */,
 				57CE526021110A930036CF3F /* RouterImp.swift in Sources */,
 				57458F312109251E0067A53A /* Presentable.swift in Sources */,
+				57CE5264211110780036CF3F /* SingInViewCoordinatorOutput.swift in Sources */,
 				290AEAE3426E0D478CB87503 /* PasswordRecoveryViewInput.swift in Sources */,
 				57F906C0210E707B004D638E /* CartCell.swift in Sources */,
 				C6A59FFE9A992A5519C63DB7 /* PasswordRecoveryViewOutput.swift in Sources */,
@@ -2059,6 +2072,7 @@
 				BA4402508C0A091D09D5CE95 /* SingInInitializer.swift in Sources */,
 				233DFE1F2B7CBD5D38BA4E25 /* SingUpViewInput.swift in Sources */,
 				780EDF95CC9DBC3E8C0C3C7C /* SingUpViewOutput.swift in Sources */,
+				57CE526221110DAD0036CF3F /* BaseCoordinator.swift in Sources */,
 				7BE7EA8ED886383EBE185C0C /* SingUpViewController.swift in Sources */,
 				3BE40ECB0B4E300552B504A7 /* SingUpModuleInput.swift in Sources */,
 				C7A2CBB3DE5F5C46D5EB15CD /* SingUpModuleOutput.swift in Sources */,
@@ -2067,7 +2081,6 @@
 				CB1917237DEBED66766A1207 /* SingUpInteractorOutput.swift in Sources */,
 				E44CA84946874AD419558F40 /* SingUpInteractor.swift in Sources */,
 				43A4B4241922B7BC4ACEDE3A /* SingUpConfigurator.swift in Sources */,
-				57CE52572110F86E0036CF3F /* BaseOutput.swift in Sources */,
 				57CE5244210FC2430036CF3F /* ProfileCell.swift in Sources */,
 				206B0CE88364339D9337AC7C /* SingUpInitializer.swift in Sources */,
 				C720BD8E5F32BAA7825E8AD3 /* TermsViewInput.swift in Sources */,
@@ -2077,6 +2090,7 @@
 				42FE03494F96313D31BDF3CD /* TermsModuleOutput.swift in Sources */,
 				57458F3A210A953E0067A53A /* AppAppearance.swift in Sources */,
 				F1D587F74F38C76F650ADC0D /* TermsPresenter.swift in Sources */,
+				57CE5266211111CA0036CF3F /* PasswordRecoveryViewCoordinatorOutput.swift in Sources */,
 				A516C8F3A5F8859DC9333C1A /* TermsInteractorInput.swift in Sources */,
 				57CE525E21110A7E0036CF3F /* Router.swift in Sources */,
 				56BA9B50F7D9995DEC9DBAA0 /* TermsInteractorOutput.swift in Sources */,
@@ -2093,6 +2107,7 @@
 				57CE524F2110E6E10036CF3F /* Storyboards.swift in Sources */,
 				1AC82B4FFA9072941165EF04 /* OnboardingInteractorOutput.swift in Sources */,
 				8042FE25337727DCD35EB8FF /* OnboardingInteractor.swift in Sources */,
+				57CE5268211112470036CF3F /* SingUpViewCoordinatorOutput.swift in Sources */,
 				DB0E0266DE6C92800F4AE141 /* OnboardingCoordinatorOutput.swift in Sources */,
 				4E089A4CF3FBBE171EA3BB49 /* OnboardingCoordinator.swift in Sources */,
 				AAD6730485590B51FF70F30D /* OnboardingConfigurator.swift in Sources */,
@@ -2151,6 +2166,7 @@
 				8727C763AC06AB741452BA7F /* ChatConfigurator.swift in Sources */,
 				C194CD8CE2D0C0CC77159F9C /* ChatInitializer.swift in Sources */,
 				57CE52592110FE870036CF3F /* UIViewControllerExtension.swift in Sources */,
+				57CE526A211112990036CF3F /* TermsViewCoordinatorOutput.swift in Sources */,
 				57458F40210BA86C0067A53A /* AuthorizationCoordinator.swift in Sources */,
 				13AA238DB51B72B4A7670329 /* ProfileViewInput.swift in Sources */,
 				1CDDF4A5A5FD063EEDBC9D1E /* ProfileViewOutput.swift in Sources */,

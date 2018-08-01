@@ -9,7 +9,7 @@
 import UIKit
 import PWSwitch
 
-class TermsViewController: UIViewController, TermsViewInput {
+class TermsViewController: UIViewController, TermsViewInput, TermsViewCoordinatorOutput {
 
 	// MARK: - Properties
 
@@ -19,7 +19,12 @@ class TermsViewController: UIViewController, TermsViewInput {
 
 	@IBOutlet var labels: [UILabel]!
 	@IBOutlet weak var button: UIButton!
-	@IBOutlet weak var conformSwitch: PWSwitch!
+	@IBOutlet weak var conformSwitch: PWSwitch! {
+		didSet {
+			conformSwitch.on = confirmed
+			button.isEnabled = confirmed
+		}
+	}
 
     // MARK: - Life cycle
 	
@@ -37,6 +42,14 @@ class TermsViewController: UIViewController, TermsViewInput {
     func setupInitialState() {
 		
     }
+	
+	// MARK: - TermsViewCoordinatorOutput
+	
+	var confirmed: Bool = false
+	
+	var onConfirmChanged: ((Bool) -> ())?
+	
+	var onSignIn: (() -> Void)?
 	
 	// MARK: - Appearance
 	
@@ -87,10 +100,10 @@ class TermsViewController: UIViewController, TermsViewInput {
 	// MARK: - Actions
 	
 	@IBAction func conform(_ sender: PWSwitch) {
-		
+		output.onConformChanged(sender.on)
 	}
 	
 	@IBAction func accept(_ sender: UIButton) {
-		dismiss(animated: true, completion: nil)
+		output.onAcceptTap()
 	}
 }

@@ -10,6 +10,7 @@ final class SingInPresenter: SingInModuleInput, SingInViewOutput, SingInInteract
 
 	// MARK: - Properties
 	
+	weak var coordinator: SingInViewCoordinatorOutput!
     weak var view: SingInViewInput!
     var interactor: SingInInteractorInput!
 	
@@ -18,4 +19,16 @@ final class SingInPresenter: SingInModuleInput, SingInViewOutput, SingInInteract
     func viewIsReady() {
 
     }
+	
+	func onSungInTap() {
+		coordinator.onSignIn?()
+	}
+	
+	func onSungUnTap() {
+		coordinator.onSignUp?()
+	}
+	
+	func onPasswordRecoveryTap() {
+		coordinator.onPasswordRecovery?()
+	}
 }

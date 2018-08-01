@@ -21,7 +21,8 @@ class SingInModuleConfigurator {
 
         let presenter = SingInPresenter()
         presenter.view = viewController
-
+		presenter.coordinator = viewController
+		
         let interactor = SingInInteractor()
         interactor.output = presenter
 

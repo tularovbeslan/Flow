@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SingUpViewController: UIViewController, SingUpViewInput {
-
+class SingUpViewController: UIViewController, SingUpViewInput, SingUpViewCoordinatorOutput {
+	
 	// MARK: - Properties
 	
     var output: SingUpViewOutput!
@@ -32,11 +32,38 @@ class SingUpViewController: UIViewController, SingUpViewInput {
     }
 
 
-    // MARK: SingUpViewInput
+    // MARK: - SingUpViewInput
 	
     func setupInitialState() {
 		
     }
+	
+	// MARK: - SingUpViewCoordinatorOutput
+	
+	var onSignIn: (() -> Void)?
+	
+	var onSignUp: (() -> Void)?
+	
+	var onTerms: (() -> Void)?
+	
+	var confirmed: Bool = false {
+		didSet {
+			buttons.forEach { (button) in
+				switch button.tag {
+				case 0:
+					button.isEnabled = confirmed
+				case 2:
+					button.isHidden = !confirmed
+				default:
+					break
+				}
+			}
+		}
+	}
+	
+	func conformTermsAgreement(_ agree: Bool) {
+		confirmed = agree
+	}
 	
 	// MARK: - Appearance
 	
@@ -90,17 +117,16 @@ class SingUpViewController: UIViewController, SingUpViewInput {
 	
 	@IBAction func singUp(_ sender: UIButton) {
 		
+		output.onSingUpTap()
 	}
 	
 	@IBAction func singIn(_ sender: UIButton) {
 		
-		dismiss(animated: true, completion: nil)
+		output.onSingInTap()
 	}
 	
 	@IBAction func terms(_ sender: UIButton) {
 		
-		let vc = storyboard!.instantiateViewController(withIdentifier: String(describing: TermsViewController.self))
-		present(vc, animated: true, completion: nil)
-
+		output.onTermsTap()
 	}
 }

@@ -9,9 +9,18 @@
 class TermsPresenter: TermsModuleInput, TermsViewOutput, TermsInteractorOutput {
 
     weak var view: TermsViewInput!
+	weak var coordinator: TermsViewCoordinatorOutput!
     var interactor: TermsInteractorInput!
 
     func viewIsReady() {
 
     }
+	
+	func onConformChanged(_ value: Bool) {
+		coordinator.onConfirmChanged?(value)
+	}
+	
+	func onAcceptTap() {
+		coordinator.onSignIn?()
+	}
 }

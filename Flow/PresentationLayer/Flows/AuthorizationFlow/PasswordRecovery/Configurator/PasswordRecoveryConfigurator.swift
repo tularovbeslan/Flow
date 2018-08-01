@@ -21,7 +21,8 @@ class PasswordRecoveryModuleConfigurator {
 
         let presenter = PasswordRecoveryPresenter()
         presenter.view = viewController
-
+		presenter.coordinator = viewController
+		
         let interactor = PasswordRecoveryInteractor()
         interactor.output = presenter
 

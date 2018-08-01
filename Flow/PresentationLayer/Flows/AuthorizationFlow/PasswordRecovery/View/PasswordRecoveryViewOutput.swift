@@ -9,4 +9,5 @@
 protocol PasswordRecoveryViewOutput {
 
     func viewIsReady()
+	func onSendTap()
 }

@@ -8,5 +8,6 @@
 
 protocol SingInViewInput: class {
 
+	
 	func setupInitialState()
 }
