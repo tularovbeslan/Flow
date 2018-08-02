@@ -9,6 +9,7 @@
 import Foundation
 
 protocol AuthorizationFlowFactory {
+	
 	func produceSingInOutput() -> SingInViewCoordinatorOutput
 	func produceSignUpOutput() -> SingUpViewCoordinatorOutput
 	func producePasswordRecoveryOutput() -> PasswordRecoveryViewCoordinatorOutput

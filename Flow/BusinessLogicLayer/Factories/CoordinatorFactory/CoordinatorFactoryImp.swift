@@ -15,4 +15,10 @@ class CoordinatorFactoryImp: CoordinatorFactory {
 		let coordinator = AuthorizationCoordinator(router: router, factory: flowFactory)
 		return coordinator
 	}
+	
+	func produceOnboardingCoordinator(router: Router, flowFactory: OnboardingFlowFactory) -> Coordinator & OnboardingCoordinatorOutput {
+		
+		let coordinator = OnboardingCoordinator(router: router, factory: flowFactory)
+		return coordinator
+	}
 }

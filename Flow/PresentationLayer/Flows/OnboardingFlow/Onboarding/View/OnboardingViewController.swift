@@ -9,7 +9,7 @@
 import UIKit
 import FSPagerView
 
-class OnboardingViewController: UIViewController, OnboardingViewInput {
+class OnboardingViewController: UIViewController, OnboardingViewInput, OnboardingViewCoordinatorOutput {
 
 	// MARK: - Properties
 
@@ -33,18 +33,23 @@ class OnboardingViewController: UIViewController, OnboardingViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-        output.viewIsReady()
+        output.viewDidLoad()
+    }
+
+
+    // MARK: - OnboardingViewInput
+	
+    func setupInitialState() {
+		
 		labelsAppearance()
 		buttonAppearance()
 		setupPager()
 		setupPageControl()
     }
-
-
-    // MARK: - OnboardingViewInput
-    func setupInitialState() {
-		
-    }
+	
+	// MARK: - OnboardingViewCoordinatorOutput
+	
+	var onNext: (() -> Void)?
 	
 	// MARK: - Appearance
 	
@@ -94,10 +99,7 @@ class OnboardingViewController: UIViewController, OnboardingViewInput {
 	// MARK: - Actions
 	
 	@IBAction func next(_ sender: UIButton) {
-		
-		let storyboard = UIStoryboard(name: "ProfileFlow", bundle: nil)
-		let vc = storyboard.instantiateViewController(withIdentifier: String(describing: ProfileViewController.self))
-		present(vc, animated: true, completion: nil)
+		output.onNextTap()
 	}
 }
 
@@ -125,18 +127,16 @@ extension OnboardingViewController: FSPagerViewDelegate {
 	
 	func pagerViewDidScroll(_ pagerView: FSPagerView) {
 		
-		guard self.pageControl.currentPage != pagerView.currentIndex else {
-			return
-		}
+		guard self.pageControl.currentPage != pagerView.currentIndex else { return }
 		self.pageControl.currentPage = pagerView.currentIndex
-		
+		bottomConstraint.constant = pagerView.currentIndex == (self.numberOfItems - 1) ? 60 : -60
+
 		UIView.animate(withDuration: 0.25,
 					   delay: 0,
 					   usingSpringWithDamping: 4,
 					   initialSpringVelocity: 4,
 					   options: .curveEaseInOut,
 					   animations: {
-			self.bottomConstraint.constant = pagerView.currentIndex == (self.numberOfItems - 1) ? 60 : -60
 			self.view.layoutIfNeeded()
 		}, completion: nil)
 	}

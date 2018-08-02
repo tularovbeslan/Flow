@@ -8,7 +8,7 @@
 
 import UIKit.UIViewController
 
-class FlowFactoryImp: AuthorizationFlowFactory {
+class FlowFactoryImp: AuthorizationFlowFactory, OnboardingFlowFactory {
 	
 	func produceSingInOutput() -> SingInViewCoordinatorOutput {
 		return SingInViewController.fromStoryboard(.AuthorizationFlow)
@@ -24,5 +24,9 @@ class FlowFactoryImp: AuthorizationFlowFactory {
 	
 	func produceTermsOutput() -> TermsViewCoordinatorOutput {
 		return TermsViewController.fromStoryboard(.AuthorizationFlow)
+	}
+	
+	func produceOnboardingOutput() -> OnboardingViewCoordinatorOutput {
+		return OnboardingViewController.fromStoryboard(.OnboardingFlow)
 	}
 }

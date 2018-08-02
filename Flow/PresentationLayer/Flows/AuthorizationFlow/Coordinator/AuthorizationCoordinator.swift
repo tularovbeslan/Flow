@@ -14,7 +14,6 @@ class AuthorizationCoordinator: BaseCoordinator , AuthorizationCoordinatorOutput
 	
 	private let factory: AuthorizationFlowFactory
 	private let router: Router
-	private weak var singUpOutput: SingUpViewCoordinatorOutput?
 	
 	init(router: Router, factory: AuthorizationFlowFactory) {
 		
@@ -50,16 +49,16 @@ class AuthorizationCoordinator: BaseCoordinator , AuthorizationCoordinatorOutput
 	
 	private func showSingUp() {
 		
-		singUpOutput = factory.produceSignUpOutput()
-		singUpOutput?.onSignUp = { [weak self] in
+		let singUpOutput = factory.produceSignUpOutput()
+		singUpOutput.onSignUp = { [weak self] in
 			self?.finishFlow?()
 		}
 		
-		singUpOutput?.onTerms = { [weak self] in
+		singUpOutput.onTerms = { [weak self] in
 			self?.showTerms()
 		}
 		
-		singUpOutput?.onSignIn = { [weak self] in
+		singUpOutput.onSignIn = { [weak self] in
 			self?.router.popModule()
 		}
 		

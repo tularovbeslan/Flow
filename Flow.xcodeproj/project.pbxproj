@@ -101,6 +101,8 @@
 		57CE526C2111EE3B0036CF3F /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE526B2111EE3B0036CF3F /* ApplicationCoordinator.swift */; };
 		57CE5270211240750036CF3F /* FlowNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE526F211240750036CF3F /* FlowNavigationController.swift */; };
 		57CE5272211240B20036CF3F /* FlowNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CE5271211240B20036CF3F /* FlowNavigationController.storyboard */; };
+		57CE5274211302AA0036CF3F /* OnboardingFlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5273211302AA0036CF3F /* OnboardingFlowFactory.swift */; };
+		57CE52762113035C0036CF3F /* OnboardingViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE52752113035C0036CF3F /* OnboardingViewCoordinatorOutput.swift */; };
 		57CFD79C56A3F5EBEABC0C0E /* PasswordRecoveryInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2429D23C1A0CFEBA0AB8F0B /* PasswordRecoveryInteractorTests.swift */; };
 		57F906BE210E669C004D638E /* FeedFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F906BD210E669C004D638E /* FeedFlow.storyboard */; };
 		57F906C0210E707B004D638E /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F906BF210E707B004D638E /* CartCell.swift */; };
@@ -336,6 +338,8 @@
 		57CE526B2111EE3B0036CF3F /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		57CE526F211240750036CF3F /* FlowNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowNavigationController.swift; sourceTree = "<group>"; };
 		57CE5271211240B20036CF3F /* FlowNavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlowNavigationController.storyboard; sourceTree = "<group>"; };
+		57CE5273211302AA0036CF3F /* OnboardingFlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowFactory.swift; sourceTree = "<group>"; };
+		57CE52752113035C0036CF3F /* OnboardingViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCoordinatorOutput.swift; sourceTree = "<group>"; };
 		57F906BD210E669C004D638E /* FeedFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedFlow.storyboard; sourceTree = "<group>"; };
 		57F906BF210E707B004D638E /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		59D8E9A706A7DB7EB14CE6D9 /* SingInConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingInConfigurator.swift; sourceTree = "<group>"; };
@@ -1015,6 +1019,7 @@
 			children = (
 				DB86E3C4FBC8797A379C20F4 /* OnboardingViewInput.swift */,
 				B2B4776A84FB943C3A3B5643 /* OnboardingViewOutput.swift */,
+				57CE52752113035C0036CF3F /* OnboardingViewCoordinatorOutput.swift */,
 				172742D1DD4932341CBEAE07 /* OnboardingViewController.swift */,
 			);
 			path = View;
@@ -1041,6 +1046,7 @@
 			isa = PBXGroup;
 			children = (
 				57CE52542110EFDA0036CF3F /* AuthorizationFlowFactory.swift */,
+				57CE5273211302AA0036CF3F /* OnboardingFlowFactory.swift */,
 				57CE525A2110FFF40036CF3F /* FlowFactoryImp.swift */,
 			);
 			path = FlowFactory;
@@ -2126,6 +2132,7 @@
 				A1575F6C7B308462FD292728 /* TermsInitializer.swift in Sources */,
 				2BC1F9A1697CAD96E3786FBE /* OnboardingViewInput.swift in Sources */,
 				DFC2BAD878F51759850E3092 /* OnboardingViewOutput.swift in Sources */,
+				57CE52762113035C0036CF3F /* OnboardingViewCoordinatorOutput.swift in Sources */,
 				CB54B1F8B9D89E1C2E94FD0B /* OnboardingViewController.swift in Sources */,
 				E978107ABFFFE40528725807 /* OnboardingModuleInput.swift in Sources */,
 				98AC956F4295FB142C9705F1 /* OnboardingModuleOutput.swift in Sources */,
@@ -2200,6 +2207,7 @@
 				1CDDF4A5A5FD063EEDBC9D1E /* ProfileViewOutput.swift in Sources */,
 				D3AAE2C34F41F02D7D77CE85 /* ProfileViewController.swift in Sources */,
 				2ACE8B5441557DDC17D89548 /* ProfileModuleInput.swift in Sources */,
+				57CE5274211302AA0036CF3F /* OnboardingFlowFactory.swift in Sources */,
 				F4C17B322AAD56AB5D518D61 /* ProfileModuleOutput.swift in Sources */,
 				15D2248D5E36B2F4D1E79D92 /* ProfilePresenter.swift in Sources */,
 				783BD6FFDAF8B3A7BFB736D9 /* ProfileInteractorInput.swift in Sources */,

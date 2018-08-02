@@ -20,18 +20,14 @@ final class ApplicationCoordinator: BaseCoordinator {
 		self.flowFactory = flowFactory
 	}
 	
-	override func start(with option: DeepLinkOption?) {
-		
-	}
-	
 	override func start() {
-		runAuthFlow()
+		runAuthorizationFlow()
 	}
 	
-	private func runAuthFlow() {
+	private func runAuthorizationFlow() {
 		let coordinator = coordinatorFactory.produceAuthorizationCoordinator(router: router, flowFactory: flowFactory)
 		coordinator.finishFlow = { [weak self, weak coordinator] in
-			self?.start()
+			self?.runOnboardingFlow()
 			self?.removeDependency(coordinator)
 		}
 	
@@ -40,7 +36,14 @@ final class ApplicationCoordinator: BaseCoordinator {
 	}
 	
 	private func runOnboardingFlow() {
+		let coordinator = coordinatorFactory.produceOnboardingCoordinator(router: router, flowFactory: flowFactory)
+		coordinator.finishFlow = { [weak self, weak coordinator] in
+			self?.start()
+			self?.removeDependency(coordinator)
+		}
 		
+		addDependency(coordinator)
+		coordinator.start()
 	}
 	
 	private func runMainFlow() {

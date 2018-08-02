@@ -6,8 +6,6 @@
 //  Copyright © 2018 Flow. All rights reserved.
 //
 
-import Foundation
-
 protocol AuthorizationCoordinatorOutput: class {
 	
 	var finishFlow: (() -> Void)? { get set }

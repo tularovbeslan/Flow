@@ -9,9 +9,14 @@
 class OnboardingPresenter: OnboardingModuleInput, OnboardingViewOutput, OnboardingInteractorOutput {
 
     weak var view: OnboardingViewInput!
+	weak var coordinator: OnboardingViewCoordinatorOutput!
     var interactor: OnboardingInteractorInput!
 
-    func viewIsReady() {
-
-    }
+	func viewDidLoad() {
+		view.setupInitialState()
+	}
+	
+	func onNextTap() {
+		coordinator.onNext?()
+	}
 }

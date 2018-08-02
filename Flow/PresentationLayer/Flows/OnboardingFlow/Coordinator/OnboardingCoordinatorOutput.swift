@@ -6,8 +6,7 @@
 //  Copyright © 2018 Flow. All rights reserved.
 //
 
-import Foundation
-
-protocol OnboardingCoordinatorOutput {
-
+protocol OnboardingCoordinatorOutput: class {
+	
+	var finishFlow: (() -> Void)? { get set }
 }
