@@ -21,6 +21,7 @@ class OnboardingModuleConfigurator {
 
         let presenter = OnboardingPresenter()
         presenter.view = viewController
+		presenter.coordinator = viewController
 
         let interactor = OnboardingInteractor()
         interactor.output = presenter
