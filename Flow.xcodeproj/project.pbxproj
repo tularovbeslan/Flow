@@ -76,6 +76,9 @@
 		57458F43210BC7610067A53A /* OnboardingFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57458F42210BC7610067A53A /* OnboardingFlow.storyboard */; };
 		57458F46210BDA420067A53A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458F45210BDA420067A53A /* UIColorExtension.swift */; };
 		57458F49210C8BE50067A53A /* ProfileFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57458F48210C8BE50067A53A /* ProfileFlow.storyboard */; };
+		5751FDD52119F4EB00425C66 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDD42119F4EB00425C66 /* TabbarCoordinator.swift */; };
+		5751FDD82119F5A200425C66 /* FlowTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDD72119F5A200425C66 /* FlowTabbarController.swift */; };
+		5751FDDA2119F5BD00425C66 /* FlowTabbarCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDD92119F5BD00425C66 /* FlowTabbarCoordinatorOutput.swift */; };
 		57CE5244210FC2430036CF3F /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5243210FC2430036CF3F /* ProfileCell.swift */; };
 		57CE5246210FD98F0036CF3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5245210FD98F0036CF3F /* User.swift */; };
 		57CE5248210FD9BB0036CF3F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5247210FD9BB0036CF3F /* Product.swift */; };
@@ -288,6 +291,9 @@
 		57458F42210BC7610067A53A /* OnboardingFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingFlow.storyboard; sourceTree = "<group>"; };
 		57458F45210BDA420067A53A /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		57458F48210C8BE50067A53A /* ProfileFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileFlow.storyboard; sourceTree = "<group>"; };
+		5751FDD42119F4EB00425C66 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
+		5751FDD72119F5A200425C66 /* FlowTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTabbarController.swift; sourceTree = "<group>"; };
+		5751FDD92119F5BD00425C66 /* FlowTabbarCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTabbarCoordinatorOutput.swift; sourceTree = "<group>"; };
 		576DA6AA7BF4BEA017375F23 /* CartCoordinatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartCoordinatorTests.swift; sourceTree = "<group>"; };
 		57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingUpPresenter.swift; sourceTree = "<group>"; };
 		57CE5243210FC2430036CF3F /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -953,6 +959,32 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		5751FDD22119F41D00425C66 /* TabbarFlow */ = {
+			isa = PBXGroup;
+			children = (
+				5751FDD32119F4D200425C66 /* Coordinator */,
+				5751FDD62119F54E00425C66 /* FlowTabbarController */,
+			);
+			path = TabbarFlow;
+			sourceTree = "<group>";
+		};
+		5751FDD32119F4D200425C66 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5751FDD42119F4EB00425C66 /* TabbarCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		5751FDD62119F54E00425C66 /* FlowTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				5751FDD92119F5BD00425C66 /* FlowTabbarCoordinatorOutput.swift */,
+				5751FDD72119F5A200425C66 /* FlowTabbarController.swift */,
+			);
+			path = FlowTabbarController;
+			sourceTree = "<group>";
+		};
 		5797AF948A11EF74F27EFDE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1003,6 +1035,7 @@
 		57CE526D21123FEE0036CF3F /* ReuseableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				5751FDD22119F41D00425C66 /* TabbarFlow */,
 				57CE526E211240460036CF3F /* FlowNavigationController */,
 			);
 			path = ReuseableComponents;
@@ -1926,6 +1959,7 @@
 				834B346B5FA1D269FE174EF0 /* PasswordRecoveryViewController.swift in Sources */,
 				F0E788C0248868A2045CC783 /* PasswordRecoveryModuleInput.swift in Sources */,
 				48E6E3D6C62E7DC431A07598 /* PasswordRecoveryModuleOutput.swift in Sources */,
+				5751FDD82119F5A200425C66 /* FlowTabbarController.swift in Sources */,
 				3C1DDCB7378C11968EC74FFA /* PasswordRecoveryPresenter.swift in Sources */,
 				7594EC376853B2ADD4AC1595 /* PasswordRecoveryInteractorInput.swift in Sources */,
 				A7642FDCCDBF2CA6AD615DAE /* PasswordRecoveryInteractorOutput.swift in Sources */,
@@ -1962,6 +1996,7 @@
 				C6DA3872E019BC7AB5C7B42B /* TermsViewOutput.swift in Sources */,
 				786F897493E3BD45A1807122 /* TermsViewController.swift in Sources */,
 				3B423386ECD8CA72DC939767 /* TermsModuleInput.swift in Sources */,
+				5751FDD52119F4EB00425C66 /* TabbarCoordinator.swift in Sources */,
 				42FE03494F96313D31BDF3CD /* TermsModuleOutput.swift in Sources */,
 				57458F3A210A953E0067A53A /* AppAppearance.swift in Sources */,
 				F1D587F74F38C76F650ADC0D /* TermsPresenter.swift in Sources */,
@@ -2036,6 +2071,7 @@
 				1CDDF4A5A5FD063EEDBC9D1E /* ProfileViewOutput.swift in Sources */,
 				D3AAE2C34F41F02D7D77CE85 /* ProfileViewController.swift in Sources */,
 				2ACE8B5441557DDC17D89548 /* ProfileModuleInput.swift in Sources */,
+				5751FDDA2119F5BD00425C66 /* FlowTabbarCoordinatorOutput.swift in Sources */,
 				57CE5274211302AA0036CF3F /* OnboardingFlowFactory.swift in Sources */,
 				F4C17B322AAD56AB5D518D61 /* ProfileModuleOutput.swift in Sources */,
 				15D2248D5E36B2F4D1E79D92 /* ProfilePresenter.swift in Sources */,
