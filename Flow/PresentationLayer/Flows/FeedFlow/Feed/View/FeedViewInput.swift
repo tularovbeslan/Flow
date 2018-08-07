@@ -8,10 +8,5 @@
 
 protocol FeedViewInput: class {
 
-    /**
-        @author Beslan Tularov
-        Setup initial state of the view
-    */
-
     func setupInitialState()
 }

@@ -8,10 +8,19 @@
 
 class FeedPresenter: FeedModuleInput, FeedViewOutput, FeedInteractorOutput {
 
+	// MARK: - Properties
+	
     weak var view: FeedViewInput!
+	weak var coordinator: FeedViewCoordinatorOutput!
     var interactor: FeedInteractorInput!
 
-    func viewIsReady() {
-
-    }
+	// MARK: - FeedInteractorOutput
+	
+	func viewDidLoad() {
+		view.setupInitialState()
+	}
+	
+	func didSelectItem() {
+		coordinator.onItemSelected?()
+	}
 }

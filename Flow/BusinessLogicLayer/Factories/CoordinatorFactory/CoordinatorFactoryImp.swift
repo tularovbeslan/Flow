@@ -21,4 +21,8 @@ class CoordinatorFactoryImp: CoordinatorFactory {
 		let coordinator = OnboardingCoordinator(router: router, factory: flowFactory)
 		return coordinator
 	}
+	
+	func produceFeedCoordinator(router: Router, flowFactory: FeedFlowFactory) -> Coordinator & FeedCoordinatorOutput {
+		
+	}
 }

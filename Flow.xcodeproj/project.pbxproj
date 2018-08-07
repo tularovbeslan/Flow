@@ -79,6 +79,9 @@
 		5751FDD52119F4EB00425C66 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDD42119F4EB00425C66 /* TabbarCoordinator.swift */; };
 		5751FDD82119F5A200425C66 /* FlowTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDD72119F5A200425C66 /* FlowTabbarController.swift */; };
 		5751FDDA2119F5BD00425C66 /* FlowTabbarCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDD92119F5BD00425C66 /* FlowTabbarCoordinatorOutput.swift */; };
+		5751FDDC2119FCCA00425C66 /* FeedViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDDB2119FCCA00425C66 /* FeedViewCoordinatorOutput.swift */; };
+		5751FDDE2119FF5A00425C66 /* FeedFlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDDD2119FF5A00425C66 /* FeedFlowFactory.swift */; };
+		5751FDE0211A08B200425C66 /* ProductPageViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDDF211A08B200425C66 /* ProductPageViewCoordinatorOutput.swift */; };
 		57CE5244210FC2430036CF3F /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5243210FC2430036CF3F /* ProfileCell.swift */; };
 		57CE5246210FD98F0036CF3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5245210FD98F0036CF3F /* User.swift */; };
 		57CE5248210FD9BB0036CF3F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5247210FD9BB0036CF3F /* Product.swift */; };
@@ -294,6 +297,9 @@
 		5751FDD42119F4EB00425C66 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
 		5751FDD72119F5A200425C66 /* FlowTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTabbarController.swift; sourceTree = "<group>"; };
 		5751FDD92119F5BD00425C66 /* FlowTabbarCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTabbarCoordinatorOutput.swift; sourceTree = "<group>"; };
+		5751FDDB2119FCCA00425C66 /* FeedViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewCoordinatorOutput.swift; sourceTree = "<group>"; };
+		5751FDDD2119FF5A00425C66 /* FeedFlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFlowFactory.swift; sourceTree = "<group>"; };
+		5751FDDF211A08B200425C66 /* ProductPageViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPageViewCoordinatorOutput.swift; sourceTree = "<group>"; };
 		576DA6AA7BF4BEA017375F23 /* CartCoordinatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartCoordinatorTests.swift; sourceTree = "<group>"; };
 		57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingUpPresenter.swift; sourceTree = "<group>"; };
 		57CE5243210FC2430036CF3F /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -1018,6 +1024,7 @@
 			children = (
 				57CE52542110EFDA0036CF3F /* AuthorizationFlowFactory.swift */,
 				57CE5273211302AA0036CF3F /* OnboardingFlowFactory.swift */,
+				5751FDDD2119FF5A00425C66 /* FeedFlowFactory.swift */,
 				57CE525A2110FFF40036CF3F /* FlowFactoryImp.swift */,
 			);
 			path = FlowFactory;
@@ -1356,6 +1363,7 @@
 			children = (
 				A186499B390F8E64B90F8A4C /* FeedViewInput.swift */,
 				8AB003EB05D30A8059B87789 /* FeedViewOutput.swift */,
+				5751FDDB2119FCCA00425C66 /* FeedViewCoordinatorOutput.swift */,
 				2918678F9E9D3ABD4C53D81C /* FeedViewController.swift */,
 				57CE524B211082430036CF3F /* FeedCell.swift */,
 			);
@@ -1549,6 +1557,7 @@
 			children = (
 				6BE66148577BC208478792E2 /* ProductPageViewInput.swift */,
 				3E7CA653AB4E252C5E9A8304 /* ProductPageViewOutput.swift */,
+				5751FDDF211A08B200425C66 /* ProductPageViewCoordinatorOutput.swift */,
 				4E9905CD4A819F6975FE27C4 /* ProductPageViewController.swift */,
 				57CE5243210FC2430036CF3F /* ProfileCell.swift */,
 			);
@@ -1945,6 +1954,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57CE52532110EAE70036CF3F /* CoordinatorFactoryImp.swift in Sources */,
+				5751FDE0211A08B200425C66 /* ProductPageViewCoordinatorOutput.swift in Sources */,
 				57458F2B210922D40067A53A /* Coordinator.swift in Sources */,
 				57458F28210922990067A53A /* CoordinatorFactory.swift in Sources */,
 				57458F2D210923400067A53A /* DeepLinkOption.swift in Sources */,
@@ -1959,6 +1969,7 @@
 				834B346B5FA1D269FE174EF0 /* PasswordRecoveryViewController.swift in Sources */,
 				F0E788C0248868A2045CC783 /* PasswordRecoveryModuleInput.swift in Sources */,
 				48E6E3D6C62E7DC431A07598 /* PasswordRecoveryModuleOutput.swift in Sources */,
+				5751FDDE2119FF5A00425C66 /* FeedFlowFactory.swift in Sources */,
 				5751FDD82119F5A200425C66 /* FlowTabbarController.swift in Sources */,
 				3C1DDCB7378C11968EC74FFA /* PasswordRecoveryPresenter.swift in Sources */,
 				7594EC376853B2ADD4AC1595 /* PasswordRecoveryInteractorInput.swift in Sources */,
@@ -1978,6 +1989,7 @@
 				005DB9E7861F6627262555CC /* SingInInteractor.swift in Sources */,
 				3F3A5F6AC8C8D2FAC21E5319 /* SingInConfigurator.swift in Sources */,
 				BA4402508C0A091D09D5CE95 /* SingInInitializer.swift in Sources */,
+				5751FDDC2119FCCA00425C66 /* FeedViewCoordinatorOutput.swift in Sources */,
 				233DFE1F2B7CBD5D38BA4E25 /* SingUpViewInput.swift in Sources */,
 				780EDF95CC9DBC3E8C0C3C7C /* SingUpViewOutput.swift in Sources */,
 				57CE526221110DAD0036CF3F /* BaseCoordinator.swift in Sources */,

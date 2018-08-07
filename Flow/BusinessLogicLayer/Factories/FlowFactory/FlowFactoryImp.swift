@@ -29,4 +29,8 @@ class FlowFactoryImp: AuthorizationFlowFactory, OnboardingFlowFactory {
 	func produceOnboardingOutput() -> OnboardingViewCoordinatorOutput {
 		return OnboardingViewController.fromStoryboard(.OnboardingFlow)
 	}
+	
+	func produceFeedOutput() -> FeedViewCoordinatorOutput {
+		return FeedViewController.fromStoryboard(.FeedFlow)
+	}
 }

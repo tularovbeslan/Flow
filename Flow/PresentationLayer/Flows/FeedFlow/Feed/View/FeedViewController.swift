@@ -9,7 +9,7 @@
 import UIKit
 import FSPagerView
 
-class FeedViewController: UIViewController, FeedViewInput {
+class FeedViewController: UIViewController, FeedViewInput, FeedViewCoordinatorOutput {
 
 	// MARK: - Properties
 
@@ -28,9 +28,7 @@ class FeedViewController: UIViewController, FeedViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-        output.viewIsReady()
-		setupCollectionView()
-		labelsAppearance()
+        output.viewDidLoad()
     }
 	
 	override func viewDidLayoutSubviews() {
@@ -44,7 +42,13 @@ class FeedViewController: UIViewController, FeedViewInput {
 	
     func setupInitialState() {
 		
+		setupCollectionView()
+		labelsAppearance()
     }
+	
+	// MARK: FeedViewCoordinatorOutput
+	
+	var onItemSelected: (() -> Void)?
 	
 	// MARK: - Helpers
 	
@@ -108,6 +112,12 @@ extension FeedViewController: UICollectionViewDataSource {
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		return collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: FeedCell.self), for: indexPath)
+	}
+}
+
+extension FeedViewController: UICollectionViewDelegate {
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		output.didSelectItem()
 	}
 }
 

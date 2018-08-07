@@ -21,7 +21,8 @@ class FeedModuleConfigurator {
 
         let presenter = FeedPresenter()
         presenter.view = viewController
-
+		presenter.coordinator = viewController
+		
         let interactor = FeedInteractor()
         interactor.output = presenter
 

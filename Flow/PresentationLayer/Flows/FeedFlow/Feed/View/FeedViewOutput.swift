@@ -8,10 +8,6 @@
 
 protocol FeedViewOutput {
 
-    /**
-        @author Beslan Tularov
-        Notify presenter that view is ready
-    */
-
-    func viewIsReady()
+    func viewDidLoad()
+	func didSelectItem()
 }
