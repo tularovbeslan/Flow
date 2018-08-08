@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CartViewController: UIViewController, CartViewInput {
+class CartViewController: UIViewController, CartViewInput, CartViewCoordinatorOutput {
 
 	// MARK: - Properties
 
@@ -24,10 +24,7 @@ class CartViewController: UIViewController, CartViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-        output.viewIsReady()
-		labelsAppearance()
-		buttonAppearance()
-		setupTableView()
+        output.viewDidLoad()
     }
 
 
@@ -35,7 +32,14 @@ class CartViewController: UIViewController, CartViewInput {
 	
     func setupInitialState() {
 		
+		labelsAppearance()
+		buttonAppearance()
+		setupTableView()
     }
+	
+	// MARK: - CartViewCoordinatorOutput
+	
+	var onBay: (() -> Void)?
 	
 	// MARK: - Helpers
 	
@@ -50,7 +54,7 @@ class CartViewController: UIViewController, CartViewInput {
 	// MARK: - Actions
 	
 	@IBAction func bay(_ sender: UIButton) {
-		
+		output.bay()
 	}
 	
 	// MARK: - Appearance

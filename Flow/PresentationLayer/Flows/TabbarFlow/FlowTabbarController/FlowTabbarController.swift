@@ -16,12 +16,17 @@ class FlowTabbarController: UITabBarController , UITabBarControllerDelegate, Flo
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		appearance()
-		delegate = self
-		
+
+		delegate = self		
 		if let controller = customizableViewControllers?.first as? UINavigationController {
 			onViewDidLoad?(controller)
 		}
+	}
+	
+	override func viewDidLayoutSubviews() {
+		super.viewDidLayoutSubviews()
+		
+		removeTabbarItemsText()
 	}
 	
 	func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
@@ -35,10 +40,12 @@ class FlowTabbarController: UITabBarController , UITabBarControllerDelegate, Flo
 		}
 	}
 	
-	// MARK: - Appearance
-	
-	private func appearance() {
+	private func removeTabbarItemsText() {
 		
-		
+		tabBar.items?.forEach {
+			
+			$0.title = ""
+			$0.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+		}
 	}
 }

@@ -37,4 +37,8 @@ class FlowFactoryImp: AuthorizationFlowFactory, OnboardingFlowFactory, FeedFlowF
 	func produceProductPageOutput() -> ProductPageViewCoordinatorOutput {
 		return ProductPageViewController.fromStoryboard(.FeedFlow)
 	}
+	
+	func produceCartOutput() -> CartViewCoordinatorOutput {
+		return CartViewController.fromStoryboard(.FeedFlow)
+	}
 }

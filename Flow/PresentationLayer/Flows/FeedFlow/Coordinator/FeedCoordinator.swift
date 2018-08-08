@@ -28,6 +28,7 @@ class FeedCoordinator: BaseCoordinator, FeedCoordinatorOutput {
 	}
 	
 	private func showFeed() {
+		
 		let feedOutput = factory.produceFeedOutput()
 		feedOutput.onItemSelected = { [weak self] in
 			self?.showProductPage()
@@ -37,6 +38,7 @@ class FeedCoordinator: BaseCoordinator, FeedCoordinatorOutput {
 	}
 	
 	private func showProductPage() {
+		
 		let productPageOutput = factory.produceProductPageOutput()
 		productPageOutput.onCart = { [weak self] in
 			self?.showCart()
@@ -51,6 +53,11 @@ class FeedCoordinator: BaseCoordinator, FeedCoordinatorOutput {
 	
 	private func showCart() {
 		
+		let cartOutput = factory.produceCartOutput()
+		cartOutput.onBay = { [weak self] in
+			self?.router.popToRootModule(animated: true)
+		}
+		router.push(cartOutput)
 	}
 	
 }

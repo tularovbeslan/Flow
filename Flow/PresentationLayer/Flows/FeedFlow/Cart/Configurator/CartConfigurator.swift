@@ -21,7 +21,8 @@ class CartModuleConfigurator {
 
         let presenter = CartPresenter()
         presenter.view = viewController
-
+		presenter.coordinator = viewController
+		
         let interactor = CartInteractor()
         interactor.output = presenter
 

@@ -33,7 +33,13 @@ class TabbarCoordinator: BaseCoordinator {
 		}
 	}
 	
-	private func runProfileFlow() {
-		
+	private func runProfileFlow() -> ((UINavigationController) -> ()) {
+		return { navigationController in
+			if navigationController.viewControllers.isEmpty == true {
+				let profileCoordinator = self.coordinatorFactory.produceFeedCoordinator(navigationController: navigationController, flowFactory: FlowFactoryImp())
+				profileCoordinator.start()
+				self.addDependency(profileCoordinator)
+			}
+		}
 	}
 }

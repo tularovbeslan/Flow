@@ -9,9 +9,14 @@
 class CartPresenter: CartModuleInput, CartViewOutput, CartInteractorOutput {
 
     weak var view: CartViewInput!
+	weak var coordinator: CartViewCoordinatorOutput!
     var interactor: CartInteractorInput!
 
-    func viewIsReady() {
-
-    }
+	func viewDidLoad() {
+		view.setupInitialState()
+	}
+	
+	func bay() {
+		coordinator.onBay?()
+	}
 }
