@@ -48,6 +48,7 @@ class ProductPageViewController: UIViewController, ProductPageViewInput, Product
 		tableView.dataSource = self
 		tableView.tableFooterView = UIView(frame: .zero)
 		tableView.separatorStyle = .none
+		tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0)
 	}
 	
 	// MARK: - Actions
