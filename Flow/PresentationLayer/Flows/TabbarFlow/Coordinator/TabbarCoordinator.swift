@@ -19,6 +19,21 @@ class TabbarCoordinator: BaseCoordinator {
 	}
 	
 	override func start() {
-
+		tabbarOutput.onViewDidLoad = runFeedFlow()
+		tabbarOutput.onFeedFlow = runFeedFlow()
+	}
+	
+	private func runFeedFlow() -> ((UINavigationController) -> ()) {
+		return { navigationController in
+			if navigationController.viewControllers.isEmpty == true {
+				let feedCoordinator = self.coordinatorFactory.produceFeedCoordinator(navigationController: navigationController, flowFactory: FlowFactoryImp())
+				feedCoordinator.start()
+				self.addDependency(feedCoordinator)
+			}
+		}
+	}
+	
+	private func runProfileFlow() {
+		
 	}
 }

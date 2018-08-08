@@ -9,4 +9,5 @@
 protocol ProductPageViewCoordinatorOutput: Presentable {
 	
 	var onCart: (() -> Void)? { get set }
+	var onBack: (() -> Void)? { get set }
 }

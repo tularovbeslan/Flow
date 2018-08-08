@@ -9,9 +9,18 @@
 class ProductPagePresenter: ProductPageModuleInput, ProductPageViewOutput, ProductPageInteractorOutput {
 
     weak var view: ProductPageViewInput!
+	weak var coordinator: ProductPageViewCoordinatorOutput!
     var interactor: ProductPageInteractorInput!
 
-    func viewIsReady() {
-
-    }
+	func viewDidLoad() {
+		view.setupInitialState()
+	}
+	
+	func addToCart() {
+		coordinator.onCart?()
+	}
+	
+	func back() {
+		coordinator.onBack?()
+	}
 }

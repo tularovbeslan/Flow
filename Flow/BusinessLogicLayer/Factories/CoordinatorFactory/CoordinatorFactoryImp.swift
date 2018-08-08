@@ -6,7 +6,7 @@
 //  Copyright © 2018 Beslan Tularov Ramazanovich. All rights reserved.
 //
 
-import Foundation
+import UIKit.UINavigationController
 
 class CoordinatorFactoryImp: CoordinatorFactory {
 	
@@ -22,7 +22,43 @@ class CoordinatorFactoryImp: CoordinatorFactory {
 		return coordinator
 	}
 	
+	func produceTabbarCoordinator(coordinatorFactory: CoordinatorFactory) -> (configurator: Coordinator, toPresent: Presentable?) {
+		
+		let controller = FlowTabbarController.fromStoryboard(.TabbarFlow)
+		let coordinator = TabbarCoordinator(tabbarOutput: controller, coordinatorFactory: coordinatorFactory)
+		return (coordinator, controller)
+	}
+	
+	func produceFeedCoordinator(flowFactory: FeedFlowFactory) -> Coordinator {
+		
+		let coordinator = produceFeedCoordinator(navigationController: nil, flowFactory: flowFactory)
+		return coordinator
+	}
+	
+	func produceFeedCoordinator(navigationController: UINavigationController?, flowFactory: FeedFlowFactory) -> Coordinator {
+		
+		let coordinator = produceFeedCoordinator(router: router(navigationController), flowFactory: flowFactory)
+		return coordinator
+	}
+	
 	func produceFeedCoordinator(router: Router, flowFactory: FeedFlowFactory) -> Coordinator & FeedCoordinatorOutput {
 		
+		let coordinator = FeedCoordinator(router: router, factory: flowFactory)
+		return coordinator
+	}
+	
+	private func router(_ controller: UINavigationController?) -> Router {
+		
+		let router = RouterImp(rootController: navigationController(controller))
+		return router
+	}
+	
+	private func navigationController(_ controller: UINavigationController?) -> UINavigationController {
+		
+		if let navigationController = controller {
+			return navigationController
+		} else {
+			return FlowNavigationController.fromStoryboard(.FlowNavigationController)
+		}
 	}
 }

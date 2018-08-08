@@ -82,6 +82,8 @@
 		5751FDDC2119FCCA00425C66 /* FeedViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDDB2119FCCA00425C66 /* FeedViewCoordinatorOutput.swift */; };
 		5751FDDE2119FF5A00425C66 /* FeedFlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDDD2119FF5A00425C66 /* FeedFlowFactory.swift */; };
 		5751FDE0211A08B200425C66 /* ProductPageViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751FDDF211A08B200425C66 /* ProductPageViewCoordinatorOutput.swift */; };
+		5751FDE3211A128F00425C66 /* TabbarFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5751FDE2211A128F00425C66 /* TabbarFlow.storyboard */; };
+		57573247211B859A00777434 /* FlowTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573246211B859A00777434 /* FlowTabbar.swift */; };
 		57CE5244210FC2430036CF3F /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5243210FC2430036CF3F /* ProfileCell.swift */; };
 		57CE5246210FD98F0036CF3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5245210FD98F0036CF3F /* User.swift */; };
 		57CE5248210FD9BB0036CF3F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5247210FD9BB0036CF3F /* Product.swift */; };
@@ -300,6 +302,8 @@
 		5751FDDB2119FCCA00425C66 /* FeedViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewCoordinatorOutput.swift; sourceTree = "<group>"; };
 		5751FDDD2119FF5A00425C66 /* FeedFlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFlowFactory.swift; sourceTree = "<group>"; };
 		5751FDDF211A08B200425C66 /* ProductPageViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPageViewCoordinatorOutput.swift; sourceTree = "<group>"; };
+		5751FDE2211A128F00425C66 /* TabbarFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarFlow.storyboard; sourceTree = "<group>"; };
+		57573246211B859A00777434 /* FlowTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTabbar.swift; sourceTree = "<group>"; };
 		576DA6AA7BF4BEA017375F23 /* CartCoordinatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartCoordinatorTests.swift; sourceTree = "<group>"; };
 		57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingUpPresenter.swift; sourceTree = "<group>"; };
 		57CE5243210FC2430036CF3F /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -968,6 +972,7 @@
 		5751FDD22119F41D00425C66 /* TabbarFlow */ = {
 			isa = PBXGroup;
 			children = (
+				5751FDE1211A127D00425C66 /* Storyboard */,
 				5751FDD32119F4D200425C66 /* Coordinator */,
 				5751FDD62119F54E00425C66 /* FlowTabbarController */,
 			);
@@ -987,8 +992,17 @@
 			children = (
 				5751FDD92119F5BD00425C66 /* FlowTabbarCoordinatorOutput.swift */,
 				5751FDD72119F5A200425C66 /* FlowTabbarController.swift */,
+				57573246211B859A00777434 /* FlowTabbar.swift */,
 			);
 			path = FlowTabbarController;
+			sourceTree = "<group>";
+		};
+		5751FDE1211A127D00425C66 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5751FDE2211A128F00425C66 /* TabbarFlow.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		5797AF948A11EF74F27EFDE3 /* View */ = {
@@ -1042,7 +1056,6 @@
 		57CE526D21123FEE0036CF3F /* ReuseableComponents */ = {
 			isa = PBXGroup;
 			children = (
-				5751FDD22119F41D00425C66 /* TabbarFlow */,
 				57CE526E211240460036CF3F /* FlowNavigationController */,
 			);
 			path = ReuseableComponents;
@@ -1443,6 +1456,7 @@
 			children = (
 				BE592A69D14AF3A64BAEBB52 /* AuthorizationFlow */,
 				110102D3A8B4B9B9B2137A86 /* OnboardingFlow */,
+				5751FDD22119F41D00425C66 /* TabbarFlow */,
 				353CA9249583F9369FD4F58B /* FeedFlow */,
 				DCE8B112EA6838FE9D8048B9 /* ProfileFlow */,
 			);
@@ -1881,6 +1895,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5751FDE3211A128F00425C66 /* TabbarFlow.storyboard in Resources */,
 				57458EFC2108B8240067A53A /* LaunchScreen.storyboard in Resources */,
 				57458EF92108B8240067A53A /* Assets.xcassets in Resources */,
 				57CE5272211240B20036CF3F /* FlowNavigationController.storyboard in Resources */,
@@ -2067,6 +2082,7 @@
 				5B6FE13CF8AE2EBDB0271CB7 /* CartModuleInput.swift in Sources */,
 				57CE524C211082430036CF3F /* FeedCell.swift in Sources */,
 				8455ABBCE87786224FD6D7A0 /* CartModuleOutput.swift in Sources */,
+				57573247211B859A00777434 /* FlowTabbar.swift in Sources */,
 				1BA463D86F5746A4CCADD84E /* CartPresenter.swift in Sources */,
 				4B7C0B25BE6DBAADEEB919B9 /* CartInteractorInput.swift in Sources */,
 				14AC84C23C6F34C67B6092D3 /* CartInteractorOutput.swift in Sources */,

@@ -8,5 +8,7 @@
 
 protocol ProductPageViewOutput {
 
-    func viewIsReady()
+    func viewDidLoad()
+	func addToCart()
+	func back()
 }

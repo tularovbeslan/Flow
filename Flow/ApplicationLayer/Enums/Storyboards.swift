@@ -9,8 +9,10 @@
 import Foundation
 
 enum Storyboards: String {
+	case FlowNavigationController
 	case AuthorizationFlow
 	case OnboardingFlow
+	case TabbarFlow
 	case FeedFlow
 	case ProfileFlow
 }

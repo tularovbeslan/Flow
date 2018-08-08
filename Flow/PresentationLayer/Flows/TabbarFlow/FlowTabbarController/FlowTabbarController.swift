@@ -16,21 +16,29 @@ class FlowTabbarController: UITabBarController , UITabBarControllerDelegate, Flo
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+		appearance()
 		delegate = self
+		
 		if let controller = customizableViewControllers?.first as? UINavigationController {
 			onViewDidLoad?(controller)
 		}
 	}
 	
 	func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+		
 		guard let controller = viewControllers?[selectedIndex] as? UINavigationController else { return }
 		
-		if selectedIndex == 0 {
-			onFeedFlow?(controller)
+		switch selectedIndex {
+		case 0: onFeedFlow?(controller)
+		case 1: onProfileFlow?(controller)
+		default: break
 		}
-		else if selectedIndex == 1 {
-			onProfileFlow?(controller)
-		}
+	}
+	
+	// MARK: - Appearance
+	
+	private func appearance() {
+		
+		
 	}
 }

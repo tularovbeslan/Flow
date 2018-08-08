@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductPageViewController: UIViewController, ProductPageViewInput {
+class ProductPageViewController: UIViewController, ProductPageViewInput, ProductPageViewCoordinatorOutput {
 
 	// MARK: - Properties
 	
@@ -24,17 +24,21 @@ class ProductPageViewController: UIViewController, ProductPageViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-        output.viewIsReady()
-		setupTableView()
-		buttonsAppearance()
+        output.viewDidLoad()
     }
 
 
     // MARK: - ProductPageViewInput
 	
     func setupInitialState() {
-		
+		setupTableView()
+		buttonsAppearance()
     }
+	
+	// MARK: - ProductPageViewCoordinatorOutput
+	
+	var onCart: (() -> Void)?
+	var onBack: (() -> Void)?
 	
 	// MARK: - Helpers
 	
@@ -49,11 +53,11 @@ class ProductPageViewController: UIViewController, ProductPageViewInput {
 	// MARK: - Actions
 	
 	@IBAction func back(_ sender: UIButton) {
-		
+		output.back()
 	}
 	
 	@IBAction func addToCart(_ sender: UIButton) {
-		
+		output.addToCart()
 	}
 	
 	// MARK: - Appearance

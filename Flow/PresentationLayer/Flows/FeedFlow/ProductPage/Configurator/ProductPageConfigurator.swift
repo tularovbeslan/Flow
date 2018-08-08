@@ -21,7 +21,8 @@ class ProductPageModuleConfigurator {
 
         let presenter = ProductPagePresenter()
         presenter.view = viewController
-
+		presenter.coordinator = viewController
+		
         let interactor = ProductPageInteractor()
         interactor.output = presenter
 

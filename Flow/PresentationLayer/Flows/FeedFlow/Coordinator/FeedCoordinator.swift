@@ -37,7 +37,16 @@ class FeedCoordinator: BaseCoordinator, FeedCoordinatorOutput {
 	}
 	
 	private func showProductPage() {
+		let productPageOutput = factory.produceProductPageOutput()
+		productPageOutput.onCart = { [weak self] in
+			self?.showCart()
+		}
 		
+		productPageOutput.onBack = { [weak self] in
+			self?.router.popModule()
+		}
+		
+		router.push(productPageOutput)
 	}
 	
 	private func showCart() {

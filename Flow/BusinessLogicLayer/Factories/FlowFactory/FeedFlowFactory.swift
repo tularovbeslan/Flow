@@ -9,4 +9,5 @@
 protocol FeedFlowFactory {
 	
 	func produceFeedOutput() -> FeedViewCoordinatorOutput
+	func produceProductPageOutput() -> ProductPageViewCoordinatorOutput
 }

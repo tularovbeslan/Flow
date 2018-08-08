@@ -38,7 +38,7 @@ final class ApplicationCoordinator: BaseCoordinator {
 	private func runOnboardingFlow() {
 		let coordinator = coordinatorFactory.produceOnboardingCoordinator(router: router, flowFactory: flowFactory)
 		coordinator.finishFlow = { [weak self, weak coordinator] in
-			self?.start()
+			self?.runTabbarFlow()
 			self?.removeDependency(coordinator)
 		}
 		
@@ -46,7 +46,10 @@ final class ApplicationCoordinator: BaseCoordinator {
 		coordinator.start()
 	}
 	
-	private func runMainFlow() {
-		
+	private func runTabbarFlow() {
+		 let (coordinator, module) = coordinatorFactory.produceTabbarCoordinator(coordinatorFactory: coordinatorFactory)
+		addDependency(coordinator)
+		router.setRootModule(module, hideBar: true)
+		coordinator.start()
 	}
 }
