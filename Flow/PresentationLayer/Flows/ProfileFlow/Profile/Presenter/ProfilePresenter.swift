@@ -9,9 +9,14 @@
 class ProfilePresenter: ProfileModuleInput, ProfileViewOutput, ProfileInteractorOutput {
 
     weak var view: ProfileViewInput!
+	weak var coordinator: ProfileViewCoordinatorOutput!
     var interactor: ProfileInteractorInput!
 
-    func viewIsReady() {
-
-    }
+	func viewDidLoad() {
+		view.setupInitialState()
+	}
+	
+	func exit() {
+		coordinator.onExit?()
+	}
 }

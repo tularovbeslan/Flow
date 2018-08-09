@@ -47,6 +47,24 @@ class CoordinatorFactoryImp: CoordinatorFactory {
 		return coordinator
 	}
 	
+	func produceProfileCoordinator(flowFactory: ProfileFlowFactory) -> Coordinator {
+		
+		let coordinator = produceProfileCoordinator(navigationController: nil, flowFactory: flowFactory)
+		return coordinator
+	}
+	
+	func produceProfileCoordinator(navigationController: UINavigationController?, flowFactory: ProfileFlowFactory) -> Coordinator {
+		
+		let coordinator = produceProfileCoordinator(router: router(navigationController), flowFactory: flowFactory)
+		return coordinator
+	}
+	
+	func produceProfileCoordinator(router: Router, flowFactory: ProfileFlowFactory) -> Coordinator & ProfileCoordinatorOutput {
+		
+		let coordinator = ProfileCoordinator(router: router, factory: flowFactory)
+		return coordinator
+	}
+	
 	private func router(_ controller: UINavigationController?) -> Router {
 		
 		let router = RouterImp(rootController: navigationController(controller))

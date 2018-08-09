@@ -14,13 +14,16 @@ class TabbarCoordinator: BaseCoordinator {
 	private let coordinatorFactory: CoordinatorFactory
 	
 	init(tabbarOutput: FlowTabbarCoordinatorOutput, coordinatorFactory: CoordinatorFactory) {
+		
 		self.tabbarOutput = tabbarOutput
 		self.coordinatorFactory = coordinatorFactory
 	}
 	
 	override func start() {
+		
 		tabbarOutput.onViewDidLoad = runFeedFlow()
 		tabbarOutput.onFeedFlow = runFeedFlow()
+		tabbarOutput.onProfileFlow = runProfileFlow()
 	}
 	
 	private func runFeedFlow() -> ((UINavigationController) -> ()) {

@@ -18,4 +18,8 @@ protocol CoordinatorFactory {
 	func produceFeedCoordinator(flowFactory: FeedFlowFactory) -> Coordinator
 	func produceFeedCoordinator(navigationController: UINavigationController?, flowFactory: FeedFlowFactory) -> Coordinator
 	func produceFeedCoordinator(router: Router, flowFactory: FeedFlowFactory) -> Coordinator & FeedCoordinatorOutput
+	
+	func produceProfileCoordinator(flowFactory: ProfileFlowFactory) -> Coordinator
+	func produceProfileCoordinator(navigationController: UINavigationController?, flowFactory: ProfileFlowFactory) -> Coordinator
+	func produceProfileCoordinator(router: Router, flowFactory: ProfileFlowFactory) -> Coordinator & ProfileCoordinatorOutput
 }

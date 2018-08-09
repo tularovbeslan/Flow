@@ -8,10 +8,6 @@
 
 class FeedCoordinator: BaseCoordinator, FeedCoordinatorOutput {
 	
-	// MARK: - FeedCoordinatorOutput
-	
-	var finishFlow: (() -> Void)?
-	
 	private let factory: FeedFlowFactory
 	private let router: Router
 	

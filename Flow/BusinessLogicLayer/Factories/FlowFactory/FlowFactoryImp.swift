@@ -8,7 +8,7 @@
 
 import UIKit.UIViewController
 
-class FlowFactoryImp: AuthorizationFlowFactory, OnboardingFlowFactory, FeedFlowFactory {
+class FlowFactoryImp: AuthorizationFlowFactory, OnboardingFlowFactory, FeedFlowFactory, ProfileFlowFactory {
 	
 	func produceSingInOutput() -> SingInViewCoordinatorOutput {
 		return SingInViewController.fromStoryboard(.AuthorizationFlow)
@@ -40,5 +40,9 @@ class FlowFactoryImp: AuthorizationFlowFactory, OnboardingFlowFactory, FeedFlowF
 	
 	func produceCartOutput() -> CartViewCoordinatorOutput {
 		return CartViewController.fromStoryboard(.FeedFlow)
+	}
+	
+	func produceProfileOutput() -> ProfileViewCoordinatorOutput {
+		return ProfileViewController.fromStoryboard(.ProfileFlow)
 	}
 }

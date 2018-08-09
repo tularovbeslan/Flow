@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, ProfileViewInput {
+class ProfileViewController: UIViewController, ProfileViewInput, ProfileViewCoordinatorOutput {
 
 	// MARK: - Properties
 
@@ -26,18 +26,24 @@ class ProfileViewController: UIViewController, ProfileViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-        output.viewIsReady()
-		photoAppearance()
-		fieldAppearance()
-		labelsAppearance()
-		buttonAppearance()
+        output.viewDidLoad()
     }
 
 
     // MARK: - ProfileViewInput
 	
     func setupInitialState() {
+		
+		photoAppearance()
+		fieldAppearance()
+		labelsAppearance()
+		buttonAppearance()
+		tabbarItemAppearance()
     }
+	
+	// MARK: - ProfileViewCoordinatorOutput
+	
+	var onExit: (() -> Void)?
 	
 	// MARK: - Appearance
 	
@@ -80,12 +86,14 @@ class ProfileViewController: UIViewController, ProfileViewInput {
 		button.titleLabel?.font = UIFont.avertaCY(style: .semibold, size: 13)
 	}
 	
+	private func tabbarItemAppearance() {
+		
+		navigationController?.tabBarItem = UITabBarItem(title: title, image: #imageLiteral(resourceName: "oval"), selectedImage: #imageLiteral(resourceName: "selectedOval"))
+	}
+	
 	// MARK: - Actions
 	
-	@IBAction func singIn(_ sender: UIButton) {
-		
-		let storyboard = UIStoryboard(name: "AuthorizationFlow", bundle: nil)
-		let vc = storyboard.instantiateViewController(withIdentifier: String(describing: SingInViewController.self))
-		present(vc, animated: true, completion: nil)
+	@IBAction func exit(_ sender: UIButton) {
+		output.exit()
 	}
 }

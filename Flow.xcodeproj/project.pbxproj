@@ -85,6 +85,8 @@
 		5751FDE3211A128F00425C66 /* TabbarFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5751FDE2211A128F00425C66 /* TabbarFlow.storyboard */; };
 		57573247211B859A00777434 /* FlowTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573246211B859A00777434 /* FlowTabbar.swift */; };
 		57573249211B916E00777434 /* CartViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573248211B916E00777434 /* CartViewCoordinatorOutput.swift */; };
+		5757324B211B95C600777434 /* ProfileViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5757324A211B95C600777434 /* ProfileViewCoordinatorOutput.swift */; };
+		5757324D211B965400777434 /* ProfileFlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5757324C211B965400777434 /* ProfileFlowFactory.swift */; };
 		57CE5244210FC2430036CF3F /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5243210FC2430036CF3F /* ProfileCell.swift */; };
 		57CE5246210FD98F0036CF3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5245210FD98F0036CF3F /* User.swift */; };
 		57CE5248210FD9BB0036CF3F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5247210FD9BB0036CF3F /* Product.swift */; };
@@ -306,6 +308,8 @@
 		5751FDE2211A128F00425C66 /* TabbarFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarFlow.storyboard; sourceTree = "<group>"; };
 		57573246211B859A00777434 /* FlowTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTabbar.swift; sourceTree = "<group>"; };
 		57573248211B916E00777434 /* CartViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewCoordinatorOutput.swift; sourceTree = "<group>"; };
+		5757324A211B95C600777434 /* ProfileViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCoordinatorOutput.swift; sourceTree = "<group>"; };
+		5757324C211B965400777434 /* ProfileFlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlowFactory.swift; sourceTree = "<group>"; };
 		576DA6AA7BF4BEA017375F23 /* CartCoordinatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartCoordinatorTests.swift; sourceTree = "<group>"; };
 		57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingUpPresenter.swift; sourceTree = "<group>"; };
 		57CE5243210FC2430036CF3F /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -1041,6 +1045,7 @@
 				57CE52542110EFDA0036CF3F /* AuthorizationFlowFactory.swift */,
 				57CE5273211302AA0036CF3F /* OnboardingFlowFactory.swift */,
 				5751FDDD2119FF5A00425C66 /* FeedFlowFactory.swift */,
+				5757324C211B965400777434 /* ProfileFlowFactory.swift */,
 				57CE525A2110FFF40036CF3F /* FlowFactoryImp.swift */,
 			);
 			path = FlowFactory;
@@ -1180,6 +1185,7 @@
 			children = (
 				24ECD2257DC0D45471D6B03C /* ProfileViewInput.swift */,
 				B34B7A3BF473A1F9AAE11841 /* ProfileViewOutput.swift */,
+				5757324A211B95C600777434 /* ProfileViewCoordinatorOutput.swift */,
 				E1E82DD632F69FC09E594F5F /* ProfileViewController.swift */,
 			);
 			path = View;
@@ -2043,12 +2049,14 @@
 				57CE52762113035C0036CF3F /* OnboardingViewCoordinatorOutput.swift in Sources */,
 				CB54B1F8B9D89E1C2E94FD0B /* OnboardingViewController.swift in Sources */,
 				E978107ABFFFE40528725807 /* OnboardingModuleInput.swift in Sources */,
+				5757324D211B965400777434 /* ProfileFlowFactory.swift in Sources */,
 				98AC956F4295FB142C9705F1 /* OnboardingModuleOutput.swift in Sources */,
 				E5B88A1497931213C99974E4 /* OnboardingPresenter.swift in Sources */,
 				3E9641893D31F10603061904 /* OnboardingInteractorInput.swift in Sources */,
 				57CE524F2110E6E10036CF3F /* Storyboards.swift in Sources */,
 				1AC82B4FFA9072941165EF04 /* OnboardingInteractorOutput.swift in Sources */,
 				8042FE25337727DCD35EB8FF /* OnboardingInteractor.swift in Sources */,
+				5757324B211B95C600777434 /* ProfileViewCoordinatorOutput.swift in Sources */,
 				57CE5268211112470036CF3F /* SingUpViewCoordinatorOutput.swift in Sources */,
 				DB0E0266DE6C92800F4AE141 /* OnboardingCoordinatorOutput.swift in Sources */,
 				4E089A4CF3FBBE171EA3BB49 /* OnboardingCoordinator.swift in Sources */,

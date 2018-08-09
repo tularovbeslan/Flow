@@ -21,6 +21,7 @@ class ProfileModuleConfigurator {
 
         let presenter = ProfilePresenter()
         presenter.view = viewController
+		presenter.coordinator = viewController
 
         let interactor = ProfileInteractor()
         interactor.output = presenter
