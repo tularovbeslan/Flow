@@ -10,4 +10,5 @@ import Foundation
 
 protocol ProfileCoordinatorOutput {
 
+	var finishFlow: (() -> Void)? { get set }
 }

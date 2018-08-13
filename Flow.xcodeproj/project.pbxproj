@@ -87,6 +87,7 @@
 		57573249211B916E00777434 /* CartViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573248211B916E00777434 /* CartViewCoordinatorOutput.swift */; };
 		5757324B211B95C600777434 /* ProfileViewCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5757324A211B95C600777434 /* ProfileViewCoordinatorOutput.swift */; };
 		5757324D211B965400777434 /* ProfileFlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5757324C211B965400777434 /* ProfileFlowFactory.swift */; };
+		57573253211DF47400777434 /* TabbarCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573252211DF47400777434 /* TabbarCoordinatorOutput.swift */; };
 		57CE5244210FC2430036CF3F /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5243210FC2430036CF3F /* ProfileCell.swift */; };
 		57CE5246210FD98F0036CF3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5245210FD98F0036CF3F /* User.swift */; };
 		57CE5248210FD9BB0036CF3F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE5247210FD9BB0036CF3F /* Product.swift */; };
@@ -310,6 +311,7 @@
 		57573248211B916E00777434 /* CartViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewCoordinatorOutput.swift; sourceTree = "<group>"; };
 		5757324A211B95C600777434 /* ProfileViewCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCoordinatorOutput.swift; sourceTree = "<group>"; };
 		5757324C211B965400777434 /* ProfileFlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlowFactory.swift; sourceTree = "<group>"; };
+		57573252211DF47400777434 /* TabbarCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinatorOutput.swift; sourceTree = "<group>"; };
 		576DA6AA7BF4BEA017375F23 /* CartCoordinatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CartCoordinatorTests.swift; sourceTree = "<group>"; };
 		57C75D608219CB67D5EA8882 /* SingUpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingUpPresenter.swift; sourceTree = "<group>"; };
 		57CE5243210FC2430036CF3F /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -988,6 +990,7 @@
 		5751FDD32119F4D200425C66 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				57573252211DF47400777434 /* TabbarCoordinatorOutput.swift */,
 				5751FDD42119F4EB00425C66 /* TabbarCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -1978,6 +1981,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57CE52532110EAE70036CF3F /* CoordinatorFactoryImp.swift in Sources */,
+				57573253211DF47400777434 /* TabbarCoordinatorOutput.swift in Sources */,
 				5751FDE0211A08B200425C66 /* ProductPageViewCoordinatorOutput.swift in Sources */,
 				57458F2B210922D40067A53A /* Coordinator.swift in Sources */,
 				57458F28210922990067A53A /* CoordinatorFactory.swift in Sources */,

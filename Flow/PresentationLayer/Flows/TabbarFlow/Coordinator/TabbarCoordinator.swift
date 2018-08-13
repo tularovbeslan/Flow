@@ -8,7 +8,9 @@
 
 import UIKit
 
-class TabbarCoordinator: BaseCoordinator {
+class TabbarCoordinator: BaseCoordinator, TabbarCoordinatorOutput {
+	
+	var finishFlow: (() -> Void)?
 	
 	private let tabbarOutput: FlowTabbarCoordinatorOutput
 	private let coordinatorFactory: CoordinatorFactory
@@ -27,7 +29,9 @@ class TabbarCoordinator: BaseCoordinator {
 	}
 	
 	private func runFeedFlow() -> ((UINavigationController) -> ()) {
+		
 		return { navigationController in
+			
 			if navigationController.viewControllers.isEmpty == true {
 				let feedCoordinator = self.coordinatorFactory.produceFeedCoordinator(navigationController: navigationController, flowFactory: FlowFactoryImp())
 				feedCoordinator.start()
@@ -37,9 +41,15 @@ class TabbarCoordinator: BaseCoordinator {
 	}
 	
 	private func runProfileFlow() -> ((UINavigationController) -> ()) {
+		
 		return { navigationController in
+			
 			if navigationController.viewControllers.isEmpty == true {
-				let profileCoordinator = self.coordinatorFactory.produceFeedCoordinator(navigationController: navigationController, flowFactory: FlowFactoryImp())
+				var profileCoordinator = self.coordinatorFactory.produceProfileCoordinator(navigationController: navigationController, flowFactory: FlowFactoryImp())
+				profileCoordinator.finishFlow = { [weak self] in
+					
+					self?.finishFlow?()
+				}
 				profileCoordinator.start()
 				self.addDependency(profileCoordinator)
 			}

@@ -22,7 +22,7 @@ class CoordinatorFactoryImp: CoordinatorFactory {
 		return coordinator
 	}
 	
-	func produceTabbarCoordinator(coordinatorFactory: CoordinatorFactory) -> (configurator: Coordinator, toPresent: Presentable?) {
+	func produceTabbarCoordinator(coordinatorFactory: CoordinatorFactory) -> (configurator: Coordinator & TabbarCoordinatorOutput, toPresent: Presentable?) {
 		
 		let controller = FlowTabbarController.fromStoryboard(.TabbarFlow)
 		let coordinator = TabbarCoordinator(tabbarOutput: controller, coordinatorFactory: coordinatorFactory)
@@ -53,7 +53,7 @@ class CoordinatorFactoryImp: CoordinatorFactory {
 		return coordinator
 	}
 	
-	func produceProfileCoordinator(navigationController: UINavigationController?, flowFactory: ProfileFlowFactory) -> Coordinator {
+	func produceProfileCoordinator(navigationController: UINavigationController?, flowFactory: ProfileFlowFactory) -> Coordinator & ProfileCoordinatorOutput {
 		
 		let coordinator = produceProfileCoordinator(router: router(navigationController), flowFactory: flowFactory)
 		return coordinator

@@ -23,9 +23,16 @@ class ProfileCoordinator: BaseCoordinator, ProfileCoordinatorOutput {
 		showProfile()
 	}
 	
+	// MARK: - ProfileCoordinatorOutput
+	
+	var finishFlow: (() -> Void)?
+	
 	private func showProfile() {
 		
 		let profileOutput = factory.produceProfileOutput()
+		profileOutput.onExit = { [weak self] in
+			self?.finishFlow?()
+		}
 		router.setRootModule(profileOutput, hideBar: true)
 	}
 }
