@@ -1,0 +1,10 @@
+app_identifier("BTR.Flow") # The bundle identifier of your app
+apple_id("tularovbeslan@gmail.com") # Your Apple email address
+
+itc_team_id("102254830") # App Store Connect Team ID
+team_id("MTVD7A69KL") # Developer Portal Team ID
+itc_team_id("102254830") # App Store Connect Team ID
+team_id("MTVD7A69KL") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
