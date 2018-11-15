@@ -843,12 +843,9 @@
 		57458F1F2108B8430067A53A /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				5799E533219E14790040E31D /* Coordinator */,
-				57CE524D2110E6C60036CF3F /* Enums */,
-				57458F44210BDA240067A53A /* Extensions */,
-				57458F38210A952D0067A53A /* AppAppearance */,
-				57458F29210922BC0067A53A /* Protocols */,
 				57458EF12108B81F0067A53A /* AppDelegate.swift */,
+				5799E534219E3DAD0040E31D /* Utilities */,
+				5799E533219E14790040E31D /* Coordinator */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -1074,6 +1071,17 @@
 				57CE526B2111EE3B0036CF3F /* ApplicationCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		5799E534219E3DAD0040E31D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				57CE524D2110E6C60036CF3F /* Enums */,
+				57458F44210BDA240067A53A /* Extensions */,
+				57458F38210A952D0067A53A /* AppAppearance */,
+				57458F29210922BC0067A53A /* Protocols */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		57CE524D2110E6C60036CF3F /* Enums */ = {
@@ -2007,7 +2015,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Flow/Pods-Flow-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Flow/Pods-Flow-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/PWSwitch/PWSwitch.framework",
 			);
@@ -2018,7 +2026,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flow/Pods-Flow-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flow/Pods-Flow-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
