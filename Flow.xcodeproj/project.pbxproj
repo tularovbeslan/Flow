@@ -555,9 +555,9 @@
 		110102D3A8B4B9B9B2137A86 /* OnboardingFlow */ = {
 			isa = PBXGroup;
 			children = (
+				5799E52F219E03970040E31D /* Module */,
 				57458F41210BC74E0067A53A /* Storyboard */,
 				E06124847BDD1A8A9FADEA7A /* Coordinator */,
-				89852A1AFAA6C68AB4185A0A /* Onboarding */,
 			);
 			path = OnboardingFlow;
 			sourceTree = "<group>";
@@ -656,11 +656,9 @@
 		353CA9249583F9369FD4F58B /* FeedFlow */ = {
 			isa = PBXGroup;
 			children = (
+				5799E531219E03DD0040E31D /* Module */,
 				57F906BC210E668B004D638E /* Storyboard */,
 				67C720AF7899BF80C3738F06 /* Coordinator */,
-				66F2E5CF6C222BBDD39D829D /* Feed */,
-				7BCD85F891BAFFB6AB3CD16E /* ProductPage */,
-				39F491B273C305D875555946 /* Cart */,
 			);
 			path = FeedFlow;
 			sourceTree = "<group>";
@@ -882,9 +880,9 @@
 		57458F232108B8710067A53A /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				B01C0836D364EE977B57BDF3 /* Flows */,
 				57CE526D21123FEE0036CF3F /* ReuseableComponents */,
 				57CE525C211109D40036CF3F /* Routing */,
-				B01C0836D364EE977B57BDF3 /* Flows */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -980,9 +978,9 @@
 		5751FDD22119F41D00425C66 /* TabbarFlow */ = {
 			isa = PBXGroup;
 			children = (
+				5799E530219E03C80040E31D /* Module */,
 				5751FDE1211A127D00425C66 /* Storyboard */,
 				5751FDD32119F4D200425C66 /* Coordinator */,
-				5751FDD62119F54E00425C66 /* FlowTabbarController */,
 			);
 			path = TabbarFlow;
 			sourceTree = "<group>";
@@ -1023,6 +1021,51 @@
 				172742D1DD4932341CBEAE07 /* OnboardingViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5799E52E219E03540040E31D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F29B5A261CDCE339C384F74F /* Terms */,
+				EC7DD738989B3373784AC740 /* SingUp */,
+				66ED7AD846ABFFA49D6AA55E /* PasswordRecovery */,
+				2259F7A2C63941BF63D10E5D /* SingIn */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5799E52F219E03970040E31D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				89852A1AFAA6C68AB4185A0A /* Onboarding */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5799E530219E03C80040E31D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				5751FDD62119F54E00425C66 /* FlowTabbarController */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5799E531219E03DD0040E31D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				39F491B273C305D875555946 /* Cart */,
+				7BCD85F891BAFFB6AB3CD16E /* ProductPage */,
+				66F2E5CF6C222BBDD39D829D /* Feed */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5799E532219E04030040E31D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				B7A60F9EF0E600E818CE997A /* Profile */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 		57CE524D2110E6C60036CF3F /* Enums */ = {
@@ -1507,12 +1550,9 @@
 		BE592A69D14AF3A64BAEBB52 /* AuthorizationFlow */ = {
 			isa = PBXGroup;
 			children = (
+				5799E52E219E03540040E31D /* Module */,
 				57458F3C210BA8100067A53A /* Storyboard */,
 				57458F3B210BA80B0067A53A /* Coordinator */,
-				2259F7A2C63941BF63D10E5D /* SingIn */,
-				66ED7AD846ABFFA49D6AA55E /* PasswordRecovery */,
-				EC7DD738989B3373784AC740 /* SingUp */,
-				F29B5A261CDCE339C384F74F /* Terms */,
 			);
 			path = AuthorizationFlow;
 			sourceTree = "<group>";
@@ -1593,9 +1633,9 @@
 		DCE8B112EA6838FE9D8048B9 /* ProfileFlow */ = {
 			isa = PBXGroup;
 			children = (
+				5799E532219E04030040E31D /* Module */,
 				57458F47210C8BCC0067A53A /* Storyboard */,
 				7A91BD41FCD79161D7291605 /* Coordinator */,
-				B7A60F9EF0E600E818CE997A /* Profile */,
 			);
 			path = ProfileFlow;
 			sourceTree = "<group>";
