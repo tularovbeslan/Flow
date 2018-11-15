@@ -12,5 +12,4 @@ protocol FlowTabbarCoordinatorOutput: class {
 	
 	var onFeedFlow: ((UINavigationController) -> ())? { get set }
 	var onProfileFlow: ((UINavigationController) -> ())? { get set }
-	var onViewDidLoad: ((UINavigationController) -> ())? { get set }
 }

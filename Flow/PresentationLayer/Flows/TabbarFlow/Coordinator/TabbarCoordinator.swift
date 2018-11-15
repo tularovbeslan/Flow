@@ -23,7 +23,6 @@ class TabbarCoordinator: BaseCoordinator, TabbarCoordinatorOutput {
 	
 	override func start() {
 		
-		tabbarOutput.onViewDidLoad = runFeedFlow()
 		tabbarOutput.onFeedFlow = runFeedFlow()
 		tabbarOutput.onProfileFlow = runProfileFlow()
 	}
@@ -32,11 +31,9 @@ class TabbarCoordinator: BaseCoordinator, TabbarCoordinatorOutput {
 		
 		return { navigationController in
 			
-			if navigationController.viewControllers.isEmpty == true {
-				let feedCoordinator = self.coordinatorFactory.produceFeedCoordinator(navigationController: navigationController, flowFactory: FlowFactoryImp())
-				feedCoordinator.start()
-				self.addDependency(feedCoordinator)
-			}
+			let feedCoordinator = self.coordinatorFactory.produceFeedCoordinator(navigationController: navigationController, flowFactory: FlowFactoryImp())
+			feedCoordinator.start()
+			self.addDependency(feedCoordinator)
 		}
 	}
 	
@@ -44,15 +41,13 @@ class TabbarCoordinator: BaseCoordinator, TabbarCoordinatorOutput {
 		
 		return { navigationController in
 			
-			if navigationController.viewControllers.isEmpty == true {
-				var profileCoordinator = self.coordinatorFactory.produceProfileCoordinator(navigationController: navigationController, flowFactory: FlowFactoryImp())
-				profileCoordinator.finishFlow = { [weak self] in
-					
-					self?.finishFlow?()
-				}
-				profileCoordinator.start()
-				self.addDependency(profileCoordinator)
+			var profileCoordinator = self.coordinatorFactory.produceProfileCoordinator(navigationController: navigationController, flowFactory: FlowFactoryImp())
+			profileCoordinator.finishFlow = { [weak self] in
+				
+				self?.finishFlow?()
 			}
+			profileCoordinator.start()
+			self.addDependency(profileCoordinator)
 		}
 	}
 }

@@ -44,7 +44,6 @@ class FeedViewController: UIViewController, FeedViewInput, FeedViewCoordinatorOu
 		
 		setupCollectionView()
 		labelsAppearance()
-		tabbarItemAppearance()
     }
 	
 	// MARK: FeedViewCoordinatorOutput
@@ -82,12 +81,6 @@ class FeedViewController: UIViewController, FeedViewInput, FeedViewCoordinatorOu
 		label.layer.masksToBounds = true
 		label.textAlignment = .left
 	}
-	
-	private func tabbarItemAppearance() {
-		
-		navigationController?.tabBarItem = UITabBarItem(title: title, image: #imageLiteral(resourceName: "oval"), selectedImage: #imageLiteral(resourceName: "selectedOval"))
-	}
-
 }
 
 extension FeedViewController: FSPagerViewDataSource {

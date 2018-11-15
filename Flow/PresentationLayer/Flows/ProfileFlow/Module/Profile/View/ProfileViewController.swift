@@ -38,7 +38,6 @@ class ProfileViewController: UIViewController, ProfileViewInput, ProfileViewCoor
 		fieldAppearance()
 		labelsAppearance()
 		buttonAppearance()
-		tabbarItemAppearance()
     }
 	
 	// MARK: - ProfileViewCoordinatorOutput
@@ -84,11 +83,6 @@ class ProfileViewController: UIViewController, ProfileViewInput, ProfileViewCoor
 		button.backgroundColor = AppAppearance.UI.Button(tag: button.tag).color
 		button.setTitle("Exit", for: .normal)
 		button.titleLabel?.font = UIFont.avertaCY(style: .semibold, size: 13)
-	}
-	
-	private func tabbarItemAppearance() {
-		
-		navigationController?.tabBarItem = UITabBarItem(title: title, image: #imageLiteral(resourceName: "oval"), selectedImage: #imageLiteral(resourceName: "selectedOval"))
 	}
 	
 	// MARK: - Actions

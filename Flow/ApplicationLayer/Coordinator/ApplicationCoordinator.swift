@@ -60,7 +60,6 @@ final class ApplicationCoordinator: BaseCoordinator {
 		 let (coordinator, module) = coordinatorFactory.produceTabbarCoordinator(coordinatorFactory: coordinatorFactory)
 		
 		coordinator.finishFlow = { [weak self] in
-			
 			self?.start()
 		}
 		addDependency(coordinator)
