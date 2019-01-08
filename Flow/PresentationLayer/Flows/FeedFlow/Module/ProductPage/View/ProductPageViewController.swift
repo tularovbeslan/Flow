@@ -75,7 +75,7 @@ class ProductPageViewController: UIViewController, ProductPageViewInput, Product
 
 			switch button.tag {
 			case 0:
-				button.setTitle("Back", for: .normal)
+				button.setTitle("Feed", for: .normal)
 			case 2:
 				button.setTitle("Add to Cart", for: .normal)
 			default:

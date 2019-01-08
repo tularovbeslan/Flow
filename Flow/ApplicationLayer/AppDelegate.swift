@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	private lazy var applicationCoordinator: Coordinator = self.produceApplicationCoordinator()
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
 		applicationCoordinator.start()
 		return true
 	}
